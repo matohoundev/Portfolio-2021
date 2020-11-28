@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'abril';
+    src: url('./assets/webfonts/Abril/AbrilFatface-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'manrope';
+    src: url('./assets/webfonts/Manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+  }
+
+@import './assets/scss/variables';
+@import './assets/scss/mixins';
+@import './assets/scss/placeholders';
+
+/*Police*/
+
+h1 {
+    font-family: "abril", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: "manrope", Helvetica, sans-serif;
+}
+
+p, strong {
+    font-family: "manrope", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*parallax*/
+
+.parallax
+{
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    background-size: cover;
+}

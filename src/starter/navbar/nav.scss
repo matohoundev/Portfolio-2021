@@ -1,0 +1,25 @@
+@import '../../App.scss';
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3%;
+    position: fixed;
+}
+
+.navbar-brand {
+    font-family: "abril", Arial, Helvetica, sans-serif;
+    font-size: $logoSize;
+    color: $color-dark;
+
+}
+
+.navbar-toggler {
+    background-color: $colorT;
+    border: none; 
+}
+
+.navbar-collapse { //reprendre a partir de la
+    // display: none;
+}

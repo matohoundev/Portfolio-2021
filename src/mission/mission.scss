@@ -1,0 +1,72 @@
+@import '../App.scss';
+
+.head-mission {
+    height: $all-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-mission h3 {
+    font-size: $h3mission;
+}
+
+article {
+    height: $half-height;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    text-align: $text-justify;
+}
+
+.about-mission {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+    text-align: $text-justify;
+}
+
+.about-mission strong {
+    font-size: $strong;
+    padding: 2% 0;
+}
+
+.mobile-mission {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-between-mobile {
+    font-size: $strong;
+}
+
+/*for the img*/
+
+.head-mission-img {
+    height: $half-height;
+    background-image: url('../assets/img-mission/RainyDay2.png');
+}
+
+.half-mission-img {
+    height: 55vh;
+    margin: 0 3%;
+    border-radius: 10px;
+    background-image: url('../assets/img-mission/RainyDay-users-tablette.png');
+}
+
+.mobile-mission-img {//revoir les deux pour eviter les repetitions
+    height: 50vh;
+    margin: 10% 15%;
+    border-radius: 19px;
+}
+
+.mb1 {
+    background-image: url('../assets/img-mission/RainyDay-mobile2.png');
+}
+
+.mb2 {
+    background-image: url('../assets/img-mission/RainyDay-users-mobile.png'); 
+}
