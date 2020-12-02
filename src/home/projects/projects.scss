@@ -3,43 +3,58 @@
 .projet {
     height: $all-height;
     display: flex;
-    background-image: linear-gradient(45deg, black 0%, black 22%,#E3B200 22%,#E3B200 45%,white 45%, white 100%);
-    //foutre un background ici et apprendre a faire l'effet découpé
 }
 
 .col-preview {
     padding: 15vh 0 0 6%;
-    line-height: 55px;
 }
 
 .col-preview h3 {
     font-size: $h3Project;
+    @extend %second-plan;
 }
 
 .col-preview em {
     font-size: $em;
+    @extend %second-plan;
+    margin-top: 9vh;
 }
 
 .card-project {
     height: 55vh;
     width: 50vw;
+    @extend %second-plan;
+    margin-top: 15vh;
     border-radius: 10px;
     background-image: url("../../assets/card-projects/Accueil\ Mobile.png");
 }
 
-.col-svg { //ok reprend la 
+.col-svg { 
+    width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    @extend %third-plan;
+    
 }
 
-.ready {
-    width: 100%;
+.svg-project { //yo t'est ici !
+    width: 600px;
 }
 
-.slide-project { // mes slide d'animation
+.slide-project-1 { // slide d'animation
     // display: none;
-    background-color: blue;
-    position: absolute;
     width: 2%;
-    height: 100%;
+    height: $all-height;  
+    @extend %first-plan;
+    background-color: blue;
+    
+}
+
+.slide-project-2 {
+    width: 100%;
+    height: $all-height;
+    @extend %fourth-plan;
+    background-image: linear-gradient(45deg, black 0%, black 22%,#E3B200 22%,#E3B200 45%,transparent 45%, transparent 100%); // for laptop 45% au lieu de 80%
 }

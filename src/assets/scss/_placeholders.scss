@@ -1,7 +1,19 @@
-// %flex-center {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+%first-plan {
+    position: absolute;
+    z-index: 4;
+}
 
-// @extend %flex-center;
+%second-plan {
+    position: absolute;
+    z-index: 3;
+}
+
+%third-plan {
+    position: relative;
+    z-index: 2;
+}
+
+%fourth-plan {
+    position: absolute;
+    z-index: 1;
+}
