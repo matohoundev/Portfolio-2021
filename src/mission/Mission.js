@@ -6,7 +6,7 @@ export class Mission extends Component {
         return (
             <Fragment>
                 <header className="head-mission">
-                    <h3>RainyDay</h3>
+                    <h3 className="h3-rainy">Rainy<b className="b-rainy">Day</b></h3>
                 </header>
                 <div className="head-mission-img parallax" alt=""></div>
                 <section>

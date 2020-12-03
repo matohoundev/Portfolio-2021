@@ -10,11 +10,11 @@ export class Project extends Component {
                 <div className="slide-project-2"></div>
                 <section className="projet rainyDay">
                     <div className="col-preview">
-                        <h3>RainyDay</h3>
-                        <em>React.js - Bootstrap - Javascript - Firebase</em>
+                        <h3 className="h3-rainy">Rainy<b className="b-rainy">Day</b></h3>
+                        <em>React.js - Bootstrap - Javascri<mark className="mark-techno">pt - Firebase</mark></em>
                         <div className="card-project"></div>
                     </div>
-                    <div id="#" className="col-svg">
+                    <div id="#" className="col-mb">
                         <img src={ready} alt="" className="svg-project"/>
                     </div>
                 </section>                

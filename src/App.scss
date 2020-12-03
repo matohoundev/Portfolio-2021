@@ -2,10 +2,32 @@
     font-family: 'abril';
     src: url('./assets/webfonts/Abril/AbrilFatface-Regular.ttf') format('truetype');
   }
-  @font-face {
-    font-family: 'manrope';
-    src: url('./assets/webfonts/Manrope/Manrope-VariableFont_wght.ttf') format('truetype');
-  }
+@font-face {
+  font-family: 'manrope';
+  src: url('./assets/webfonts/Manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+}
+
+//font projet
+
+@font-face {
+  font-family: 'newyorker';
+  src: url('./assets/webfonts-project/NewYorker/newyrken.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'newyorker2';
+  src: url('./assets/webfonts-project/NewYorker/newyorkr.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'neon';
+  src: url('./assets/webfonts-project/neon/neon2.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'limelight';
+  src: url('./assets/webfonts-project/Limelight/Limelight-Regular.ttf') format('truetype');
+}
+
+
+// SCSS import 
 
 @import './assets/scss/variables';
 @import './assets/scss/mixins';
@@ -14,7 +36,7 @@
 /*Police*/
 
 h1 {
-    font-family: "abril", Arial, Helvetica, sans-serif;
+  font-family: "abril", Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -22,11 +44,23 @@ h2 {
 }
 
 p, strong {
-    font-family: "manrope", Arial, Helvetica, sans-serif;
+  font-family: "manrope", Arial, Helvetica, sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+/* Fonts Project*/
+
+.h3-rainy {
+  font-family: "newyorker", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.b-rainy {
+  font-family: "newyorker2", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
 /*parallax*/

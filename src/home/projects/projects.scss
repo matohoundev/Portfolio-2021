@@ -10,7 +10,6 @@
 }
 
 .col-preview h3 {
-    font-size: $h3Project;
     @extend %second-plan;
 }
 
@@ -18,10 +17,16 @@
     font-size: $em;
     @extend %second-plan;
     margin-top: 9vh;
+    color: $color-clear;
+}
+
+.mark-techno {
+    background: transparent;
+    color: $color-dark;
 }
 
 .card-project {
-    height: 55vh;
+    height: 50vh;
     width: 50vw;
     @extend %second-plan;
     margin-top: 15vh;
@@ -29,18 +34,13 @@
     background-image: url("../../assets/card-projects/Accueil\ Mobile.png");
 }
 
-.col-svg { 
+.col-mb { 
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     overflow: hidden;
     @extend %third-plan;
-    
-}
-
-.svg-project { //yo t'est ici !
-    width: 600px;
 }
 
 .slide-project-1 { // slide d'animation
@@ -48,13 +48,23 @@
     width: 2%;
     height: $all-height;  
     @extend %first-plan;
-    background-color: blue;
-    
+    background-color: blue; 
 }
 
 .slide-project-2 {
     width: 100%;
     height: $all-height;
     @extend %fourth-plan;
-    background-image: linear-gradient(45deg, black 0%, black 22%,#E3B200 22%,#E3B200 45%,transparent 45%, transparent 100%); // for laptop 45% au lieu de 80%
+    background-image: linear-gradient(45deg, black 0%, black 27%,#E3B200 27%,#E3B200 70%,transparent 70%, transparent 100%); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%
+}
+
+//rainyDay customization
+
+.col-preview .h3-rainy {
+    font-size: 4.563em;//regler le bail bizarre avec le texte
+}
+
+.svg-project { 
+    margin: -15vh 0 0 -27vw;
+    width: 700px;
 }
