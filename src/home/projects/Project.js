@@ -7,8 +7,8 @@ export class Project extends Component {
     render() {
         return (
             <Fragment>
-                <div className="slide-project-1"></div>
-                <div className="slide-project-2"></div>
+                <div className="slide-project-1 slide-r"></div>
+                <div className="slide-project-2 slide-2-r"></div>
                 <section className="projet rainyDay">
                     <div className="col-preview">
                         <h3 className="h3-rainy">Rainy<b className="b-rainy">Day</b></h3>
