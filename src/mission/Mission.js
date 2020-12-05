@@ -9,7 +9,7 @@ export class Mission extends Component {
                     <h3 className="h3-rainy">Rainy<b className="b-rainy">Day</b></h3>
                 </header>
                 <div className="head-mission-img parallax" alt=""></div>
-                <section>
+                <section className="main-mission">
                     <article>
                         <p>RainyDay est une plate-forme de suivi pour la télévision et les films. Il permet aux utilisateurs de suivre ce qu'ils regardent, RainyDay permet également aux utilisateurs de réagir  et de commenter des épisodes au sein de la communauté du site. Les utilisateurs ne peuvent pas regarder des émissions ou des films avec RainyDay. </p>
                     </article>
