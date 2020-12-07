@@ -47,6 +47,7 @@ article {
 
 .text-between-mobile {
     font-size: $strong;
+    font-family: "manrope-light", "manrope", Helvetica, sans-serif;
 }
 
 /*for the img*/
@@ -59,7 +60,7 @@ article {
 .half-mission-img {
     height: 529px;
     width: 365px;
-    border-radius: 10px;
+    border-radius: $border-xs;
     background-image: url('../assets/img-mission/RainyDay-users-tablette.png');
 }
 
@@ -68,53 +69,55 @@ article {
     min-height: 412px;
     width: 252px;
     margin: 50px 0 50px 0;
-    border-radius: 19px;
+    border-radius: $border-xs;
 }
 
 .mb1 {
     background-image: url('../assets/img-mission/RainyDay-mobile2.png');
-    background-image: url('../assets/img-mission/RainyDay-users-mobile.png');
 }
 
 .mb2 {
     background-image: url('../assets/img-mission/RainyDay-users-mobile.png'); 
 }
 
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 763px) {
     /* tablettes et ordinateurs */
     .head-mission h3 {
         font-size: $h3mission-lp;
     }
 
     .main-mission {
-        font-size: 1.2em;
+        font-size: $strong;
+        padding: 0 8%;
     }
 
     .half-mission-img {
         width: 397px;
     }
-    
-    .about-mission {
-        // height: 30vh;
-        // padding: 0 5%; 
-    }
 
     .mobile-mission {
         flex-direction: row;
-        align-items: center;
         justify-content: center;
+        padding: 60px 0;
     }
 
     /*for the img*/
 
     .mobile-mission-img {//revoir les deux pour eviter les repetitions
         height: 60vh;
-        margin: 0px 2vw 90px 2vw;
+        margin: 0 30px;
     }
 
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (orientation : landscape) {
+        /* Styles pour cette Media Queries */
+        .main-mission {
+            padding: 0;
+        }
+        }
+
+    @media screen and (min-width: 1024px) {
         /* ordinateurs */
         .main-mission {
             font-size: 2.125em;
@@ -122,18 +125,24 @@ article {
 
         .about-mission {
             height: 30vh;
-            // padding: 0 5%; 
             margin: 5% 0;
         }
 
         /*for the img*/
 
         .head-mission-img {
-            border-radius: 10px;
+            border-radius: $border-xs;
         }
 
         .half-mission-img {
             height: 80vh;
             width: 80vw;
+            max-width: 1474px;
         }
+
+        .mobile-mission-img {//revoir les deux pour eviter les repetitions
+            height: 60vh;
+            margin: 0 8vw;
+        }
+
         }   

@@ -6,6 +6,10 @@
   font-family: 'manrope';
   src: url('./assets/webfonts/Manrope/Manrope-VariableFont_wght.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'manrope-light';
+  src: url('./assets/webfonts/Manrope/Manrope-ExtraLight.ttf') format('truetype');
+}
 
 //font projet
 
@@ -40,7 +44,7 @@ h1 {
 }
 
 h2 {
-  font-family: "manrope", Helvetica, sans-serif;
+  font-family: "manrope-light", Helvetica, sans-serif;
 }
 
 p, strong {

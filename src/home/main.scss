@@ -6,24 +6,60 @@
     flex-direction: column;
     justify-content: center;  
     padding-left: 3%;
-    background-color: $main-color;  
+    background-image: linear-gradient(45deg, #5d0422 0%, #5d0422 20%,#4B0019 20%,#4B0019 45%,#a10237 45%,#a10237 75%, $main-color 75%, $main-color 100%);
 }
 
-h1 {
+h1, h2 {
     color: $color-clear;
     font-weight: lighter;
 }
+h1 {
+    font-size: 2.188em;
+}
 
 h2 {
-    font-weight: lighter;
+    font-size: 1.563em;
 }
 
 .about {
     height: $all-height;
     display: flex;
     align-items: center;
-    padding: 0 5%;
     text-align: $text-justify;
-    background-color: $secondary-color;
+    padding: 0 5%;
     color: white; 
+    background-image: linear-gradient(45deg, $main-color 0%, $main-color 20%,#4B0019 20%,#a10237 80%, $main-color 80%, $main-color 100%);
 }
+
+@media screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+    h1 {
+        font-size: 7.375em;
+    }
+    h2 {
+        font-size: 3.125em;
+    }
+    
+    .about {
+        font-size: 1.5em;
+    }
+
+    }
+
+@media screen and (min-width: 1024px) {
+    /* tablettes et ordinateurs */
+    .about {
+        font-size: 1.8em;
+    }
+
+    }
+
+
+
+@media screen and (min-width: 1224px) {
+    /* ordinateurs */
+    .about {
+        padding: 0 20%;
+    }
+
+    }

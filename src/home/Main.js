@@ -13,9 +13,7 @@ export class Main extends Component {
                 
                 <main>
                     <section className="about">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet voluptatibus autem. Voluptatibus porro provident unde vel illo repellat fugit aspernatur? Fugiat impedit officia commodi dignissimos quis repellendus atque quaerat.
-                        Exercitationem dolore, enim repellat explicabo voluptate commodi sequi saepe harum adipisci eum, vero dignissimos sunt! Neque quisquam atque harum possimus consequatur dolore, iure eos quia nostrum illo quis esse enim!
-                        Voluptates maiores tempore, at non aliquam architecto doloribus tenetur natus, quibusdam eius ducimus amet nisi, ab illo eligendi unde quo inventore cum magnam aperiam! Culpa quod facilis dolorem saepe velit!</p>
+                        <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services. Je réalise des sites internet avec le souci du détail et un rendu ﬁdèle au design.</p>
                     </section>
 
                     <Project />
