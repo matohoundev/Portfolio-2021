@@ -4,7 +4,7 @@ import './mission.scss';
 export class Mission extends Component {
     render() {
         return (
-            <Fragment>
+            <div className="lol">
                 <header className="head-mission">
                     <h3 className="h3-rainy">Rainy<b className="b-rainy">Day</b></h3>
                 </header>
@@ -25,7 +25,7 @@ export class Mission extends Component {
                     </div>
                 </section>
                 <aside></aside>
-            </Fragment>
+            </div>
         )
     }
 }

@@ -1,0 +1,15 @@
+@import '../App.scss';
+
+.contact-main {
+    height: 90vh;
+    padding-top: 20vh;
+    padding-left: 8%;
+    font-size: 23px;
+}
+
+@media screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+    .contact-main {
+        font-size: 40px;
+    }
+    }

@@ -13,7 +13,7 @@ export class Project extends Component {
                     <div className="col-preview">
                         <h3 className="h3-rainy">Rainy<b className="b-rainy">Day</b></h3>
                         <em>React.js - Bootstrap - Javascript -<mark className="mark-techno"> Firebase</mark></em>
-                        <div className="card-project parallax"></div>
+                        <div className="card-project"></div>
                     </div>
                     <div id="#" className="col-mb">
                         <img src={ready} alt="" className="svg-project"/>

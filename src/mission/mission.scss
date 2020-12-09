@@ -10,6 +10,9 @@
 .head-mission h3 {
     font-size: $h3mission-mb;
 }
+.lol {
+    background-image: linear-gradient(70deg, $color-clear 0%, $color-clear 20%,#4B0019 20%,#4B0019 45%, $color-clear 45%, $color-clear 100%);
+}
 
 .main-mission {
     display: flex;

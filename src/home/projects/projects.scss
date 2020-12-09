@@ -1,4 +1,8 @@
 @import '../../App.scss';
+@import './customer/rainyDay.scss';
+@import './customer/porftolio.scss';
+@import './customer/figurToys.scss';
+@import './customer/acacia.scss';
 
 .projet {
     height: $all-height;
@@ -14,7 +18,7 @@
 }
 
 .col-preview em {
-    font-size: $em;
+    font-size: 16px;
     @extend %second-plan;
     margin-top: 10vh;
     color: $color-clear;
@@ -28,6 +32,7 @@
 .card-project {
     height: 50vh;
     width: 50vw;
+    max-width: 824px; 
     @extend %second-plan;
     margin-top: 18vh;
     border-radius: 10px;
@@ -57,35 +62,26 @@
     @extend %fourth-plan;
 }
 
-//////// rainyDay customization /////////
+@media screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+    .col-preview em {
+        font-size: $logoSize;
+    }
 
-.col-preview .h3-rainy {
-    font-size: 4.563em;//regler le bail bizarre avec le texte
-    color: $color-clear;
-}
+    .col-mb { 
+        justify-content: flex-end; 
+    }
 
-.col-preview .b-rainy {
-    color: $color-dark;
-}
+    .card-project {
+        background-image: url("../../assets/card-projects/Accueil\ Tablette\ .png");
+    }
 
-.svg-project { //revoir les class c'est pas clean ça genre deux width 700px serieusement ? il y aura surement trois class voila a toi de jouer, et voir l'axe
-    width: 650px; //800px a la fin
-    margin: 6vh 0 0 -11vw;
-    position: absolute;
-}
-.svg-project-2 { 
-    width: 660px; //potentiellement 810px pour les ordi
-    margin: 5.2vh 0 0 -13.3vw;
-}
+    }
 
-.slide-r { // slide d'animation
-    background-color: blue; 
-}
+@media screen and (min-width: 1224px) {
+    /* ordinateurs */
+    .card-project {
+        background-image: url("../../assets/card-projects/Accueil.png");
+    }
 
-.slide-2-r {
-    background-image: linear-gradient(45deg, black 0%, black 27%,#E3B200 27%,#E3B200 70%,transparent 70%, transparent 100%); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
-}
-
-//////// FigurToys customization /////////
-//////// Portfolio customization /////////
-//////// Acacia customization /////////
+    }

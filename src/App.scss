@@ -47,9 +47,15 @@ h2 {
   font-family: "manrope-light", Helvetica, sans-serif;
 }
 
-p, strong {
+h3 {
+  font-family: "abril", "manrope", Arial, Helvetica, sans-serif;
+}
+
+p, strong, em {
   font-family: "manrope", Arial, Helvetica, sans-serif;
 }
+
+
 
 a {
   text-decoration: none;
@@ -65,14 +71,4 @@ a {
 .b-rainy {
   font-family: "newyorker2", Arial, Helvetica, sans-serif;
   font-weight: lighter;
-}
-
-/*parallax*/
-
-.parallax
-{
-    // background-attachment: fixed;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
 }
