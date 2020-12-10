@@ -3,6 +3,32 @@ import Project from './projects/Project';
 import './main.scss';
 
 export class Main extends Component {
+
+    state = {
+        projects: [
+            {
+                id: 1,
+                cls_slide_1: "slide-rainy",
+                cls_slide_2: "slide-rainy-2",
+                cls_name: "Rainy Day",
+                name: "Rainy Day",
+                tech: "React.js - Bootstrap -Javascript - Firebase",
+                cls_card: "card-rainy",
+                cls_svg_1: "svg-project-rainy",
+                cls_svg_2: "svg-project-rainy-2"
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+        ]
+    }
+
     render() {
         return (
             <Fragment>

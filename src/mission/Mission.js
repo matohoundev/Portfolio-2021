@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './mission.scss';
 
 export class Mission extends Component {
     render() {
         return (
-            <div className="lol">
+            <div className="mission">
                 <header className="head-mission">
                     <h3 className="h3-rainy">Rainy<b className="b-rainy">Day</b></h3>
                 </header>

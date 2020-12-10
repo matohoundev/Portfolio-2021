@@ -36,7 +36,6 @@
     @extend %second-plan;
     margin-top: 18vh;
     border-radius: 10px;
-    background-image: url("../../assets/card-projects/Accueil\ Mobile.png");
     background-size: cover;//normalement c'est temporaire ça depend parallax ou non
 }
 
@@ -70,18 +69,6 @@
 
     .col-mb { 
         justify-content: flex-end; 
-    }
-
-    .card-project {
-        background-image: url("../../assets/card-projects/Accueil\ Tablette\ .png");
-    }
-
-    }
-
-@media screen and (min-width: 1224px) {
-    /* ordinateurs */
-    .card-project {
-        background-image: url("../../assets/card-projects/Accueil.png");
     }
 
     }
