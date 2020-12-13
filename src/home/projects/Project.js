@@ -11,8 +11,8 @@ export class Project extends Component {
                 <div className="slide-project-2 slide-rainy-2"></div>
                 <section className="projet rainyDay">
                     <div className="col-preview">
-                        <h3 className="h3-rainy">Rainy<b className="b-rainy">Day</b></h3>
-                        <em>React.js - Bootstrap - Javascript -<mark className="mark-techno"> Firebase</mark></em>
+                        <h3 className={this.props.cls_h3}>Rainy<b className="b-rainy">Day</b></h3>
+                        <em>React.js - Bootstrap - Javascript -<mark className="mark-tech-rainy"> Firebase</mark></em>
                         <div className="card-project card-rainy"></div>
                     </div>
                     <div id="#" className="col-mb">
