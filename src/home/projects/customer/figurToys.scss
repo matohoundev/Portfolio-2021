@@ -1,3 +1,81 @@
 @import '../../../App.scss';
 
 //////// FigurToys customization /////////
+
+.col-preview .h3-figur {
+    font-size: 4.563em;//regler le bail bizarre avec le texte
+    color: $color-clear;
+}
+
+.mark-tech-figur {
+    color:  #332832;
+}
+
+.card-figur {
+    background-image: url("../../../assets/card-projects/Accueil\ Mobile.png");
+}
+
+.svg-project-figur { 
+    width: 650px; //800px a la fin
+    margin: 6vh 0 0 -11vw;
+    position: absolute;
+}
+.svg-project-figur-2 { 
+    width: 660px; //potentiellement 810px pour les ordi
+    margin: 5.2vh 0 0 -13.3vw;
+}
+.svg-project-figur-3 { 
+    width: 660px; //potentiellement 810px pour les ordi
+    margin: 5.2vh 0 0 -13.3vw;
+}
+
+.slide-figur { // slide d'animation
+    // background-color: blue; 
+}
+
+.slide-figur-2 {
+    background-image: linear-gradient(45deg, #332832 0%, #332832 27%,#D8115D 27%,#D8115D 70%,transparent 70%, transparent 100%); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
+}
+
+@media screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+    .card-figur {
+        background-image: url("../../../assets/card-projects/Accueil\ Tablette\ .png");
+    }
+
+    .svg-project-figur { 
+        width: 800px; //800px a la fin
+    }
+
+    .svg-project-figur-2 { 
+        width: 810px; //potentiellement 810px pour les ordi
+    }
+
+    .svg-project-figur-3 { 
+        width: 810px; //potentiellement 810px pour les ordi
+    }
+
+}
+
+@media screen and (min-width: 1224px) {
+    /* ordinateurs */
+    
+    .card-figur {
+        background-image: url("../../../assets/card-projects/Accueil.png");
+    }
+    
+    .svg-project-figur { 
+        width: 45vw; //800px a la fin
+    }
+    
+    .svg-project-figur-2 { 
+        width: 46vw; //potentiellement 810px pour les ordi
+    }
+    .svg-project-figur-3 { 
+        width: 46vw; //potentiellement 810px pour les ordi
+    }
+    
+    .slide-figur-2 {
+        background-image: linear-gradient(45deg, #332832 0%, #332832 22%,#D8115D 22%,#D8115D 50%,transparent 50%, transparent 100%);
+    }
+}
