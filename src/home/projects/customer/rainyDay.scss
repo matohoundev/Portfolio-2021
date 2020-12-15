@@ -3,7 +3,7 @@
 //////// rainyDay customization /////////
 
 .col-preview .h3-rainy {
-    font-size: 4.563em;//regler le bail bizarre avec le texte
+    font-size: 4.563em;
     color: $color-clear;
 }
 
@@ -20,12 +20,12 @@
 }
 
 .svg-project-rainy { 
-    width: 650px; //800px a la fin
+    width: 650px; 
     margin: 6vh 0 0 -11vw;
     position: absolute;
 }
 .svg-project-rainy-2 { 
-    width: 660px; //potentiellement 810px pour les ordi
+    width: 660px; 
     margin: 5.2vh 0 0 -13.3vw;
 }
 
@@ -44,14 +44,25 @@
     }
 
     .svg-project-rainy { 
-        width: 800px; //800px a la fin
+        width: 800px; 
     }
 
     .svg-project-rainy-2 { 
-        width: 810px; //potentiellement 810px pour les ordi
+        width: 810px; 
     }
 
     }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        /* tablettes */
+        .svg-project-rainy { 
+             margin-right: -21vw;
+        }
+    
+        .svg-project-rainy-2 { 
+            margin-right: -23vw;
+        }
+        }
 
 @media screen and (min-width: 1224px) {
     /* ordinateurs */
@@ -61,11 +72,11 @@
     }
 
     .svg-project-rainy { 
-        width: 45vw; //800px a la fin
+        width: 45vw; 
     }
 
     .svg-project-rainy-2 { 
-        width: 46vw; //potentiellement 810px pour les ordi
+        width: 46vw; 
     }
 
     .slide-rainy-2 {

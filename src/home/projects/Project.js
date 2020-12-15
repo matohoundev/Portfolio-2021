@@ -23,19 +23,21 @@ export class Project extends Component {
                         </em>
                         <div className={`card-project ${this.props.cls_card}`}></div>
                     </div>
+
                     <div id="#" className="col-mb">
-                        <img src={this.props.svg} alt="" className={this.props.cls_svg}/>
+                        <img src={this.props.svg} alt={this.props.alt_svg} className={this.props.cls_svg}/>
                         {this.props.project_id === 1 || 2 ? 
-                            <img src={this.props.svg_2} alt="" className={this.props.cls_svg_2}/>
+                            <img src={this.props.svg_2} alt={this.props.alt_svg_2} className={this.props.cls_svg_2}/>
                             :
                             null
                         }
                         {this.props.project_id === 2 ? 
-                            <img src={this.props.svg_3} alt="" className={this.props.cls_svg_3}/>
+                            <img src={this.props.svg_3} alt={this.props.alt_svg_3} className={this.props.cls_svg_3}/>
                             :
                             null
                         }
                     </div>
+                    
                 </section>                
             </Fragment>
         )

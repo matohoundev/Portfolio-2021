@@ -29,7 +29,7 @@ export class Main extends Component {
                 svg:ready,
                 svg_2:readyTwo,
                 alt_svg:"Anime kimetsu no yaiba(Demon Slayer) background black",
-                alt_svg2:"Anime Kimetsu no yaiba(Demon Slayer) background yellow",
+                alt_svg_2:"Anime Kimetsu no yaiba(Demon Slayer) background yellow",
                 cls_svg: "svg-project-rainy",
                 cls_svg_2: "svg-project-rainy-2"
             },
@@ -48,8 +48,8 @@ export class Main extends Component {
                 svg_2:epaule,
                 svg_3:cloud,
                 alt_svg:"Sephiroth",
-                alt_svg2:"Épaulière sephiroth color pink",
-                alt_svg3:"Cloud Strife de dos",
+                alt_svg_2:"Épaulière sephiroth color pink",
+                alt_svg_3:"Cloud Strife de dos",
                 cls_svg: "svg-project-figur",
                 cls_svg_2: "svg-project-figur-2",
                 cls_svg_3: "svg-project-figur-3"
@@ -119,8 +119,8 @@ export class Main extends Component {
                             svg_2={projet.svg_2}
                             svg_3={projet.svg_3}
                             alt_svg={projet.alt_svg}
-                            alt_svg_2={projet.alt_svg}
-                            alt_svg_3={projet.alt_svg}
+                            alt_svg_2={projet.alt_svg_2}
+                            alt_svg_3={projet.alt_svg_3}
                             cls_svg={projet.cls_svg}
                             cls_svg_2={projet.cls_svg_2}
                             cls_svg_3={projet.cls_svg_3}

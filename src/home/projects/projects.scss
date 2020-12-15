@@ -38,7 +38,6 @@
     width: 100vw;
     display: flex;
     align-items: center;
-    // justify-content: flex-start; // justify-content: flex-end; pour ordi
     overflow: hidden;
     @extend %third-plan;
 }
@@ -56,12 +55,47 @@
     @extend %fourth-plan;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen 
+    and (min-width: 640px) 
+    and (max-width: 823px)
+    and (min-height: 360px)
+    and (max-height: 414px)
+    and (orientation: landscape) {
+    /* smartphone landscapes */
+    .col-preview em {
+        font-size: $emproject-sd;
+        margin-top: 21vh;
+    }
+    
+    .card-project {
+        width: 40vw;
+        margin-top: 30vh;
+    }
+    }
+
+
+@media screen and (min-width: 824px) {
     /* tablettes et ordinateurs */
     .col-preview em {
         font-size: $logoSize;
     }
+    
+    }
 
+    @media (min-device-width: 1024px) and (max-device-width: 1400px)and (orientation: landscape) {
+        /* tablettes */
+        .col-preview em {
+            margin-top: 11vh;
+            font-size: $emproject-mb;
+        }
+
+        .card-project {
+            height: 45vh;
+        }
+        }
+        
+@media screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
     .col-mb { 
         justify-content: flex-end; 
     }

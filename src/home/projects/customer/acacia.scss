@@ -1,3 +1,70 @@
 @import '../../../App.scss';
 
 //////// Acacia customization /////////
+
+
+.col-preview .h3-acacia {
+    font-size: 4.563em;//regler le bail bizarre avec le texte
+    color: $color-clear;
+}
+
+.mark-tech-acacia {
+    color:  #5366DE;
+}
+
+.card-acacia {
+    background-image: url("../../../assets/card-projects/Accueil\ Mobile.png");
+}
+
+.svg-project-acacia { 
+    width: 650px; //800px a la fin
+    margin: 6vh 0 0 -11vw;
+    position: absolute;
+}
+
+.slide-acacia { // slide d'animation
+    // background-color: blue; 
+}
+
+.slide-acacia-2 {
+    background-image: linear-gradient(45deg, #5366DE 0%, #5366DE 27%,#F9A825 27%,#F9A825 70%,transparent 70%, transparent 100%); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
+}
+
+@media screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+    .card-acacia {
+        background-image: url("../../../assets/card-projects/Accueil\ Tablette\ .png");
+    }
+
+    .svg-project-acacia { 
+        width: 800px; //800px a la fin
+    }
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles pour cette Media Queries */
+    .svg-project-acacia { 
+         margin-right: -21vw;
+    }
+
+    .svg-project-acacia-2 { 
+        margin-right: -23vw;
+    }
+    }
+
+@media screen and (min-width: 1224px) {
+    /* ordinateurs */
+    
+    .card-acacia {
+        background-image: url("../../../assets/card-projects/Accueil.png");
+    }
+    
+    .svg-project-acacia { 
+        width: 45vw; //800px a la fin
+    }
+    
+    .slide-acacia-2 {
+        background-image: linear-gradient(45deg, #5366DE 0%, #5366DE 22%,#F9A825 22%,#F9A825 50%,transparent 50%, transparent 100%);
+    }
+}
