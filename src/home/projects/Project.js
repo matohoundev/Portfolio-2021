@@ -3,6 +3,9 @@ import './projects.scss';
 
 export class Project extends Component {
     render() {
+
+        let min_view = 844;
+        
         return (
             <Fragment>
                 <div className={`slide-project ${this.props.cls_slide}`}></div>
@@ -11,10 +14,10 @@ export class Project extends Component {
                     <div className="col-preview">
                         <h3 className={this.props.cls_h3}>
                             {this.props.name}
-                                {this.props.project_id === 1 ? 
+                                {min_view > document.body.clientWidth ? 
                                     <b className={this.props.cls_name_half}>{this.props.name_other_half}</b>
                                      : 
-                                     null
+                                    <b className={this.props.cls_name_half_md}>{this.props.name_other_half}</b>
                                 }
                         </h3>
                         <em>

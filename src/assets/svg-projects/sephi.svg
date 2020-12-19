@@ -13,7 +13,7 @@
    viewBox="0 0 2443.000000 1373.000000"
    preserveAspectRatio="xMidYMid meet"
    id="svg882"
-   sodipodi:docname="final-fantasy-vii-remake-5e593ef49a3c2.svg"
+   sodipodi:docname="sephi.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata888">
@@ -47,9 +47,10 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg882" />
+     inkscape:current-layer="svg882"
+     inkscape:document-rotation="0" />
   <g
-     transform="matrix(0.1,0,0,-0.1,39.372986,1373)"
+     transform="matrix(0.1,0,0,-0.1,397.47967,1376.7498)"
      fill="#000000"
      stroke="none"
      id="g880">
@@ -63,9 +64,6 @@
     <path
        d="m 1037,11183 c -12,-11 -8,-62 7,-97 29,-70 128,-80 161,-15 20,38 20,105 -1,113 -21,8 -159,8 -167,-1 z"
        id="path8" />
-    <path
-       d="m 912,10814 c -85,-32 -132,-140 -97,-226 33,-85 89,-118 200,-118 116,0 183,43 207,133 11,42 10,54 -7,105 -16,44 -29,63 -62,86 -36,25 -53,30 -120,32 -53,3 -92,-1 -121,-12 z"
-       id="path10" />
     <path
        d="m 7156,8385 c -3,-8 -1,-15 4,-15 6,0 10,7 10,15 0,8 -2,15 -4,15 -2,0 -6,-7 -10,-15 z"
        id="path12" />

@@ -49,6 +49,7 @@ h2 {
 
 h3 {
   font-family: "abril", "manrope", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
 p, strong, em {
@@ -63,14 +64,28 @@ mark {
   background: transparent;
 }
 
+b {
+  font-weight: lighter;
+}
+
 /* Fonts Project*/
 
 .h3-rainy {
   font-family: "newyorker", Arial, Helvetica, sans-serif;
-  font-weight: lighter;
 }
 
-.b-rainy {
+.h3-figur {
+  font-family: Arial, "newyorker", Helvetica, sans-serif;
+}
+
+.h3-folio {
+  font-family: "neon" ,"newyorker", Arial, Helvetica, sans-serif;
+}
+
+.h3-acacia {
+  font-family: "limelight", Arial, Helvetica, sans-serif;
+}
+
+.b-rainy, .b-rainy-md {
   font-family: "newyorker2", Arial, Helvetica, sans-serif;
-  font-weight: lighter;
 }

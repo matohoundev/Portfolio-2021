@@ -7,8 +7,8 @@
     color: $color-clear;
 }
 
-.mark-tech-figur {
-    color:  #332832;
+.col-preview .b-figur, .mark-tech-figur{
+    color: #332832;
 }
 
 .card-figur {
@@ -34,7 +34,7 @@
 }
 
 .slide-figur-2 {
-    background-image: linear-gradient(45deg, #332832 0%, #332832 27%,#D8115D 27%,#D8115D 70%,transparent 70%, transparent 100%); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
+    background-image: linear-gradient(45deg, #332832 0%, #332832 27%,#D8115D 27%,#D8115D 71%,transparent 71%, transparent 100%); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
 }
 
 @media screen and (min-width: 768px) {

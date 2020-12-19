@@ -7,11 +7,7 @@
     color: $color-clear;
 }
 
-.col-preview .b-rainy {
-    color: $color-dark;
-}
-
-.mark-tech-rainy {
+.col-preview .b-rainy, .b-rainy-md, .mark-tech-rainy{
     color: $color-dark;
 }
 
@@ -34,7 +30,7 @@
 }
 
 .slide-rainy-2 {
-    background-image: linear-gradient(45deg, black 0%, black 27%,#E3B200 27%,#E3B200 70%,transparent 70%, transparent 100%); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
+    background-image: linear-gradient(45deg, black 0%, black 27%,#E3B200 27%,#E3B200 72.8%,transparent 72.8%, transparent 100%); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
 }
 
 @media screen and (min-width: 768px) {

@@ -22,6 +22,7 @@ export class Main extends Component {
                 name: "Rainy",
                 name_other_half: "Day",
                 cls_name_half:"b-rainy",
+                cls_name_half_md:"b-rainy-md",
                 cls_mark_name: "mark-tech-rainy",
                 tech: "React.js - Bootstrap -Javascript - ",
                 tech_other_half: "Firebase",
@@ -39,7 +40,9 @@ export class Main extends Component {
                 cls_slide_2: "slide-figur-2",
                 cls_name: "figurToys",
                 cls_h3:"h3-figur",
-                name: "FigurToys",
+                name: "Figur",
+                name_other_half: "Toys",
+                cls_name_half:"b-figur",
                 cls_mark_name: "mark-tech-figur",
                 tech: "Wordpress - Astra - ",
                 tech_other_half: "WooCommerce",
@@ -60,7 +63,9 @@ export class Main extends Component {
                 cls_slide_2: "slide-folio-2",
                 cls_name: "folio",
                 cls_h3:"h3-folio",
-                name: "Portfolio 2020",
+                name: "Folio",
+                name_other_half: "2020",
+                cls_name_half:"b-folio",
                 cls_mark_name: "mark-tech-folio",
                 tech: "Bootstrap - Javascript  - Jquery - ",
                 tech_other_half: "Php",
@@ -75,10 +80,12 @@ export class Main extends Component {
                 cls_slide_2: "slide-acacia-2",
                 cls_name: "acacia",
                 cls_h3:"h3-acacia",
-                name: "Acacia",
+                name: "Aca",
+                name_other_half: "cia",
+                cls_name_half:"b-acacia",
                 cls_mark_name: "mark-tech-acacia",
-                tech: "Mvc - Materialize - Javascript  - Jquery - ",
-                tech_other_half: "Php",
+                tech: "Mvc - Materialize - Javascript ",
+                tech_other_half: "- Jquery - Php",
                 cls_card: "card-acacia",
                 svg:cuisto,
                 alt_svg:"chef cuistot cartoon",
@@ -111,6 +118,7 @@ export class Main extends Component {
                             name={projet.name}
                             name_other_half={projet.name_other_half}
                             cls_name_half={projet.cls_name_half}
+                            cls_name_half_md={projet.cls_name_half_md}
                             cls_mark_name={projet.cls_mark_name}
                             tech={projet.tech}
                             tech_other_half={projet.tech_other_half}
