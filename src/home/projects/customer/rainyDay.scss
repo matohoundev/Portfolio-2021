@@ -17,12 +17,12 @@
 
 .svg-project-rainy { 
     width: 650px; 
-    margin: 6vh 0 0 -11vw;
+    margin: 6vh 0 0 -9vw;
     position: absolute;
 }
 .svg-project-rainy-2 { 
     width: 660px; 
-    margin: 5.2vh 0 0 -13.3vw;
+    margin: 5.2vh 0 0 -11.3vw;
 }
 
 .slide-rainy { // slide d'animation
@@ -52,11 +52,11 @@
     @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
         /* tablettes */
         .svg-project-rainy { 
-             margin-right: -21vw;
+             margin-right: -23vw;
         }
     
         .svg-project-rainy-2 { 
-            margin-right: -23vw;
+            margin-right: -25vw;
         }
         }
 

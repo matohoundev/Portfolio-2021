@@ -16,17 +16,21 @@
 }
 
 .svg-project-figur { 
-    width: 650px; //800px a la fin
-    margin: 6vh 0 0 -11vw;
-    position: absolute;
+    width: 1200px; 
+    margin: 20vh 0 0 -90vw;
+    @extend %first-plan;
 }
 .svg-project-figur-2 { 
-    width: 660px; //potentiellement 810px pour les ordi
-    margin: 5.2vh 0 0 -13.3vw;
+    width: 660px; 
+    margin: 62vh 0 0 -13.3vw;
+    @extend %third-plan;
+    display: none;
 }
 .svg-project-figur-3 { 
-    width: 660px; //potentiellement 810px pour les ordi
-    margin: 5.2vh 0 0 -13.3vw;
+    width: 180px; 
+    margin: 71vh 0 0 40vw;
+    @extend %second-plan;
+    display: none;
 }
 
 .slide-figur { // slide d'animation
@@ -34,7 +38,7 @@
 }
 
 .slide-figur-2 {
-    background-image: linear-gradient(45deg, #332832 0%, #332832 27%,#D8115D 27%,#D8115D 71%,transparent 71%, transparent 100%); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
+    background-image: linear-gradient(45deg, #332832 0%, #332832 27%,#D8115D 27%,#D8115D 71%,transparent 71%, transparent 100%);
 }
 
 @media screen and (min-width: 768px) {
@@ -44,15 +48,15 @@
     }
 
     .svg-project-figur { 
-        width: 800px; //800px a la fin
+        width: 1300px;
     }
 
     .svg-project-figur-2 { 
-        width: 810px; //potentiellement 810px pour les ordi
+        width: 810px; 
     }
 
     .svg-project-figur-3 { 
-        width: 810px; //potentiellement 810px pour les ordi
+        width: 230px; 
     }
 
 }
@@ -60,13 +64,13 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     /* Styles pour cette Media Queries */
     .svg-project-figur { 
-         margin-right: -21vw;
+        margin-right: -50vw;
     }
 
-    .svg-project-figur-2 { 
-        margin-right: -23vw;
+    .svg-project-figur-3 { 
+        margin-right: 12.5vw;
     }
-    }
+}
 
 @media screen and (min-width: 1224px) {
     /* ordinateurs */
@@ -76,14 +80,19 @@
     }
     
     .svg-project-figur { 
-        width: 45vw; //800px a la fin
+        width: 1660px; 
+        margin: 2.3vh -20vw 0 0vw;
     }
     
     .svg-project-figur-2 { 
-        width: 46vw; //potentiellement 810px pour les ordi
+        width: 1670px; 
+        margin: 62vh -22.8vw 0 0vw;
+        display: block;
     }
     .svg-project-figur-3 { 
-        width: 46vw; //potentiellement 810px pour les ordi
+        width: 380px; 
+        margin: 78vh 13.5vw 0 40vw;
+        display: block;
     }
     
     .slide-figur-2 {

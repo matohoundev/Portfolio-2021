@@ -9,18 +9,16 @@
     display: flex;
 }
 
-.col-preview {
+.col-preview h3 {
+    @extend %second-plan;
     padding: 15vh 0 0 7%;
 }
 
-.col-preview h3 {
-    @extend %second-plan;
-}
-
-.col-preview em {
-    font-size: 16px;
+.col-preview em { 
     @extend %second-plan;
     margin-top: 10vh;
+    padding: 17vh 0 0 7%;
+    font-size: 16px;
     color: $color-clear;
 }
 
@@ -29,7 +27,7 @@
     width: 50vw;
     max-width: 824px; 
     @extend %second-plan;
-    margin-top: 18vh;
+    margin: 35vh 0 0 7%;
     border-radius: 10px;
     background-size: cover;//normalement c'est temporaire ça depend parallax ou non
 }
@@ -69,15 +67,26 @@
     
     .card-project {
         width: 40vw;
-        margin-top: 30vh;
+        margin-top: 45vh;
     }
     }
 
+@media screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+    .col-preview h3, .col-preview em {
+    padding: 15vh 0 0 7%;
+}
 
+    .col-mb { 
+        justify-content: flex-end; 
+    }
+
+    }
+    
 @media screen and (min-width: 824px) {
     /* tablettes et ordinateurs */
     .col-preview em {
-        font-size: $logoSize;
+        font-size: $emproject-mb;
     }
     
     }
@@ -86,7 +95,6 @@
         /* tablettes */
         .col-preview em {
             margin-top: 11vh;
-            font-size: $emproject-mb;
         }
 
         .card-project {
@@ -94,10 +102,3 @@
         }
         }
         
-@media screen and (min-width: 768px) {
-    /* tablettes et ordinateurs */
-    .col-mb { 
-        justify-content: flex-end; 
-    }
-
-    }
