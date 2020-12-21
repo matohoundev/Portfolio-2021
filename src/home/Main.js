@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Project from './projects/Project';
+import Slideshow from './slideshow/Slideshow';
+import Contact from './contact/Contact';
 import ready from '../assets/svg-projects/ready.svg';
 import readyTwo from '../assets/svg-projects/readyTwo.svg';
 import sephi from '../assets/svg-projects/sephi.svg';
@@ -135,7 +137,10 @@ export class Main extends Component {
                         />
                         ))}
                 </main>
-                
+                <div className="end-folio">
+                    <Contact />
+                    <Slideshow />
+                </div>
             </Fragment>
         )
     }

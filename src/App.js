@@ -4,7 +4,7 @@ import Navbar from './starter/navbar/NavBar';
 import Footer from './starter/footer/Footer';
 import Main from './home/Main';
 import Mission from './mission/Mission';
-import Contact from './contact/Contact';
+import Contact from './home/contact/Contact';
 
 function App() {
   return (

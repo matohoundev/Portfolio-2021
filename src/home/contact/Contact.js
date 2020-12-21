@@ -5,10 +5,10 @@ export class Contact extends Component {
     render() {
         return (
             <Fragment>
-                <main className="contact-main">
+                <div className="contact-main">
                     <h3>ok démarrons un  projet</h3>
                     <p>matohoundev@gmail.com</p>
-                </main>
+                </div>
             </Fragment>
         )
     }
