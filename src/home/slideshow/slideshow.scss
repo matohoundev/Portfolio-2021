@@ -1,5 +1,76 @@
 @import '../../App.scss';
+@import './anim_slide.scss';
 
 .slideshow {
+    width: 100;
     height: 45vh;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 23px;
+    border-top: 1px black solid;
+    background-color: #a10237;
+    color: white; 
 }
+
+.slideshow mark {
+    color: white;
+  }
+
+/* FIRST SLIDESHOW */
+
+.first-slideshow {
+    animation: slideshow1 3s 1 linear;
+}
+
+/* SECOND SLIDESHOW */
+
+.second-slideshow {
+    animation: slideshow2 3s 1 linear;
+}
+
+/* THIRD SLIDESHOW */
+
+.third-slideshow {
+    animation: slideshow3 3s 1 linear;
+}
+
+/* FOURTH SLIDESHOW */
+
+.fourth-slideshow {
+    animation: slideshow4 3s 1 linear;
+}
+
+/* FIFTH SLIDESHOW */
+
+.fifth-slideshow {
+    animation: slideshow5 3s 1 linear;
+}
+
+@media screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+    .slideshow {
+        padding-left: 10px;
+        word-spacing: 4em;
+        font-size: 1.488em;
+    }
+    }
+
+@media screen and (min-width: 1024px) {
+    /* tablettes et ordinateurs */
+    .slideshow {
+        font-size: 2.2em;
+        height: 47.5vh;
+    }
+    
+    }
+
+@media screen and (min-width: 1660px) {
+    /* tablettes et ordinateurs */
+    .slideshow {
+        font-size: 3.388em;
+    }
+        
+    }

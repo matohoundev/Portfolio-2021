@@ -137,10 +137,10 @@ export class Main extends Component {
                         />
                         ))}
                 </main>
-                <div className="end-folio">
+
                     <Contact />
                     <Slideshow />
-                </div>
+
             </Fragment>
         )
     }

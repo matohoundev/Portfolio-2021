@@ -6,8 +6,8 @@ export class Contact extends Component {
         return (
             <Fragment>
                 <div className="contact-main">
-                    <h3>ok démarrons un  projet</h3>
-                    <p>matohoundev@gmail.com</p>
+                    <h3>Démarrons un projet ensemble</h3>
+                    <a className="email" href="mailto:matohoundev@gmail.com">matohoundev@gmail.com</a>
                 </div>
             </Fragment>
         )

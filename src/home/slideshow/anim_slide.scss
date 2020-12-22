@@ -1,0 +1,59 @@
+/* FIRST SLIDESHOW */
+
+@keyframes slideshow1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* SECOND SLIDESHOW */
+
+@keyframes slideshow2 {
+    0% {
+        transform: translateX(-23%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* THIRD SLIDESHOW */
+
+@keyframes slideshow3 {
+    0% {
+        transform: translateX(80%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* FOURTH SLIDESHOW */
+
+@keyframes slideshow4 {
+    0% {
+        transform: translateX(-53%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* FIFTH SLIDESHOW */
+
+@keyframes slideshow5 {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}

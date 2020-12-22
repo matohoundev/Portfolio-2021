@@ -7,9 +7,22 @@
     font-size: 23px;
 }
 
+.email {
+    color: $color-dark;
+}
+
 @media screen and (min-width: 768px) {
     /* tablettes et ordinateurs */
     .contact-main {
+        font-size: 30px;
+    }
+    }
+
+@media screen and (min-width: 1024px) {
+    /* tablettes et ordinateurs */
+    .contact-main {
+        height: 47.5vh;
         font-size: 40px;
     }
+    
     }
