@@ -5,8 +5,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 10px 3%;
-    position: fixed;
-    z-index: 3;
+    @extend %navbar-plan;
 }
 
 .navbar-brand {

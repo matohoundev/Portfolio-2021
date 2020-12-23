@@ -1,3 +1,12 @@
+//fixed
+
+%navbar-plan {
+    position: fixed;
+    z-index: 5;
+}
+
+//absolute
+
 %first-plan {
     position: absolute;
     z-index: 4;
@@ -15,5 +24,27 @@
 
 %fourth-plan {
     position: absolute;
+    z-index: 1;
+}
+
+//relative
+
+%first-plan-r {
+    position: relative;
+    z-index: 4;
+}
+
+%second-plan-r {
+    position: relative;
+    z-index: 3;
+}
+
+%third-plan-r {
+    position: relative;
+    z-index: 2;
+}
+
+%fourth-plan-r {
+    position: relative;
     z-index: 1;
 }
