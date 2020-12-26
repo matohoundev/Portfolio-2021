@@ -1,7 +1,7 @@
 @import '../../App.scss';
 @import './anim_slide.scss';
 
-.slideshow {
+.slideTech {
     width: 100;
     height: 45vh;
     overflow: hidden;
@@ -15,43 +15,43 @@
     color: white; 
 }
 
-.slideshow mark {
+.slideTech mark {
     color: white;
   }
 
-/* FIRST SLIDESHOW */
+/* FIRST SLIDETech */
 
-.first-slideshow {
-    animation: slideshow1 3s 1 linear;
+.first-slideTech {
+    animation: slideTech1 3s 1 linear;
 }
 
-/* SECOND SLIDESHOW */
+/* SECOND SLIDETech */
 
-.second-slideshow {
-    animation: slideshow2 3s 1 linear;
+.second-slideTech {
+    animation: slideTech2 3s 1 linear;
 }
 
-/* THIRD SLIDESHOW */
+/* THIRD SLIDETech */
 
-.third-slideshow {
-    animation: slideshow3 3s 1 linear;
+.third-slideTech {
+    animation: slideTech3 3s 1 linear;
 }
 
-/* FOURTH SLIDESHOW */
+/* FOURTH SLIDETech */
 
-.fourth-slideshow {
-    animation: slideshow4 3s 1 linear;
+.fourth-slideTech {
+    animation: slideTech4 3s 1 linear;
 }
 
-/* FIFTH SLIDESHOW */
+/* FIFTH SLIDETech */
 
-.fifth-slideshow {
-    animation: slideshow5 3s 1 linear;
+.fifth-slideTech {
+    animation: slideTech5 3s 1 linear;
 }
 
 @media screen and (min-width: 768px) {
     /* tablettes et ordinateurs */
-    .slideshow {
+    .slideTech {
         padding-left: 10px;
         word-spacing: 4em;
         font-size: 1.488em;
@@ -60,7 +60,7 @@
 
 @media screen and (min-width: 1024px) {
     /* tablettes et ordinateurs */
-    .slideshow {
+    .slideTech {
         font-size: 2.2em;
         height: 47.5vh;
     }
@@ -69,7 +69,7 @@
 
 @media screen and (min-width: 1660px) {
     /* tablettes et ordinateurs */
-    .slideshow {
+    .slideTech {
         font-size: 3.388em;
     }
         

@@ -1,4 +1,5 @@
 @import '../App.scss';
+@import './slideshow/anim_slide.scss';
 
 .head-Main {
     height: $all-height;
@@ -6,18 +7,14 @@
     flex-direction: column;
     justify-content: center;  
     padding-left: 3%;
-}
-
-.slide-Main {
-    height: $all-height;
-    overflow: hidden;
-    width: 100%;
-    @extend %second-plan;
     background-image: linear-gradient(45deg, #5d0422 0%, #5d0422 20%,#4B0019 20%,#4B0019 45%,#a10237 45%,#a10237 75%, $main-color 75%, $main-color 100%);
 }
 
+.head-Main {
+    animation: slideBack-main 2.5s ease-in-out 1;
+}
+
 h1, h2 {
-    @extend %first-plan-r;
     color: $color-clear;
     font-weight: lighter;
 }
@@ -36,21 +33,12 @@ h2 {
     text-align: $text-justify;
     padding: 0 5%;
     color: white;
-}
-
-.about p{
-    @extend %first-plan-r;
-}
-
-.slide-about {
-    height: $all-height;
-    overflow: hidden;
-    width: 100%;
-    @extend %second-plan;
     background-image: linear-gradient(45deg, $main-color 0%, $main-color 20%,#4B0019 20%,#a10237 80%, $main-color 80%, $main-color 100%);
 }
 
-
+.about {
+    animation: slideBack-about 10s ease-in-out 1;
+}
 
 @media screen and (min-width: 768px) {
     /* tablettes et ordinateurs */
@@ -84,38 +72,3 @@ h2 {
     }
 
     }
-
-
-
-
-/* HEAD SLIDESHOW */
-
-@keyframes slideshow-main {
-    0% {
-        background-size: 400%;
-    }
-
-    100% {
-        background-size: 100%;
-    }
-}
-
-.slide-Main {
-    animation: slideshow-main 2.5s ease-in-out 1;
-}
-
-/* ABOUT SLIDESHOW */
-
-@keyframes slideshow-about {
-    0% {
-        background-size: 0%;
-    }
-
-    100% {
-        background-size: 100%;
-    }
-}
-
-.slide-about {
-    animation: slideshow-about 10s ease-in-out 1;
-}

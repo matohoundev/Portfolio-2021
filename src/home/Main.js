@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Project from './projects/Project';
-import Slideshow from './slideshow/Slideshow';
+import SlideTech from './slideshow/SlideTech';
 import Contact from './contact/Contact';
 import ready from '../assets/svg-projects/ready.svg';
 import readyTwo from '../assets/svg-projects/readyTwo.svg';
@@ -78,7 +78,7 @@ export class Main extends Component {
             },
             {
                 id: 4,
-                cls_slide_1: "slide-acacia",
+                cls_slide: "slide-acacia",
                 cls_slide_2: "slide-acacia-2",
                 cls_name: "acacia",
                 cls_h3:"h3-acacia",
@@ -99,14 +99,12 @@ export class Main extends Component {
     render() {
         return (
             <Fragment>
-                <div className="slide-Main"></div>
                 <header className="head-Main">
                         <h1>ATOHOUN MARVIN</h1>
                         <h2>Front-end Developper</h2>
                 </header>
                 
                 <main>
-                    <div className="slide-about"></div>
                     <section className="about">
                         <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services. Je réalise des sites internet avec le souci du détail et un rendu ﬁdèle au design.</p>
                     </section>
@@ -141,7 +139,7 @@ export class Main extends Component {
                 </main>
 
                     <Contact />
-                    <Slideshow />
+                    <SlideTech />
 
             </Fragment>
         )

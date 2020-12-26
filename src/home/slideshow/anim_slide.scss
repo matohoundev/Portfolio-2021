@@ -1,6 +1,69 @@
-/* FIRST SLIDESHOW */
+/* HEAD BACKGROUND SLIDE */
 
-@keyframes slideshow1 {
+@keyframes slideBack-main {
+    0% {
+        background-size: 400%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* ABOUT BACKGROUND SLIDE */
+
+@keyframes slideBack-about {
+    0% {
+        background-size: 0%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* PROJECT FOREGROUND SLIDE */
+
+@keyframes slideProjectF{
+    0% {
+        width: 100%;
+        background-size: 3200%;
+    }
+
+    100% {
+        width: 100%;
+        background-size: 0%;
+    }
+}
+
+    /* Large Screen */
+    @keyframes slideProjectF-mb{
+        0% {
+            width: 100%;
+            background-size: 1500%;
+        }
+
+        100% {
+            width: 100%;
+            background-size: 0%;
+        }
+    }
+
+/* PROJECT BACKGROUND SLIDE */
+
+@keyframes slideProjectB{
+    0% {
+        background-size: 300%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* FIRST TECHNO SLIDE */
+
+@keyframes slideTech1 {
     0% {
         transform: translateX(100%);
     }
@@ -10,9 +73,9 @@
     }
 }
 
-/* SECOND SLIDESHOW */
+/* SECOND TECHNO SLIDE */
 
-@keyframes slideshow2 {
+@keyframes slideTech2 {
     0% {
         transform: translateX(-23%);
     }
@@ -22,9 +85,9 @@
     }
 }
 
-/* THIRD SLIDESHOW */
+/* THIRD TECHNO SLIDE */
 
-@keyframes slideshow3 {
+@keyframes slideTech3 {
     0% {
         transform: translateX(80%);
     }
@@ -34,9 +97,9 @@
     }
 }
 
-/* FOURTH SLIDESHOW */
+/* FOURTH TECHNO SLIDE */
 
-@keyframes slideshow4 {
+@keyframes slideTech4 {
     0% {
         transform: translateX(-53%);
     }
@@ -46,9 +109,9 @@
     }
 }
 
-/* FIFTH SLIDESHOW */
+/* FIFTH TECHNO SLIDE */
 
-@keyframes slideshow5 {
+@keyframes slideTech5 {
     0% {
         transform: translateX(50%);
     }

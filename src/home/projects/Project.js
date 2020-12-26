@@ -9,8 +9,7 @@ export class Project extends Component {
         return (
             <Fragment>
                 <div className={`slide-project ${this.props.cls_slide}`}></div>
-                <div className={`slide-project-2 ${this.props.cls_slide_2}`}></div>
-                <section className={`projet ${this.props.cls_name}`}>
+                <section className={`projet ${this.props.cls_name} ${this.props.cls_slide_2}`}>
                     <div className="col-preview">
                         <h3 className={this.props.cls_h3}>
                             {this.props.name}

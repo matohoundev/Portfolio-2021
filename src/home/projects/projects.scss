@@ -9,6 +9,10 @@
     display: flex;
 }
 
+.projet {
+    animation: slideProjectB 2s ease-in-out 1;
+}
+
 .col-preview h3 {
     @extend %second-plan;
     padding: 15vh 0 0 7%;
@@ -41,16 +45,14 @@
 }
 
 .slide-project { // slide d'animation
-    // display: none;
-    width: 2%;
+    width: 0%;
     height: $all-height;  
     @extend %first-plan;
+    background-repeat: no-repeat;
 }
 
-.slide-project-2 {
-    width: 100%;
-    height: $all-height;
-    @extend %fourth-plan;
+.slide-project {
+    animation: slideProjectF 2s ease-in-out 1;
 }
 
 @media only screen 
@@ -81,6 +83,10 @@
         justify-content: flex-end; 
     }
 
+    .slide-project {
+        animation: slideProjectF-mb 2s ease-in-out 1;
+    }
+
     }
     
 @media screen and (min-width: 824px) {
@@ -100,5 +106,6 @@
         .card-project {
             height: 45vh;
         }
+
         }
         
