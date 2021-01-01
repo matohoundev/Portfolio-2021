@@ -51,10 +51,6 @@
     background-repeat: no-repeat;
 }
 
-.slide-project {
-    animation: slideProjectF 2s ease-in-out 1;
-}
-
 @media only screen 
     and (min-width: 640px) 
     and (max-width: 823px)
@@ -87,10 +83,6 @@
         justify-content: flex-end; 
     }
 
-    .slide-project {
-        animation: slideProjectF-mb 2s ease-in-out 1;
-    }
-
     }
     
 @media screen and (min-width: 824px) {
@@ -117,10 +109,6 @@
     /* ordinateurs */
     .projet {
         animation: slideProjectB 2s ease-in-out 1;
-    }
-
-    .slide-project {
-        animation: slideProjectF-lg 2s ease-in-out 1;
     }
         
 }

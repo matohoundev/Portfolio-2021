@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
+import ReactFullpage from '@fullpage/react-fullpage';
 import Project from './projects/Project';
 import SlideTech from './slideshow/SlideTech';
+import Footer from '../starter/footer/Footer';
 import Contact from './contact/Contact';
 import ready from '../assets/svg-projects/ready.svg';
 import readyTwo from '../assets/svg-projects/readyTwo.svg';
@@ -98,51 +100,72 @@ export class Main extends Component {
 
     render() {
         return (
-            <Fragment>
-                <header className="head-Main">
-                        <h1>ATOHOUN MARVIN</h1>
-                        <h2>Front-end Developper</h2>
-                </header>
-                
-                <main>
-                    <section className="about">
-                        <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services. Je réalise des sites internet avec le souci du détail et un rendu ﬁdèle au design.</p>
-                    </section>
+            <ReactFullpage
 
-                    {this.state.projects.map(projet => (
-                        <Project 
-                            key={projet.id}
-                            project_id={projet.id}
-                            cls_slide={projet.cls_slide}
-                            cls_slide_2={projet.cls_slide_2}
-                            cls_name={projet.cls_name}
-                            cls_h3={projet.cls_h3}
-                            name={projet.name}
-                            name_other_half={projet.name_other_half}
-                            cls_name_half={projet.cls_name_half}
-                            cls_name_half_md={projet.cls_name_half_md}
-                            cls_mark_name={projet.cls_mark_name}
-                            tech={projet.tech}
-                            tech_other_half={projet.tech_other_half}
-                            cls_card={projet.cls_card}
-                            svg={projet.svg}
-                            svg_2={projet.svg_2}
-                            svg_3={projet.svg_3}
-                            alt_svg={projet.alt_svg}
-                            alt_svg_2={projet.alt_svg_2}
-                            alt_svg_3={projet.alt_svg_3}
-                            cls_svg={projet.cls_svg}
-                            cls_svg_2={projet.cls_svg_2}
-                            cls_svg_3={projet.cls_svg_3}
-                        />
-                        ))}
-                </main>
+                licenseKey={'ne pas oublier de la prendre après'}
 
-                    <Contact />
-                    <SlideTech />
+                scrollBar={true}
 
-            </Fragment>
-        )
+                render={({ state, fullpageApi }) => {
+
+                    return (
+                        
+                        <Fragment>
+                            <header className="head-Main section"
+                                data-aos="header-slide"
+                                data-aos-duration="2500"
+                            >
+                                <h1>ATOHOUN MARVIN</h1>
+                                <h2>Front-end Developper</h2>
+                            </header>
+
+                                <section className="about section" 
+                                    data-aos="about-slide"
+                                    data-aos-duration="2500"
+                                >
+                                    <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services. Je réalise des sites internet avec le souci du détail et un rendu ﬁdèle au design.</p>
+                                </section>
+
+                                {this.state.projects.map(projet => (
+                                    <Project
+                                        key={projet.id}
+                                        project_id={projet.id}
+                                        cls_slide={projet.cls_slide}
+                                        cls_slide_2={projet.cls_slide_2}
+                                        cls_name={projet.cls_name}
+                                        cls_h3={projet.cls_h3}
+                                        name={projet.name}
+                                        name_other_half={projet.name_other_half}
+                                        cls_name_half={projet.cls_name_half}
+                                        cls_name_half_md={projet.cls_name_half_md}
+                                        cls_mark_name={projet.cls_mark_name}
+                                        tech={projet.tech}
+                                        tech_other_half={projet.tech_other_half}
+                                        cls_card={projet.cls_card}
+                                        svg={projet.svg}
+                                        svg_2={projet.svg_2}
+                                        svg_3={projet.svg_3}
+                                        alt_svg={projet.alt_svg}
+                                        alt_svg_2={projet.alt_svg_2}
+                                        alt_svg_3={projet.alt_svg_3}
+                                        cls_svg={projet.cls_svg}
+                                        cls_svg_2={projet.cls_svg_2}
+                                        cls_svg_3={projet.cls_svg_3}
+                                    />
+                                ))}
+                            
+                            <div className="section">
+                                <Contact />
+                                <SlideTech />
+                                <Footer />
+                            </div>
+                            
+
+                        </Fragment>
+                    );
+                }}   
+            />
+        );
     }
 }
 

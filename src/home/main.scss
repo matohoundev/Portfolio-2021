@@ -10,10 +10,6 @@
     background-image: linear-gradient(45deg, #5d0422 0%, #5d0422 20%,#4B0019 20%,#4B0019 45%,#a10237 45%,#a10237 75%, $main-color 75%, $main-color 100%);
 }
 
-.head-Main {
-    animation: slideBack-main 2.5s ease-in-out 1;
-}
-
 h1, h2 {
     color: $color-clear;
     font-weight: lighter;
@@ -34,10 +30,6 @@ h2 {
     padding: 0 5%;
     color: white;
     background-image: linear-gradient(45deg, $main-color 0%, $main-color 20%,#4B0019 20%,#a10237 80%, $main-color 80%, $main-color 100%);
-}
-
-.about {
-    animation: slideBack-about 10s ease-in-out 1;
 }
 
 @media screen and (min-width: 768px) {

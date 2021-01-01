@@ -1,12 +1,19 @@
 import './App.scss';
+import React, { useEffect } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from './starter/navbar/NavBar';
-import Footer from './starter/footer/Footer';
 import Main from './home/Main';
 import Mission from './mission/Mission';
 import Contact from './home/contact/Contact';
 
 function App() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000, delay: 0, easing: 'ease-in-out' });
+  }, []);
+
   return (
     <Router>
       <Navbar />
@@ -17,7 +24,6 @@ function App() {
         <Route path="/contact" component={Contact} />
       </Switch>
 
-      <Footer />
     </Router>
   );
 }

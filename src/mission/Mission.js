@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from '../starter/footer/Footer';
 import './mission.scss';
 
 export class Mission extends Component {
@@ -25,6 +26,7 @@ export class Mission extends Component {
                     </div>
                 </section>
                 <aside></aside>
+                <Footer />
             </div>
         )
     }

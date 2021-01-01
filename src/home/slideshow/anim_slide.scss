@@ -1,88 +1,81 @@
 /* HEAD BACKGROUND SLIDE */
 
-@keyframes slideBack-main {
-    0% {
-        background-size: 400%;
-    }
-
-    100% {
-        background-size: 100%;
+[data-aos="header-slide"] {
+    // transition-property: background-size;
+    background-size: 400%;
+    &.aos-animate {
+    background-size: 100%;
     }
 }
 
 /* ABOUT BACKGROUND SLIDE */
 
-@keyframes slideBack-about {
-    0% {
-        background-size: 0%;
-    }
-
-    100% {
-        background-size: 100%;
+[data-aos="about-slide"] {
+    background-size: 150%;
+    &.aos-animate {
+    background-size: 100%;
     }
 }
 
 /* PROJECT FOREGROUND SLIDE */
 
-@keyframes slideProjectF{
-    0% {
-        width: 100%;
-        background-size: 3200%;
-    }
-
-    100% {
-        width: 100%;
-        background-size: 0%;
+[data-aos="project-slide-f"] {
+    width: 100%;
+    background-size: 3200%;
+    &.aos-animate {
+    width: 100%;
+    background-size: 0%;
     }
 }
+    // @media screen and (min-width: 768px) {
+    // /* middle Screen */
+    // [data-aos="project-slide"] {
+    //     width: 100%;
+    //     background-size: 2300%;
+    //     &.aos-animate {
+    //     width: 100%;
+    //     background-size: 0%;
+    //     }
+    // }
 
-    /* middle Screen */
-    @keyframes slideProjectF-mb{
-        0% {
-            width: 100%;
-            background-size: 2300%;
-        }
-
-        100% {
-            width: 100%;
-            background-size: 0%;
-        }
-    }
-
-    /* large Screen */
-    @keyframes slideProjectF-lg{
-        0% {
-            width: 100%;
-            background-size: 1500%;
-        }
-
-        100% {
-            width: 100%;
-            background-size: 0%;
-        }
-    }
+    //     @media screen and (min-width: 1400px) {
+    //     /* large Screen */
+    //     [data-aos="project-slide"] {
+    //         width: 100%;
+    //         background-size: 1500%;
+    //         &.aos-animate {
+    //         width: 100%;
+    //         background-size: 0%;
+    //         }    
+    //     }
 
 /* PROJECT BACKGROUND SLIDE */
 
-@keyframes slideProjectB{
-    0% {
-        background-size: 300%;
-    }
-
-    100% {
-        background-size: 100%;
+[data-aos="project-slide-b"] {
+    background-size: 300%;
+    &.aos-animate {
+    background-size: 100%;
     }
 }
+    // @media screen and (min-width: 768px) {
+        // /* middle Screen */
+        // [data-aos="project-slide-b"] {
+        //     background-size: 400%;
+        //     &.aos-animate {
+        //     background-size: 100%;
+        //     }
+        // }
+        // }
 
-    @keyframes slideProjectB-mb{
-        0% {
-            background-size: 400%;
-        }
-
-        100% {
-            background-size: 100%;
-        }
-    }
+            // @media screen and (min-width: 1400px) {
+            //     /* large Screen */
+            //     [data-aos="project-slide-b"] {
+            //         background-size: 300%;
+            //         &.aos-animate {
+            //         background-size: 100%;
+            //         }
+            //     }     
+            // }
 
 /* FIRST TECHNO SLIDE */
 

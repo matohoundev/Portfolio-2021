@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './projects.scss';
 
 export class Project extends Component {
@@ -7,9 +7,15 @@ export class Project extends Component {
         let min_view = 844;
         
         return (
-            <Fragment>
-                <div className={`slide-project ${this.props.cls_slide}`}></div>
-                <section className={`projet ${this.props.cls_name} ${this.props.cls_slide_2}`}>
+            <div className="section">
+
+                <div className={`slide-project ${this.props.cls_slide}`} 
+                    data-aos="project-slide-f"
+                    ></div>
+
+                <section className={`projet ${this.props.cls_name} ${this.props.cls_slide_2}`}
+                    data-aos="project-slide-b"
+                >
                     <div className="col-preview">
                         <h3 className={this.props.cls_h3}>
                             {this.props.name}
@@ -41,7 +47,7 @@ export class Project extends Component {
                     </div>
                     
                 </section>                
-            </Fragment>
+            </div>
         )
     }
 }
