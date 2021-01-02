@@ -17,7 +17,7 @@ export class Project extends Component {
                     data-aos="project-slide-b"
                 >
                     <div className="col-preview">
-                        <h3 className={this.props.cls_h3}>
+                        <h3 className={this.props.cls_h3} data-aos="fade-left">
                             {this.props.name}
                                 {min_view > document.body.clientWidth ? 
                                     <b className={this.props.cls_name_half}>{this.props.name_other_half}</b>
@@ -33,14 +33,14 @@ export class Project extends Component {
                     </div>
 
                     <div id="#" className="col-mb">
-                        <img src={this.props.svg} alt={this.props.alt_svg} className={this.props.cls_svg}/>
+                        <img src={this.props.svg} alt={this.props.alt_svg} className={this.props.cls_svg} data-aos="img-slide-left"/>
                         {this.props.project_id === 1 || 2 ? 
-                            <img src={this.props.svg_2} alt={this.props.alt_svg_2} className={this.props.cls_svg_2}/>
+                            <img src={this.props.svg_2} alt={this.props.alt_svg_2} className={this.props.cls_svg_2} data-aos="img-slide-right"/>
                             :
                             null
                         }
                         {this.props.project_id === 2 ? 
-                            <img src={this.props.svg_3} alt={this.props.alt_svg_3} className={this.props.cls_svg_3}/>
+                            <img src={this.props.svg_3} alt={this.props.alt_svg_3} className={this.props.cls_svg_3} data-aos="img-slide-up"/>
                             :
                             null
                         }

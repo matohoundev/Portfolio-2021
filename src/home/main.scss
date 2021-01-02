@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;  
     padding-left: 3%;
+    overflow: hidden;
     background-image: linear-gradient(45deg, #5d0422 0%, #5d0422 20%,#4B0019 20%,#4B0019 45%,#a10237 45%,#a10237 75%, $main-color 75%, $main-color 100%);
 }
 

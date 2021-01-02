@@ -115,15 +115,15 @@ export class Main extends Component {
                                 data-aos="header-slide"
                                 data-aos-duration="2500"
                             >
-                                <h1>ATOHOUN MARVIN</h1>
-                                <h2>Front-end Developper</h2>
+                                <h1 data-aos="fade-right">ATOHOUN MARVIN</h1>
+                                <h2 data-aos="fade-right">Front-end Developper</h2>
                             </header>
 
                                 <section className="about section" 
                                     data-aos="about-slide"
                                     data-aos-duration="2500"
                                 >
-                                    <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services. Je réalise des sites internet avec le souci du détail et un rendu ﬁdèle au design.</p>
+                                    <p data-aos="fade">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services. Je réalise des sites internet avec le souci du détail et un rendu ﬁdèle au design.</p>
                                 </section>
 
                                 {this.state.projects.map(projet => (

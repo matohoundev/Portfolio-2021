@@ -9,10 +9,6 @@
     display: flex;
 }
 
-.projet {
-    animation: slideProjectB 2s ease-in-out 1;
-}
-
 .col-preview h3 {
     @extend %second-plan;
     padding: 15vh 0 0 7%;
@@ -71,9 +67,6 @@
 
 @media screen and (min-width: 768px) {
     /* tablettes et ordinateurs */
-    .projet {
-        animation: slideProjectB-mb 2s ease-in-out 1;
-    }
 
     .col-preview h3, .col-preview em {
     padding: 15vh 0 0 7%;
@@ -104,11 +97,3 @@
         }
 
         }
-        
-@media screen and (min-width: 1400px) {
-    /* ordinateurs */
-    .projet {
-        animation: slideProjectB 2s ease-in-out 1;
-    }
-        
-}
