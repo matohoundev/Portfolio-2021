@@ -1,17 +1,43 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import nav from './nav.svg';
 import './nav.scss';
 
-export class Navbar extends Component {
-    render() {
-        return (
-            <Fragment>
-                <nav>
-                    <Link to="/" className="navbar-brand">AM</Link>
-                    <button className="navbar-toggler">
-                        <img src={nav} alt="" className="svg"/>
-                    </button> 
+export function Navbar() {
+
+    const [toggleMenu, setToggleMenu] = useState(false);
+    const [largeur, setLargeur] = useState(window.innerWidth)
+
+    const toggleNavSmallScreen = () => {
+        setToggleMenu(!toggleMenu);
+    }
+
+    useEffect(() => {
+
+        const changeWidth = () => {
+            setLargeur(window.innerWidth);
+        }
+
+        if (window.innerWidth > 500) {
+            setToggleMenu(false);
+        }
+
+        window.addEventListener('resize', changeWidth);
+
+        return () => {
+            window.removeEventListener('resize', changeWidth)
+        }
+
+    }, [])
+
+    return (
+        <Fragment>
+            <nav>
+                <Link to="/" className="navbar-brand">AM</Link>
+                <button onClick={toggleNavSmallScreen} className="navbar-toggler">
+                    <img src={nav} alt="" className="svg" />
+                </button>
+                {(toggleMenu || largeur > 500) && (
                     <div className="navbar-collapse">
                         <ul className="navbar-nav">
                             <li className="navbar-nav">
@@ -22,10 +48,12 @@ export class Navbar extends Component {
                             </li>
                         </ul>
                     </div>
-                </nav>
-            </Fragment>
-        )
-    }
+                )
+                }
+
+            </nav>
+        </Fragment>
+    )
 }
 
 export default Navbar;

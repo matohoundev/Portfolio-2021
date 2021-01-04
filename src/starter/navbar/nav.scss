@@ -6,13 +6,15 @@ nav {
     justify-content: space-between;
     padding: 10px 3%;
     @extend %navbar-plan;
-}
-
-.navbar-brand {
     font-family: "abril", Arial, Helvetica, sans-serif;
     font-size: $logoSize;
-    color: $color-dark;
+}
 
+nav li {
+    list-style: none;
+}
+.navbar-brand {
+    color: $color-dark;
 }
 
 .navbar-toggler {
@@ -21,5 +23,41 @@ nav {
 }
 
 .navbar-collapse { //reprendre a partir de la
-    // display: none;
+    height: 12vh;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+}
+
+.navbar-collapse a {
+    color: $color-clear;
+    letter-spacing: 3px;
+}
+
+.navbar-nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-collapse {
+        width: 15%;
+        position: initial;
+    }
+
+    .navbar-collapse a {
+        color: $color-clear;
+        letter-spacing: 0px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
 }
