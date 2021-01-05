@@ -1,3 +1,20 @@
+/*Navbar slide and rotate*/
+
+[data-aos="nav-slide"] {
+    background-size: 0%;
+    &.aos-animate {
+    background-size: 100%;
+    }
+    
+    @media screen and (min-width: 1024px) {
+    /* middle Screen and large screen*/
+        background-size: 0%;
+        &.aos-animate {
+        background-size: 0%;
+        }
+    } 
+}
+
 /* HEAD BACKGROUND SLIDE */
 
 [data-aos="header-slide"] {

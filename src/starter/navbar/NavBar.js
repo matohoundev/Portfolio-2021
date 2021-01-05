@@ -18,26 +18,24 @@ export function Navbar() {
             setLargeur(window.innerWidth);
         }
 
-        if (window.innerWidth > 500) {
+        if(window.innerWidth > 1024){
             setToggleMenu(false);
         }
 
         window.addEventListener('resize', changeWidth);
 
         return () => {
-            window.removeEventListener('resize', changeWidth)
+            window.removeEventListener('resize', changeWidth);
         }
 
     }, [])
 
     return (
         <Fragment>
+            { (toggleMenu) && (<div className="nav-bg" data-aos="nav-slide" data-aos-duration="300"></div>)}
             <nav>
-                <Link to="/" className="navbar-brand">AM</Link>
-                <button onClick={toggleNavSmallScreen} className="navbar-toggler">
-                    <img src={nav} alt="" className="svg" />
-                </button>
-                {(toggleMenu || largeur > 500) && (
+                <Link to="/" className="navbar-brand">AM</Link>       
+                {(toggleMenu || largeur > 1024) && (
                     <div className="navbar-collapse">
                         <ul className="navbar-nav">
                             <li className="navbar-nav">
@@ -50,7 +48,9 @@ export function Navbar() {
                     </div>
                 )
                 }
-
+                <button onClick={toggleNavSmallScreen} className="navbar-toggler">
+                    <img src={nav} alt="" className="svg" />
+                </button>
             </nav>
         </Fragment>
     )

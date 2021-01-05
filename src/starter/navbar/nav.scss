@@ -1,7 +1,7 @@
 @import '../../App.scss';
 
 nav {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     padding: 10px 3%;
@@ -13,16 +13,16 @@ nav {
 nav li {
     list-style: none;
 }
+
 .navbar-brand {
     color: $color-dark;
 }
 
 .navbar-toggler {
-    background-color: $colorT;
-    border: none; 
+    // position: absolute;
 }
 
-.navbar-collapse { //reprendre a partir de la
+.navbar-collapse { // reprendre a partir de la
     height: 12vh;
     position: absolute;
     top: 100px;
@@ -34,6 +34,17 @@ nav li {
     letter-spacing: 3px;
 }
 
+.nav-bg {
+    @extend %navbar-slide;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(45deg, $colorT 0%,#a10237 100%);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
 .navbar-nav {
     height: 100%;
     display: flex;
@@ -41,6 +52,10 @@ nav li {
 }
 
 @media screen and (min-width: 1024px) {
+    .nav-slide {
+        display: none;
+    }
+
     .navbar-collapse {
         width: 15%;
         position: initial;
