@@ -31,6 +31,11 @@
 
 @media screen and (min-width: 768px) {
     /* tablettes et ordinateurs */
+
+    .col-preview .b-folio, .mark-tech-folio {
+        color: $color-clear;
+    }
+
     .card-folio {
         background-image: url("../../../assets/card-projects/Accueil\ Tablette\ .png");
     }
@@ -54,6 +59,10 @@
 @media screen and (min-width: 1224px) {
     /* ordinateurs */
     
+    .col-preview .b-folio, .mark-tech-folio{
+        color: #DD5C5C;
+    }
+
     .card-folio {
         background-image: url("../../../assets/card-projects/Accueil.png");
     }

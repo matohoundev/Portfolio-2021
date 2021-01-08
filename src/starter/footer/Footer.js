@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Gmail from '../../assets/icons/gmail.svg';
 import Twitter from '../../assets/icons/twitter.svg';
 import Github from '../../assets/icons/github.svg';

@@ -70,6 +70,7 @@ export class Main extends Component {
                 name: "Folio",
                 name_other_half: "2020",
                 cls_name_half:"b-folio",
+                cls_name_half_md:"b-folio",
                 cls_mark_name: "mark-tech-folio",
                 tech: "Bootstrap - Javascript  - Jquery - ",
                 tech_other_half: "Php",

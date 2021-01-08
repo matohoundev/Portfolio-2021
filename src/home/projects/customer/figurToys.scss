@@ -8,7 +8,7 @@
 }
 
 .col-preview .b-figur, .mark-tech-figur{
-    color: #332832;
+    color: #d8115d;
 }
 
 .card-figur {
@@ -42,6 +42,11 @@
 
 @media screen and (min-width: 768px) {
     /* tablettes et ordinateurs */
+
+    .col-preview .b-figur, .mark-tech-figur {
+        color: $color-clear;
+    }
+
     .card-figur {
         background-image: url("../../../assets/card-projects/Accueil\ Tablette\ .png");
     }
@@ -85,13 +90,13 @@
     
     .svg-project-figur-2 { 
         width: 1670px; 
-        margin: 62vh -22.8vw 0 0vw;
+        margin: 64vh -22.8vw 0 0vw;
         display: block;
     }
     
     .svg-project-figur-3 { 
         width: 380px; 
-        margin: 74vh 13.5vw 0 40vw;
+        margin: 71vh 17.5vw 0 40vw;
         display: block;
     }
     

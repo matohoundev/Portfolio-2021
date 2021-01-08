@@ -1,7 +1,13 @@
 @import '../App.scss';
 
 .mission {
-    background-image: linear-gradient(45deg, $color-clear 0%, $color-clear 25%, $main-color 25%, $main-color 45%, $color-clear 45%, $color-clear 100%);
+    font-family: "manrope", Helvetica, sans-serif;
+    overflow: hidden;
+    background-image: linear-gradient(135deg, $color-clear 0%, $color-clear 25%, $main-color 25%, $main-color 45%, $color-clear 45%, $color-clear 100%);
+}
+
+.mission strong {
+    padding-bottom: 8px;
 }
 
 .head-mission {
@@ -15,65 +21,85 @@
     font-size: $h3mission-mb;
 }
 
-.main-mission {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-article {
-    height: $half-height;
-    display: flex;
-    align-items: center;
-    text-align: $text-justify;
-    padding: 0 5%;  
-}
-
-.about-mission {
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: $text-justify;
-    padding: 0 5%; 
-}
-
-.about-mission strong {
-    font-size: $strong;
-    padding: 2% 0;
-}
-
-.mobile-mission {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text-between-mobile {
-    font-size: $strong;
-    font-family: "manrope-light", "manrope", Helvetica, sans-serif;
-}
-
-/*for the img*/
-
 .head-mission-img {
     height: $half-height;
     background-image: url('../assets/img-mission/RainyDay2.png');
 }
 
+.main-mission {//on va voir si c'est vraiment nécessaire
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 0;
+}
+
+    .citation-mission {
+        font-size: 35px;
+        padding:  0 4%;
+    }
+
+        .word-clear {
+            color: $color-clear;
+        }
+
+.synopsis {
+    height: $half-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: $text-justify;
+    padding: 0 5%;
+    font-size: 18px;
+}
+
+    .synopsis strong {
+        color: white;
+    }
+
 .half-mission-img {
-    height: 529px;
-    width: 365px;
+    height: 65vh;
+    max-height: 987px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.cd-1 {
+    width: 95%;
+    max-width: 1474px;
     border-radius: $border-xs;
     background-image: url('../assets/img-mission/RainyDay-users-tablette.png');
 }
 
-.mobile-mission-img {//revoir les deux pour eviter les repetitions
+.about-mission {
+    height: $half-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: $text-justify;
+    padding: 0 5%;
+    font-size: 18px;
+}
+
+.card-mission {
+    width: 100%;
+}
+
+.cd-img{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.card-mission-img-type1 {
+    height: 60vh;
+}
+
+.card-mission-img-type2 {
+    height: 80vh;
+}
+
+.card-mission-img-type3 {
     height: 50vh;
-    min-height: 412px;
-    width: 252px;
-    margin: 50px 0 50px 0;
-    border-radius: $border-xs;
 }
 
 .mb1 {
@@ -90,63 +116,89 @@ article {
         font-size: $h3mission-lp;
     }
 
-    .main-mission {
-        font-size: $strong;
-        padding: 0 8%;
+    .citation-mission {
+        font-size: 90px;
     }
 
-    .half-mission-img {
-        width: 397px;
+    .synopsis {
+        height: $half-height;
+        padding: 0 3% 0 3%;
+        font-size: 22px;
     }
 
-    .mobile-mission {
-        flex-direction: row;
+    .about-mission {
+        height: $half-height;
+        padding: 0 3% 0 3%;
+        font-size: 22px;
+    }
+
+    .card-mission {
+        display: flex;
         justify-content: center;
-        padding: 60px 0;
     }
 
-    /*for the img*/
-
-    .mobile-mission-img {//revoir les deux pour eviter les repetitions
-        height: 60vh;
-        margin: 0 30px;
+    .card-part-one {
+        width: 45%;
+        margin-right: 5%;
     }
 
-    }
-
-    @media only screen and (orientation : landscape) {
-        /* Styles pour cette Media Queries */
-        .main-mission {
-            padding: 0;
-        }
-        }
-
-    @media screen and (min-width: 1024px) {
-        /* ordinateurs */
-        .main-mission {
-            font-size: 2.125em;
-        }
-
-        .about-mission {
-            height: 30vh;
-            margin: 5% 0;
-        }
-
-        /*for the img*/
-
-        .head-mission-img {
-            border-radius: $border-xs;
-        }
-
-        .half-mission-img {
-            height: 80vh;
-            width: 80vw;
-            max-width: 1474px;
-        }
-
-        .mobile-mission-img {//revoir les deux pour eviter les repetitions
+        .card-mission-img-type1 {
             height: 60vh;
-            margin: 0 8vw;
+        }
+        
+        .card-mission-img-type2 {
+            height: 60vh;
+        }
+    
+
+    .card-part-two {
+        width: 45%;
+        display: flex;
+        align-items: center;
+    }
+    
+        .card-mission-img-type3 {
+            height: 80vh;
         }
 
-        }   
+    }
+
+@media screen and (min-width: 1024px) {
+//         /* ordinateurs */
+
+    .synopsis {
+        height: $half-height;
+        padding: 0 40% 0 3%;
+    }
+
+    .main-mission {
+        align-items: baseline;
+    }
+
+    .about-mission {
+        height: $half-height;
+        padding: 0 40% 0 3%;
+    }
+
+    .card-part-one {
+        width: 35%;
+        margin-right: 5%;
+    }
+
+        .card-mission-img-type1 {
+            height: 60vh;
+        }
+        
+        .card-mission-img-type2 {
+            height: 60vh;
+        }
+    
+    .card-part-two {
+        width: 35%;
+    }
+
+        .card-mission-img-type3 {
+            height: 100vh;
+        }
+
+}   

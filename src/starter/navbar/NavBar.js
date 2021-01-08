@@ -35,13 +35,13 @@ export function Navbar() {
             { (toggleMenu) && (<div className="nav-bg" data-aos="nav-slide" data-aos-duration="300"></div>)}
             <nav>
                 <Link to="/" className="navbar-brand">AM</Link>       
-                {(toggleMenu || largeur > 1024) && (
+                {(toggleMenu || largeur > 1023) && (
                     <div className="navbar-collapse">
-                        <ul className="navbar-nav">
-                            <li className="navbar-nav">
+                        <ul className="navbar-nav" data-aos="nav-fade-right" data-aos-duration="300">
+                            <li>
                                 <Link to="/mission">Projet</Link>
                             </li>
-                            <li className="navbar-nav">
+                            <li>
                                 <Link to="/contact">Contact</Link>
                             </li>
                         </ul>
@@ -49,7 +49,7 @@ export function Navbar() {
                 )
                 }
                 <button onClick={toggleNavSmallScreen} className="navbar-toggler">
-                    <img src={nav} alt="" className="svg" />
+                    <img src={nav} alt="" className="nav-icon"/>
                 </button>
             </nav>
         </Fragment>

@@ -4,7 +4,7 @@ import './projects.scss';
 export class Project extends Component {
     render() {
 
-        let min_view = 844;
+        let min_width = 844;
         
         return (
             <div className="section">
@@ -19,7 +19,7 @@ export class Project extends Component {
                     <div className="col-preview">
                         <h3 className={this.props.cls_h3} data-aos="fade-left">
                             {this.props.name}
-                                {min_view > document.body.clientWidth ? 
+                                {min_width > document.body.clientWidth ? 
                                     <b className={this.props.cls_name_half}>{this.props.name_other_half}</b>
                                      : 
                                     <b className={this.props.cls_name_half_md}>{this.props.name_other_half}</b>
