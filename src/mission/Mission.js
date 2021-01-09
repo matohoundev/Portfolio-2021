@@ -2,15 +2,19 @@ import React, { Component } from 'react';
 import Footer from '../starter/footer/Footer';
 import './mission.scss';
 
-export class Mission extends Component {
+export class Mission extends Component { 
     render() {
+
+        const props = this.props.location.state.mission
+        console.log(this.props.location)
+
         return (
             <div className="mission" data-aos="mission-slide">
                 <header className="head-mission">
-                    <h3 className="h3-rainy"
+                    <h3 className={props.cls_h3}
                         data-aos="fade"
                         data-aos-duration="1000"
-                    >Rainy<b className="b-rainy">Day</b>
+                    >{props.name}<b className={props.cls_name_half}>{props.name_other_half}</b>
                     </h3>
                 </header>
 
@@ -27,9 +31,12 @@ export class Mission extends Component {
                         data-aos-duration="1000"
                     >
                         <strong>Qui sont-ils ?</strong>
-                        <p>RainyDay est une plate-forme de suivi pour la télévision et les films. Il permet aux utilisateurs de suivre ce qu'ils regardent, RainyDay permet également aux utilisateurs de réagir  et de commenter des épisodes au sein de la communauté du site. Les utilisateurs ne peuvent pas regarder des émissions ou des films avec RainyDay. </p>
+                        <p>{props.synopsis}</p>
                     </article>
-                    <div className="half-mission-img">
+                    <div className="half-mission-img"
+                        data-aos="fade-up"
+                        data-aos-duration="800" 
+                    >
                         <div className="cd-1" alt=""></div>
                     </div> 
                     <div className="about-mission" 

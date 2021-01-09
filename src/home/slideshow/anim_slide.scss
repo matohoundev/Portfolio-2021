@@ -73,6 +73,7 @@
     &.aos-animate {
     width: 100%;
     background-size: 0%;
+    visibility: hidden;
     }
     
     @media screen and (min-width: 768px) {
@@ -82,6 +83,7 @@
         &.aos-animate {
         width: 100%;
         background-size: 0%;
+        visibility: hidden;
         }
     }   
 
@@ -91,7 +93,8 @@
             background-size: 1500%;
             &.aos-animate {
             width: 100%;
-            background-size: 0%; 
+            background-size: 0%;
+            visibility: hidden; 
             }
         }
 }

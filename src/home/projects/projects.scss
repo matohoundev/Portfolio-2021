@@ -29,7 +29,8 @@
     @extend %second-plan;
     margin: 35vh 0 0 7%;
     border-radius: 10px;
-    background-size: cover;//normalement c'est temporaire ça depend parallax ou non
+    background-size: cover;
+    background-position: top;
 }
 
 .col-mb { 
@@ -41,7 +42,6 @@
 }
 
 .slide-project { // slide d'animation
-    width: 0%;
     height: $all-height;  
     @extend %first-plan;
     background-repeat: no-repeat;
