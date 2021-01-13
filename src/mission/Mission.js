@@ -6,7 +6,6 @@ export class Mission extends Component {
     render() {
 
         const props = this.props.location.state.mission
-        console.log(this.props.location)
 
         return (
             <div className="mission" data-aos="mission-slide">
@@ -18,14 +17,15 @@ export class Mission extends Component {
                     </h3>
                 </header>
 
-                <div className="head-mission-img" alt=""></div>
+                <div className={`head-mission-img parallax ${props.cls_head_img}`} alt=""></div>
 
                 <section className="main-mission">
-                    <q className="citation-mission p2"
+                    <q className="citation-mission"
                         data-aos="fade-left"
                         data-aos-duration="1000"
-                    >Tout est la, <br /> <span className="word-clear">maintenant</span>, à vous de voir
+                    >{props.citation}
                     </q>
+
                     <article className="synopsis" 
                         data-aos="fade-right" 
                         data-aos-duration="1000"
@@ -33,32 +33,37 @@ export class Mission extends Component {
                         <strong>Qui sont-ils ?</strong>
                         <p>{props.synopsis}</p>
                     </article>
+
                     <div className="half-mission-img"
                         data-aos="fade-up"
                         data-aos-duration="800" 
                     >
-                        <div className="cd-1" alt=""></div>
+                        <div className={`cd-1 parallax ${props.cls_half_img}`} alt=""></div>
                     </div> 
+
                     <div className="about-mission" 
                         data-aos="fade-right" 
                         data-aos-duration="1000"
                     >
                         <strong>Mission</strong>
-                        <p>Création d’une page d’attente présentant succinctement le studio et son savoir-faire. Focus sur l’animation de certains éléments ainsi que les micro-interactions. Les technologies utilisées sont bara.js – gsap – blotter.js et curtainsJS.</p>
+                        <p>{props.mission}</p>
                     </div>
+
                     <div className="card-mission">
                         <div className="card-part-one" 
                             data-aos="fade-right" 
                             data-aos-duration="800"
                         >
-                            <div className="cd-img card-mission-img-type1 mb1 parallax" alt=""></div>
-                            <div className="cd-img card-mission-img-type2 mb2 parallax" alt=""></div>
+                            <div className={`cd-img card-mission-img-type1 parallax ${props.cls_img}`}></div>
+                            <div className={`cd-img card-mission-img-type2 parallax ${props.cls_img}`}></div>
+                            
                         </div>
+                        
                         <div className="card-part-two" 
                             data-aos="fade-left"
                             data-aos-duration="800"
                         >
-                            <div className="cd-img card-mission-img-type3 mb1 parallax" alt=""></div>
+                            <div className={`cd-img card-mission-img-type3 parallax ${props.cls_img}`}></div>
                         </div>     
                     </div>
                 </section>

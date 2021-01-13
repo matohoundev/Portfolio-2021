@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Mission from '../../mission/Mission';
 import { Link } from 'react-router-dom';
 import './projects.scss';
 
@@ -14,54 +13,12 @@ export class Project extends Component {
                     cls_h3: this.props.cls_h3,
                     cls_name_half: this.props.cls_name_half,
                     tech: this.props.tech + this.props.tech_other_half,
-                    citation:0,
-                    synopsis: "RainyDay est une plate-forme de suivi pour la télévision et les films. Il permet aux utilisateurs de suivre ce qu'ils regardent, RainyDay permet également aux utilisateurs de réagir  et de commenter des épisodes au sein de la communauté du site. Les utilisateurs ne peuvent pas regarder des émissions ou des films avec RainyDay.",
-                    mission:0,
-                    img:0,
-                    img2:0,
-                    img3:0
-                },
-                {
-                    id: this.props.project_id,
-                    name: this.props.name,
-                    name_other_half: this.props.name_other_half,
-                    cls_h3: this.props.cls_h3,
-                    cls_name_half: this.props.cls_name_half,
-                    tech: this.props.tech + this.props.tech_other_half,
-                    citation:0,
-                    synopsis: "FigurToys est une Boutique en ligne de Figurines de collections et produits Geek, 100% authentique sous licence officiel, Dérivé du Cinéma, Manga, Musique, Horreur, Jeux ...",
-                    mission:0,
-                    img:0,
-                    img2:0,
-                    img3:0
-                },
-                {
-                    id: this.props.project_id,
-                    name: this.props.name,
-                    name_other_half: this.props.name_other_half,
-                    cls_h3: this.props.cls_h3,
-                    cls_name_half: this.props.cls_name_half,
-                    tech: this.props.tech + this.props.tech_other_half,
-                    citation:0,
-                    synopsis: "RainyDay est une plate-forme de suivi pour la télévision et les films. Il permet aux utilisateurs de suivre ce qu'ils regardent, RainyDay permet également aux utilisateurs de réagir  et de commenter des épisodes au sein de la communauté du site. Les utilisateurs ne peuvent pas regarder des émissions ou des films avec RainyDay.",
-                    mission:0,
-                    img:0,
-                    img2:0,
-                    img3:0
-                },
-                {
-                    id: this.props.project_id,
-                    name: this.props.name,
-                    name_other_half: this.props.name_other_half,
-                    cls_h3: this.props.cls_h3,
-                    cls_name_half: this.props.cls_name_half,
-                    tech: this.props.tech + this.props.tech_other_half,
-                    citation:0,
-                    synopsis: "RainyDay est une plate-forme de suivi pour la télévision et les films. Il permet aux utilisateurs de suivre ce qu'ils regardent, RainyDay permet également aux utilisateurs de réagir  et de commenter des épisodes au sein de la communauté du site. Les utilisateurs ne peuvent pas regarder des émissions ou des films avec RainyDay.",
-                    mission:0,
-                    img:0,
-                    img2:0,
-                    img3:0
+                    cls_head_img: this.props.cls_head_img,
+                    citation:this.props.citation,
+                    synopsis: this.props.synopsis,
+                    cls_half_img: this.props.cls_half_img,
+                    mission: this.props.mission,
+                    cls_img: this.props.cls_img,
                 }
             ]
         }
@@ -69,7 +26,7 @@ export class Project extends Component {
     render() {
 
         let min_width = 844;
-        
+
         return (
             <div className="section">
 
@@ -95,8 +52,8 @@ export class Project extends Component {
                         </em>
 
                         {this.state.missions.map(mission => (
-                            <Link 
-                            key={mission.id}
+                            <Link
+                            key={this.props.project_id}
                             to={{
                                 pathname: "/mission",
                                 state: {

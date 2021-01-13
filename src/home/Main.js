@@ -4,13 +4,22 @@ import Project from './projects/Project';
 import SlideTech from './slideshow/SlideTech';
 import Footer from '../starter/footer/Footer';
 import Contact from './contact/Contact';
+
+//Ready
 import ready from '../assets/svg-projects/ready.svg';
 import readyTwo from '../assets/svg-projects/readyTwo.svg';
+
+//FigurToys
 import sephi from '../assets/svg-projects/sephi.svg';
 import epaule from '../assets/svg-projects/epaule.svg';
 import cloud from '../assets/svg-projects/cloud.svg';
+
+//Portfolio 2020
 import marvin from '../assets/svg-projects/marvin.svg';
+
+//Acacia
 import cuisto from '../assets/svg-projects/cuisto.svg';
+
 import './main.scss';
 
 export class Main extends Component {
@@ -24,7 +33,7 @@ export class Main extends Component {
                 cls_name: "rainyDay",
                 cls_h3:"h3-rainy",
                 name: "Rainy",
-                name_other_half: "Day",
+                name_other_half:"Day",
                 cls_name_half:"b-rainy",
                 cls_name_half_md:"b-rainy-md",
                 cls_mark_name: "mark-tech-rainy",
@@ -36,7 +45,16 @@ export class Main extends Component {
                 alt_svg:"Anime kimetsu no yaiba(Demon Slayer) background black",
                 alt_svg_2:"Anime Kimetsu no yaiba(Demon Slayer) background yellow",
                 cls_svg: "svg-project-rainy",
-                cls_svg_2: "svg-project-rainy-2"
+                cls_svg_2: "svg-project-rainy-2",
+
+                // Mission
+                
+                cls_head_img:"rainyLand",
+                citation:"Tout est la maintenant ,à vous de voir",
+                synopsis: "RainyDay est une plate-forme de suivi pour la télévision et les films. Il permet aux utilisateurs de suivre ce qu'ils regardent, RainyDay permet également aux utilisateurs de réagir  et de commenter des épisodes au sein de la communauté du site. Les utilisateurs ne peuvent pas regarder des émissions ou des films avec RainyDay.",
+                cls_half_img:"rainyHalf",
+                mission:"Création d’une page d’attente présentant succinctement le studio et son savoir-faire. Focus sur l’animation de certains éléments ainsi que les micro-interactions. Les technologies utilisées sont bara.js – gsap – blotter.js et curtainsJS",
+                cls_img:"rainyCard",
             },
             {
                 id: 2,
@@ -59,7 +77,16 @@ export class Main extends Component {
                 alt_svg_3:"Cloud Strife de dos",
                 cls_svg: "svg-project-figur",
                 cls_svg_2: "svg-project-figur-2",
-                cls_svg_3: "svg-project-figur-3"
+                cls_svg_3: "svg-project-figur-3",
+                
+                // Mission
+
+                cls_head_img:"figurLand",
+                citation:"0",
+                synopsis: "FigurToys est une Boutique en ligne de Figurines de collections et produits Geek, 100% authentique sous licence officiel, Dérivé du Cinéma, Manga, Musique, Horreur, Jeux ...",
+                cls_half_img:"figurHalf",
+                mission:0,
+                cls_img:"figurCard",
             },
             {
                 id: 3,
@@ -77,7 +104,16 @@ export class Main extends Component {
                 cls_card: "card-folio",
                 svg:marvin,
                 alt_svg:"Atohoun marvin auteur du site (moi en gros)",
-                cls_svg: "svg-project-folio"
+                cls_svg: "svg-project-folio",
+
+                // Mission
+
+                cls_head_img:"folioLand",
+                citation:"0",
+                synopsis: "FigurToys est une Boutique en ligne de Figurines de collections et produits Geek, 100% authentique sous licence officiel, Dérivé du Cinéma, Manga, Musique, Horreur, Jeux ...",
+                cls_half_img:"folioHalf",
+                mission:"0",
+                cls_img:"folioCard",
             },
             {
                 id: 4,
@@ -94,7 +130,16 @@ export class Main extends Component {
                 cls_card: "card-acacia",
                 svg:cuisto,
                 alt_svg:"chef cuistot cartoon",
-                cls_svg: "svg-project-acacia"
+                cls_svg: "svg-project-acacia",
+
+                // Mission
+
+                cls_head_img:"acaciaLand",
+                citation:"0",
+                synopsis: "FigurToys est une Boutique en ligne de Figurines de collections et produits Geek, 100% authentique sous licence officiel, Dérivé du Cinéma, Manga, Musique, Horreur, Jeux ...",
+                cls_half_img:"acaciaHalf",
+                mission:0,
+                cls_img:"acaciaCard",
             }
         ]
     }
@@ -152,6 +197,15 @@ export class Main extends Component {
                                         cls_svg={projet.cls_svg}
                                         cls_svg_2={projet.cls_svg_2}
                                         cls_svg_3={projet.cls_svg_3}
+
+                                        //mission
+
+                                        cls_head_img={projet.cls_head_img}
+                                        citation={projet.citation}
+                                        synopsis={projet.synopsis}
+                                        cls_half_img={projet.cls_half_img}
+                                        mission={projet.mission}
+                                        cls_img={projet.cls_img}
                                     />
                                 ))}
                             

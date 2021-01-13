@@ -1,4 +1,8 @@
 @import '../App.scss';
+@import './scss\ mission/rainyday.scss';
+@import './scss\ mission/figurtoys.scss';
+@import './scss\ mission/portfolio.scss';
+@import './scss\ mission/acacia.scss';
 
 .mission {
     font-family: "manrope", Helvetica, sans-serif;
@@ -23,7 +27,6 @@
 
 .head-mission-img {
     height: $half-height;
-    background-image: url('../assets/img-mission/RainyDay2.png');
 }
 
 .main-mission {//on va voir si c'est vraiment nécessaire
@@ -38,7 +41,7 @@
         padding:  0 4%;
     }
 
-        .word-clear {
+        q::first-line {
             color: $color-clear;
         }
 
@@ -57,7 +60,7 @@
     }
 
 .half-mission-img {
-    height: 65vh;
+    height: 75vh;
     max-height: 987px;
     width: 100%;
     display: flex;
@@ -68,7 +71,6 @@
     width: 95%;
     max-width: 1474px;
     border-radius: $border-xs;
-    background-image: url('../assets/img-mission/RainyDay-users-tablette.png');
 }
 
 .about-mission {
@@ -100,14 +102,6 @@
 
 .card-mission-img-type3 {
     height: 50vh;
-}
-
-.mb1 {
-    background-image: url('../assets/img-mission/RainyDay-mobile2.png');
-}
-
-.mb2 {
-    background-image: url('../assets/img-mission/RainyDay-users-mobile.png'); 
 }
 
 @media screen and (min-width: 763px) {
@@ -164,7 +158,7 @@
     }
 
 @media screen and (min-width: 1024px) {
-//         /* ordinateurs */
+    /* ordinateurs */
 
     .synopsis {
         height: $half-height;
@@ -174,6 +168,10 @@
     .main-mission {
         align-items: baseline;
     }
+
+        .citation-mission {
+            width: 68%;
+        }
 
     .about-mission {
         height: $half-height;
