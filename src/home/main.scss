@@ -2,7 +2,6 @@
 @import './slideshow/anim_slide.scss';
 
 .head-Main {
-    height: $all-height;
     display:flex;
     flex-direction: column;
     justify-content: center; 
@@ -23,7 +22,6 @@ h2 {
 }
 
 .about {
-    height: $all-height;
     display: flex;
     align-items: center;
     text-align: $text-justify;

@@ -28,7 +28,7 @@ export class Project extends Component {
         let min_width = 844;
 
         return (
-            <div className="section">
+            <div id="project" className="section">
 
                 <div className={`slide-project ${this.props.cls_slide}`} 
                     data-aos="project-slide-f"

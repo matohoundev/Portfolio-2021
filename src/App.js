@@ -1,5 +1,6 @@
 import './App.scss';
 import React, { useEffect } from 'react';
+import ScrollToTop from './scrollRestoration/scrollToTop';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
@@ -7,6 +8,7 @@ import Navbar from './starter/navbar/NavBar';
 import Main from './home/Main';
 import Mission from './mission/Mission';
 import Contact from './home/contact/Contact';
+
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
 
       <Switch>

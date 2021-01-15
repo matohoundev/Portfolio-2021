@@ -5,7 +5,7 @@
 @import './customer/acacia.scss';
 
 .projet {
-    height: $all-height;
+    height: 100vh;
     display: flex;
 }
 
@@ -32,6 +32,10 @@
     background-size: cover;
     background-position: top;
 }
+
+    .card-project:hover {
+        animation: cardHover 0.8s 1 ease-in-out;
+    }
 
 .col-mb { 
     width: 100vw;

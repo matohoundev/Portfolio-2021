@@ -52,3 +52,13 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: #a10237;
 }
+
+// body{
+//   /* This is the magic bit for Firefox */
+//   scrollbar-width: none;
+// }
+
+// body::-webkit-scrollbar { 
+//   /* This is the magic bit for WebKit */
+//   display: none;
+// }

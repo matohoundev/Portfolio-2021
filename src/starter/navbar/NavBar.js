@@ -1,7 +1,10 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import nav from './nav.svg';
 import './nav.scss';
+
+import { Anchor } from 'antd';
+
+const { Link } = Anchor;
 
 export function Navbar() {
 
@@ -34,22 +37,22 @@ export function Navbar() {
         <Fragment>
             { (toggleMenu) && (<div className="nav-bg" data-aos="nav-slide" data-aos-duration="300"></div>)}
             <nav>
-                <Link to="/" className="navbar-brand">AM</Link>       
+                <Anchor><Link href="/" className="navbar-brand" title="AM" /></Anchor>
                 {(toggleMenu || largeur > 1023) && (
                     <div className="navbar-collapse">
                         <ul className="navbar-nav" data-aos="nav-fade-right" data-aos-duration="300">
                             <li>
-                                <Link to="/mission">Projet</Link>
+                                <Anchor><Link href="#project" title="Projet" /></Anchor>
                             </li>
                             <li>
-                                <Link to="/contact">Contact</Link>
+                                <Anchor><Link href="#contact" title="Contact" /></Anchor>
                             </li>
                         </ul>
                     </div>
                 )
                 }
                 <button onClick={toggleNavSmallScreen} className="navbar-toggler">
-                    <img src={nav} alt="" className="nav-icon"/>
+                    <img src={nav} alt="" className="nav-icon" />
                 </button>
             </nav>
         </Fragment>

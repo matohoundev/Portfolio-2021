@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Carousel from './carousel/Carousel';
 import Footer from '../starter/footer/Footer';
 import './mission.scss';
 
@@ -68,7 +69,7 @@ export class Mission extends Component {
                     </div>
                 </section>
                 
-                <aside></aside>
+                <Carousel />
                 <Footer />
             </div>
         )
