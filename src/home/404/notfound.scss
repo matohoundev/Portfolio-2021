@@ -30,13 +30,9 @@
     animation: error 1s 1 ease-in-out;
 }
 
-.Lost h1 {
-    
-}
-
 .Lost p {
     max-width: 520px;
-    margin: 70px 0 70px 0;
+    margin: 20px 0 40px 0;
     font-size: 18px;
 }
 
@@ -45,14 +41,23 @@
     color: black;
     background-color: white;
     border-radius: 10px;
-    padding: 15px;
+    padding: 12px;
+    font-weight: bold;
 }
 
 .Lost button a:hover {
     animation: cardHover 0.8s 1 ease-in-out;
 }
 
-
 .Lost h1, .Lost p, .Lost button {
-    animation: fade 1s 1 ease-in-out;
+    animation: fade 2s 1 ease-in-out;
 } 
+
+
+@media screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+    .Lost p {
+    margin: 70px 0 70px 0;
+}
+
+    }

@@ -24,7 +24,7 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route path="/mission" component={Mission} />
+        <Route path="/mission/:missionId" component={Mission} />
         <Route path="/contact" component={Contact} />
         <Route path="/404" component={NotFound} />
         <Redirect to="/404" />

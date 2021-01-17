@@ -42,10 +42,10 @@ export function Navbar() {
                     <div className="navbar-collapse">
                         <ul className="navbar-nav" data-aos="nav-fade-right" data-aos-duration="300">
                             <li>
-                                <Anchor><Link href="#project" title="Projet" /></Anchor>
+                                <Anchor><Link href="/#project" title="Projet" /></Anchor>
                             </li>
                             <li>
-                                <Anchor><Link href="#contact" title="Contact" /></Anchor>
+                                <Anchor><Link href="/#contact" title="Contact" /></Anchor>
                             </li>
                         </ul>
                     </div>

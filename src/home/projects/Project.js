@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './projects.scss';
 
 const Project = props => {
@@ -22,7 +22,6 @@ const Project = props => {
         ])
 
     let min_width = 844;
-    let match = useRouteMatch();
 
     return (
         <div id="project" className="section">
@@ -52,7 +51,7 @@ const Project = props => {
                         <Link
                             key={props.project_id}
                             to={{
-                                pathname: `${match.url}mission/${props.name.toLowerCase() + props.name_other_half.toLowerCase()}`,
+                                pathname: `/mission/${props.name.toLowerCase() + props.name_other_half.toLowerCase()}`,
                                 state: {
                                     mission
                                 }

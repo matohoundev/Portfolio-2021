@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Carousel from './carousel/Carousel';
+import { Link } from 'react-router-dom';
 import Footer from '../starter/footer/Footer';
 import './mission.scss';
 
@@ -69,7 +69,7 @@ export class Mission extends Component {
                     </div>
                 </section>
                 
-                <Carousel />
+                <button className="returnHome"><Link to="/" >Retourner à l'accueil</Link></button>
                 <Footer />
             </div>
         )
