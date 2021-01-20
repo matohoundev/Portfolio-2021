@@ -18,6 +18,7 @@ const Project = props => {
                 cls_half_img: props.cls_half_img,
                 mission: props.mission,
                 cls_img: props.cls_img,
+                github: props.github
             }
         ])
 

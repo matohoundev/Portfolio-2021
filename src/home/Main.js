@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { motion } from "framer-motion";
 import ReactFullpage from '@fullpage/react-fullpage';
 import Project from './projects/Project';
 import SlideTech from './slideshow/SlideTech';
@@ -55,6 +56,7 @@ export class Main extends Component {
                 cls_half_img:"rainyHalf",
                 mission:"Création d’une page d’attente présentant succinctement le studio et son savoir-faire. Focus sur l’animation de certains éléments ainsi que les micro-interactions. Les technologies utilisées sont bara.js – gsap – blotter.js et curtainsJS",
                 cls_img:"rainyCard",
+                github:"https://github.com/matohoundev?tab=repositories"
             },
             {
                 id: 2,
@@ -87,6 +89,7 @@ export class Main extends Component {
                 cls_half_img:"figurHalf",
                 mission:0,
                 cls_img:"figurCard",
+                github:"https://github.com/matohoundev/Wordpress-FigurToys"
             },
             {
                 id: 3,
@@ -114,6 +117,7 @@ export class Main extends Component {
                 cls_half_img:"folioHalf",
                 mission:"0",
                 cls_img:"folioCard",
+                github:"https://github.com/matohoundev/Portfolio-2020"
             },
             {
                 id: 4,
@@ -131,6 +135,7 @@ export class Main extends Component {
                 svg:cuisto,
                 alt_svg:"chef cuistot cartoon",
                 cls_svg: "svg-project-acacia",
+                
 
                 // Mission
 
@@ -140,11 +145,30 @@ export class Main extends Component {
                 cls_half_img:"acaciaHalf",
                 mission:0,
                 cls_img:"acaciaCard",
+                github:"https://github.com/matohoundev/Acacia"
             }
         ]
     }
 
     render() {
+
+        const pageVariants = {
+            initial: {
+                x: "100vw"
+              },
+            in: {
+                x: "100vw"
+            },
+            out: {
+                x: "0vw"
+            }
+          };
+          
+          const pageTransition = {
+            ease: "easeOut",
+            duration: 0.5
+          };
+          
         return (
             <ReactFullpage
 
@@ -152,11 +176,23 @@ export class Main extends Component {
 
                 scrollBar={true}
 
+                // scrollingSpeed={200}
+
                 render={({ state, fullpageApi }) => {
 
                     return (
                         
                         <Fragment>
+                        
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}
+                            className="transition">
+                        </motion.div>
+
                             <header className="head-Main section"
                                 data-aos="header-slide"
                                 data-aos-duration="2500"
@@ -206,6 +242,7 @@ export class Main extends Component {
                                         cls_half_img={projet.cls_half_img}
                                         mission={projet.mission}
                                         cls_img={projet.cls_img}
+                                        github={projet.github}
                                     />
                                 ))}
                             

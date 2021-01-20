@@ -10,7 +10,7 @@ export class Footer extends Component {
             <div className="footer">
                 <a href="mailto:matohoundev@gmail.com"><img src={Gmail} alt="" className="icons" /></a>
                 <a href="https://www.linkedin.com/in/marvin-atohoun/"><img src={Twitter} alt="" className="icons" /></a>
-                <a href="https://github.com/matohoundev"><img src={Github} alt="" className="icons" /></a>
+                <a href="https://github.com/matohoundev?tab=repositories"><img src={Github} alt="" className="icons" /></a>
             </div>
         )
     }

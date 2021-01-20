@@ -83,6 +83,19 @@
     font-size: 18px;
 }
 
+.github { 
+    padding: 7px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-family: "abril", Helvetica, sans-serif;
+}
+
+    .github:hover {
+        animation: cardHover 0.8s 1 ease-in-out;
+    }
+
 .card-mission {
     width: 100%;
 }
@@ -112,16 +125,12 @@
 }
 
 @keyframes shake{
-    0% {
-        padding-right: 0;
-    }
-
-    20% {
-        padding-right: 15px;
+    30% {
+        padding-right: 10px;
     }
 
     60% {
-        padding-left: 15px;
+        padding-left: 10px;
     }
 
     100% {

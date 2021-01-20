@@ -115,3 +115,12 @@ b {
   background-position: top;
   background-repeat: no-repeat;
 }
+
+/* transition page */
+
+.transition {
+  width: 100vw;
+  height: 100vh;
+  @extend %transition-plan;
+  background-color: #4B0019;
+}

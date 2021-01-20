@@ -23,8 +23,7 @@
 .Lost {
     height: 100%; width: 100%;
     padding: 15vh 0 0 50px;
-    position: absolute;
-    z-index: 7;
+    @extend %notFound-plan;
     background-image: linear-gradient(135deg, #5d0422 0%, #5d0422 40%,  #a10237 40%,#a10237 75%, #5d0422 75%, #5d0422 100%);
     color: white;
     animation: error 1s 1 ease-in-out;

@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import Footer from '../starter/footer/Footer';
 import './mission.scss';
@@ -8,7 +9,33 @@ export class Mission extends Component {
 
         const props = this.props.location.state.mission
 
+        const pageVariants = {
+            initial: {
+                x: "0vw"
+              },
+            in: {
+                x: "100vw"
+            },
+            out: {
+                x: "100vw"
+            }
+          };
+          
+          const pageTransition = {
+            ease: "easeIn",
+            duration: 0.5
+          };
+
         return (
+            <Fragment>
+            <motion.div
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={pageVariants}
+                transition={pageTransition}
+                className="transition">
+            </motion.div>
             <div className="mission" data-aos="mission-slide">
                 <header className="head-mission">
                     <h3 className={props.cls_h3}
@@ -48,6 +75,7 @@ export class Mission extends Component {
                     >
                         <strong>Mission</strong>
                         <p>{props.mission}</p>
+                        <a href={props.github}><button className="github">Github</button></a>
                     </div>
 
                     <div className="card-mission">
@@ -69,9 +97,9 @@ export class Mission extends Component {
                     </div>
                 </section>
                 
-                <button className="returnHome"><Link to="/" >Retourner à l'accueil</Link></button>
+                <button className="returnHome"><Link to="/">Retour en arrière</Link></button>
                 <Footer />
-            </div>
+            </div></Fragment>
         )
     }
 }

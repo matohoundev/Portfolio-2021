@@ -1,5 +1,10 @@
 //fixed
 
+%transition-plan {
+    position: fixed;
+    z-index: 7;
+}
+
 %navbar-plan {
     position: fixed;
     z-index: 6;
@@ -10,6 +15,11 @@
     z-index: 5;
 }
 //absolute
+
+%notFound-plan {
+    position: fixed;
+    z-index: 7;
+}
 
 %first-plan {
     position: absolute;
