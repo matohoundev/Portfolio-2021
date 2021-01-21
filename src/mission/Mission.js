@@ -58,7 +58,7 @@ export class Mission extends Component {
                         data-aos="fade-right" 
                         data-aos-duration="1000"
                     >
-                        <strong>Qui sont-ils ?</strong>
+                        <strong>Quid ?</strong>
                         <p>{props.synopsis}</p>
                     </article>
 
@@ -75,7 +75,8 @@ export class Mission extends Component {
                     >
                         <strong>Mission</strong>
                         <p>{props.mission}</p>
-                        <a href={props.github}><button className="github">Github</button></a>
+                        <p>Technologies utilisées : {props.tech}</p>
+                        <a href={props.github} target="_blank" rel="noreferrer"><button className="github">Github</button></a>
                     </div>
 
                     <div className="card-mission">
@@ -97,7 +98,7 @@ export class Mission extends Component {
                     </div>
                 </section>
                 
-                <button className="returnHome"><Link to="/">Retour en arrière</Link></button>
+                <button className="returnHome"><Link to="/">Retour</Link></button>
                 <Footer />
             </div></Fragment>
         )

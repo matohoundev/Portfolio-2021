@@ -14,6 +14,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* color selection */
+
+::selection {
+  background-color: #E3004C;
+}
+
 /* delete style button*/
 
 button {

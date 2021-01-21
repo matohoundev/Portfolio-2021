@@ -1,9 +1,8 @@
 import './App.scss';
 import React, { useEffect, Fragment } from 'react';
-import ScrollToTop from './scrollRestoration/scrollToTop';
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {Route, Switch, Redirect, useLocation} from 'react-router-dom';
 import Navbar from './starter/navbar/NavBar';
 import Main from './home/Main';
@@ -21,17 +20,18 @@ function App() {
 
   return (
     <Fragment>
-  { /* <ScrollToTop /> */}
 
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence initial={false} exitBeforeEnter>
 
         <Navbar />
 
         <Switch location={location} key={location.pathname}>
           <Route exact path="/" component={Main} />
           <Route path="/mission/:missionId" component={Mission} />
-          <Route path="/404" component={NotFound} />
-          <Redirect to="/404" />
+          <motion.Fragment exit="undefined">
+            <Route path="/404" component={NotFound} />
+            <Redirect to="/404" />
+          </motion.Fragment>
         </Switch>
 
       </AnimatePresence>

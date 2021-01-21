@@ -51,10 +51,10 @@ export class Main extends Component {
                 // Mission
                 
                 cls_head_img:"rainyLand",
-                citation:"Tout est la maintenant ,à vous de voir",
+                citation:"Tout est la maintenant, à vous de voir",
                 synopsis: "RainyDay est une plate-forme de suivi pour la télévision et les films. Il permet aux utilisateurs de suivre ce qu'ils regardent, RainyDay permet également aux utilisateurs de réagir  et de commenter des épisodes au sein de la communauté du site. Les utilisateurs ne peuvent pas regarder des émissions ou des films avec RainyDay.",
                 cls_half_img:"rainyHalf",
-                mission:"Création d’une page d’attente présentant succinctement le studio et son savoir-faire. Focus sur l’animation de certains éléments ainsi que les micro-interactions. Les technologies utilisées sont bara.js – gsap – blotter.js et curtainsJS",
+                mission:"RainyDay est un projet personnelle entièrement crée par moi. Le projet rainyDay est actuellement en cours de création, une version bêta sera bientôt disponible et sans suivra une application mobile, en attendant vous pouvez suivre mes différents projet perso sur mon Github.",
                 cls_img:"rainyCard",
                 github:"https://github.com/matohoundev?tab=repositories"
             },
@@ -84,10 +84,10 @@ export class Main extends Component {
                 // Mission
 
                 cls_head_img:"figurLand",
-                citation:"0",
-                synopsis: "FigurToys est une Boutique en ligne de Figurines de collections et produits Geek, 100% authentique sous licence officiel, Dérivé du Cinéma, Manga, Musique, Horreur, Jeux ...",
+                citation:"Pourquoi toutes ces figurines ? Why not",
+                synopsis: "FigurToys est une Boutique fictif en ligne de Figurines de collections et produits Geek, 100% authentique sous licence officiel, Dérivé du Cinéma, Manga, Musique, Horreur, Jeux ...",
                 cls_half_img:"figurHalf",
-                mission:0,
+                mission: "Création d'une boutique Wordpress avec le thème Astra et WooCommerce pour la gestion du panier. ",
                 cls_img:"figurCard",
                 github:"https://github.com/matohoundev/Wordpress-FigurToys"
             },
@@ -112,10 +112,10 @@ export class Main extends Component {
                 // Mission
 
                 cls_head_img:"folioLand",
-                citation:"0",
-                synopsis: "FigurToys est une Boutique en ligne de Figurines de collections et produits Geek, 100% authentique sous licence officiel, Dérivé du Cinéma, Manga, Musique, Horreur, Jeux ...",
+                citation:"Pourquoi faire compliqué quand on peut faire simple",
+                synopsis: "Folio2020 est tout simplement l'édition 2020 de mon portfolio.",
                 cls_half_img:"folioHalf",
-                mission:"0",
+                mission:"L'édition 2020 de mon portfolio avait pour objectif d'offrir deux identités visuelle sur la même page via les différents interaction proposée, interaction qui au fur et à mesure modifiait l'apparence du site pour proposer une experience différente, le premier design était sobre et le second beaucoup plus colorée.",
                 cls_img:"folioCard",
                 github:"https://github.com/matohoundev/Portfolio-2020"
             },
@@ -140,10 +140,10 @@ export class Main extends Component {
                 // Mission
 
                 cls_head_img:"acaciaLand",
-                citation:"0",
-                synopsis: "FigurToys est une Boutique en ligne de Figurines de collections et produits Geek, 100% authentique sous licence officiel, Dérivé du Cinéma, Manga, Musique, Horreur, Jeux ...",
+                citation:"La bonne cuisine est honnête, sincère et simple.",
+                synopsis: "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
                 cls_half_img:"acaciaHalf",
-                mission:0,
+                mission:"Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
                 cls_img:"acaciaCard",
                 github:"https://github.com/matohoundev/Acacia"
             }
