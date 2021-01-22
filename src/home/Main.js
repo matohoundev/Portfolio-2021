@@ -205,7 +205,7 @@ export class Main extends Component {
                                     data-aos="about-slide"
                                     data-aos-duration="2500"
                                 >
-                                    <p data-aos="fade">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services. Je réalise des sites internet avec le souci du détail et un rendu ﬁdèle au design.</p>
+                                    <p data-aos="fade">Je m'appelle Atohoun Marvin, Développeur web afin de me préparer au Titre Professionnel de Développeur Web et Web Mobile. Autodidacte tourné côté front-end j'ai décidé d'acquérir la partie back qui me faisait jusqu'a maintenant défaut. D'un naturel dynamique et ayant soif d'apprendre je suis notamment interesser par l'apprentissage de React ou tout autre technologie. Passionné par tout ce qui touche de près ou de loin aux technologies Web, je mettrai mes compétences au service de vos besoins.</p>
                                 </section>
 
                                 {this.state.projects.map(projet => (

@@ -21,7 +21,7 @@
 }
 
 .Lost {
-    height: 100%; width: 100%;
+    height: 100vh; width: 100vw;
     padding: 15vh 0 0 50px;
     @extend %notFound-plan;
     background-image: linear-gradient(135deg, #5d0422 0%, #5d0422 40%,  #a10237 40%,#a10237 75%, #5d0422 75%, #5d0422 100%);
@@ -50,13 +50,4 @@
 
 .Lost h1, .Lost p, .Lost button {
     animation: fade 2s 1 ease-in-out;
-} 
-
-
-@media screen and (min-width: 768px) {
-    /* tablettes et ordinateurs */
-    .Lost p {
-    margin: 70px 0 70px 0;
 }
-
-    }
