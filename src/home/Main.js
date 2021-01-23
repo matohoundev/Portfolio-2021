@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { motion } from "framer-motion";
 import ReactFullpage from '@fullpage/react-fullpage';
 import Project from './projects/Project';
-import SlideTech from './slideshow/SlideTech';
 import Footer from '../starter/footer/Footer';
 import Contact from './contact/Contact';
 
@@ -205,7 +204,7 @@ export class Main extends Component {
                                     data-aos="about-slide"
                                     data-aos-duration="2500"
                                 >
-                                    <p data-aos="fade">Je m'appelle Atohoun Marvin, Développeur web afin de me préparer au Titre Professionnel de Développeur Web et Web Mobile. Autodidacte tourné côté front-end j'ai décidé d'acquérir la partie back qui me faisait jusqu'a maintenant défaut. D'un naturel dynamique et ayant soif d'apprendre je suis notamment interesser par l'apprentissage de React ou tout autre technologie. Passionné par tout ce qui touche de près ou de loin aux technologies Web, je mettrai mes compétences au service de vos besoins.</p>
+                                    <p data-aos="fade"><span class="about-plus">"Votre projet est le mien"</span> c'est ainsi que j'envisage tout projet votre motivation est la mienne et c'est ce qui me permet d'atteindre un rendu fidèle au design. Développer de manière agile et polir chaque détails avec la soif d'innover ce sont mes valeurs.</p>
                                 </section>
 
                                 {this.state.projects.map(projet => (
@@ -248,7 +247,6 @@ export class Main extends Component {
                             
                             <div className="section">
                                 <Contact />
-                                <SlideTech />
                                 <Footer />
                             </div>
                             

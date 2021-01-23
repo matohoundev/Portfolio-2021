@@ -1,5 +1,11 @@
 @import '../../App.scss';
 
+.slide-contact {
+    width: 100vw;
+    background-position: right;
+    background-image: linear-gradient(45deg, transparent 0%, transparent 90%, #a10237 90%, #a10237 100%);
+}
+
 .contact-main {
     height: 45vh;
     padding-top: 20vh;
@@ -7,8 +13,16 @@
     font-size: 23px;
 }
 
+    .contact-link {
+        display: flex;
+    } 
+
 .email {
     color: $color-dark;
+}
+
+.hand-left {
+    animation: handLink 1s infinite ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -22,7 +36,7 @@
     /* tablettes et ordinateurs */
     .contact-main {
         height: 47.5vh;
-        font-size: 40px;
+        font-size: 45px;
     }
     
     }

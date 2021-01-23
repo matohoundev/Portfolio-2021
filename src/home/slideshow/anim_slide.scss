@@ -78,23 +78,17 @@
     
     @media screen and (min-width: 768px) {
     /* middle Screen */
-        width: 100%;
         background-size: 2300%;
         &.aos-animate {
-        width: 100%;
         background-size: 0%;
-        visibility: hidden;
         }
     }   
 
         @media screen and (min-width: 1400px) {
         /* large Screen */
-            width: 100%;
             background-size: 1500%;
             &.aos-animate {
-            width: 100%;
             background-size: 0%;
-            visibility: hidden; 
             }
         }
 }
@@ -150,6 +144,41 @@
     &.aos-animate {
     background-size: 100%;
     }
+}
+
+
+/*contact*/ 
+
+@keyframes handLink {
+    0% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(-5%);
+    }
+}
+
+[data-aos="contact-slide"] {
+    background-size: 3200%;
+    &.aos-animate {
+    background-size: 100%;
+    }
+    
+    @media screen and (min-width: 768px) {
+    /* middle Screen */
+        background-size: 2300%;
+        &.aos-animate {
+        background-size: 100%;
+        }
+    }   
+
+        @media screen and (min-width: 1400px) {
+        /* large Screen */
+            background-size: 1500%;
+            &.aos-animate {
+            background-size: 100%;
+            }
+        }
 }
 
 /* IMG SLIDE LEFT */
