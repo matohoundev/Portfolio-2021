@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import SlideTech from '../slideshow/SlideTech';
+import Tech from '../slideshow/Tech';
 import './contact.scss'
 
 export class Contact extends Component {
@@ -10,14 +10,17 @@ export class Contact extends Component {
                     data-aos="contact-slide"
                 ></div>
 
-                <div id="contact" className="contact-main">
+                <div id="contact" className="contact-main bg-real" 
+                    data-aos="fade-right"
+                >
                     <h3>Démarrons un projet ensemble</h3>
                     <div className="contact-link">
                         <a className="email" href="mailto:matohoundev@gmail.com">matohoundev@gmail.com</a>
                         <span className="hand-left">👈</span>
                     </div>
+                    <Tech />
                 </div>
-                <SlideTech />
+                
             </Fragment>
         )
     }

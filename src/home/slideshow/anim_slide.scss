@@ -162,6 +162,7 @@
     background-size: 3200%;
     &.aos-animate {
     background-size: 100%;
+    visibility: hidden;
     }
     
     @media screen and (min-width: 768px) {

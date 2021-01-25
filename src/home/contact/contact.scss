@@ -6,8 +6,14 @@
     background-image: linear-gradient(45deg, transparent 0%, transparent 90%, #a10237 90%, #a10237 100%);
 }
 
+.bg-real {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg, transparent 0%, transparent 90%, #a10237 90%, #a10237 100%);
+}
+
 .contact-main {
-    height: 45vh;
+    width: 100vw;
+    height: 90vh;
     padding-top: 20vh;
     padding-left: 8%;
     font-size: 23px;
@@ -25,6 +31,19 @@
     animation: handLink 1s infinite ease-in-out;
 }
 
+@media only screen 
+  and (min-width: 640px) 
+  and (max-width: 823px)
+  and (min-height: 360px)
+  and (max-height: 414px)
+  and (orientation: landscape) {
+  /* smartphone landscapes */
+    .contact-main {
+        padding-top: 5vh;
+        padding-left: 10%;
+    }
+  }
+
 @media screen and (min-width: 768px) {
     /* tablettes et ordinateurs */
     .contact-main {
@@ -35,7 +54,7 @@
 @media screen and (min-width: 1024px) {
     /* tablettes et ordinateurs */
     .contact-main {
-        height: 47.5vh;
+        height: 95vh;
         font-size: 45px;
     }
     
