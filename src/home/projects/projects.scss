@@ -5,7 +5,7 @@
 @import './customer/acacia.scss';
 
 .projet {
-    height: 100vh;
+    height: $max-height-vh;
     display: flex;
 }
 
@@ -18,13 +18,13 @@
     @extend %second-plan;
     margin-top: 10vh;
     padding: 17vh 0 0 7%;
-    font-size: 16px;
+    font-size: $sz3;
     color: $color-clear;
 }
 
 .card-project {
-    height: 50vh;
-    width: 50vw;
+    height: $half-height-vh;
+    width: $half-width-vw;
     max-width: 824px; 
     @extend %second-plan;
     margin: 35vh 0 0 7%;
@@ -38,7 +38,7 @@
     }
 
 .col-mb { 
-    width: 100vw;
+    width: $max-width-vw;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -46,7 +46,7 @@
 }
 
 .slide-project { // slide d'animation
-    height: $all-height;  
+    height: $max-height-vh;  
     @extend %first-plan;
     background-repeat: no-repeat;
 }
@@ -59,7 +59,7 @@
     and (orientation: landscape) {
     /* smartphone landscapes */
     .col-preview em {
-        font-size: $emproject-sd;
+        font-size: $sz2;
         margin-top: 21vh;
     }
     
@@ -85,7 +85,7 @@
 @media screen and (min-width: 824px) {
     /* tablettes et ordinateurs */
     .col-preview em {
-        font-size: $emproject-mb;
+        font-size: $sz8;
     }
     
     }

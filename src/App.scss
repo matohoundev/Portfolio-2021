@@ -4,7 +4,7 @@
 @import './assets/scss/mixins';
 @import './assets/scss/placeholders';
 
-//font theme website 
+//fonts theme websites 
 
 @font-face {
     font-family: 'abril';
@@ -19,7 +19,7 @@
   src: url('./assets/webfonts/Manrope/Manrope-ExtraLight.ttf') format('truetype');
 }
 
-//font project
+//fonts projects
 
 @font-face {
   font-family: 'newyorker';
@@ -41,13 +41,13 @@
 
 
 
-/*Police*/
+/*Fonts Family*/
 
 h1 {
   font-family: "abril", "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-h2 {
+h2, .email, .Tech p, .about p, .Lost p, .Lost button{
   font-family: "manrope-light", "Open Sans", Helvetica, sans-serif;
 }
 
@@ -56,13 +56,15 @@ h3 {
   font-weight: lighter;
 }
 
+.Tech mark {
+  font-family: "abril", Arial, Helvetica, sans-serif;
+}
+
 p, strong, em {
   font-family: "manrope", Arial, Helvetica, sans-serif;
 }
 
-.email, .Tech p, .about p {
-  font-family: "manrope-light", "Open Sans", Helvetica, sans-serif;
-}
+// delete decoration
 
 a {
   text-decoration: none;
@@ -76,19 +78,11 @@ mark {
   background: transparent;
 }
 
-.Tech mark {
-  font-family: "abril", Arial, Helvetica, sans-serif;
-}
-
 b {
   font-weight: lighter;
 }
 
-.Lost p, .Lost button {
-  font-family: "manrope-light", Helvetica, sans-serif;
-} 
-
-/* Fonts Project*/
+/* Fonts for Projects */
 
 .h3-rainy {
   font-family: "newyorker", Arial, Helvetica, sans-serif;
@@ -111,7 +105,7 @@ b {
 }
 
 
-/*Gestion Parallax*/
+/*Management Parallax*/
 
 .parallax {
   background-size: cover;
@@ -120,11 +114,11 @@ b {
   background-repeat: no-repeat;
 }
 
-/* transition page */
+/* Transition Page */
 
 .transition {
-  width: 100vw;
-  height: 100vh;
+  width: $max-width-vw;
+  height: $max-height-vh;
   @extend %transition-plan;
-  background-color: #4B0019;
+  background-color: $third-color;
 }

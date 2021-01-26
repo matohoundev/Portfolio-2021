@@ -1,13 +1,13 @@
 @import '../../App.scss';
 
 nav {
-    width: 100vw;
+    width: $max-width-vw;
     display: flex;
     justify-content: space-between;
     padding: 10px 3%;
     @extend %navbar-plan;
     font-family: "abril", Arial, Helvetica, sans-serif;
-    font-size: $logoSize;
+    font-size: $sz10;
 }
 
 nav li {
@@ -36,8 +36,7 @@ nav .ant-anchor .navbar-brand a {
 
 .nav-bg {
     @extend %navbar-slide;
-    width: 100%;
-    height: 100vh;
+    width: $max-width-percent; height: $max-height-vh;
     top: 0;
     right: 0;
     background-image: linear-gradient(45deg, $colorT 0%, #a10237 100%);
@@ -46,7 +45,7 @@ nav .ant-anchor .navbar-brand a {
 }
 
 .navbar-nav {
-    height: 100%;
+    height: $max-height-percent;
     display: flex;
     flex-direction: column;
 }
@@ -74,3 +73,11 @@ nav .ant-anchor .navbar-brand a {
         display: none;
     }
 }
+
+@media screen and (min-width: 2560px) {
+    /* ordinateurs */
+    nav {
+        font-size: $sz12;
+    }
+
+}   

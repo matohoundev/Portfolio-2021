@@ -1,4 +1,4 @@
-/*reset*/
+/* reset */
 *, ::before, ::after {
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ body {
   background-color: #E3004C;
 }
 
-/* delete style button*/
+/* delete style button */
 
 button {
   background-color: transparent;
@@ -42,13 +42,10 @@ button {
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  // background: #9e0135;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  // -webkit-border-radius: 10px;
-  // border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
   box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
   background: #E3004C;
@@ -60,11 +57,11 @@ button {
 }
 
 body{
-  /* This is the magic bit for Firefox */
+  /* for Firefox */
   scrollbar-width: none;
 }
 
 body::-webkit-scrollbar { 
-  /* This is the magic bit for WebKit */
+  /* for WebKit */
   display: none;
 }

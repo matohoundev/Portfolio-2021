@@ -21,7 +21,7 @@
 }
 
 .Lost {
-    height: 100vh; width: 100vw;
+    height: $max-height-vh ; width: $max-width-vw;
     padding: 15vh 0 0 50px;
     @extend %notFound-plan;
     background-image: linear-gradient(135deg, #5d0422 0%, #5d0422 40%,  #a10237 40%,#a10237 75%, #5d0422 75%, #5d0422 100%);
@@ -32,11 +32,11 @@
 .Lost p {
     max-width: 520px;
     margin: 20px 0 40px 0;
-    font-size: 18px;
+    font-size: $sz9;
 }
 
 .Lost button a{
-    font-size: 18px;
+    font-size: $sz4;
     color: black;
     background-color: white;
     border-radius: 10px;
@@ -51,3 +51,16 @@
 .Lost h1, .Lost p, .Lost button {
     animation: fade 2s 1 ease-in-out;
 }
+
+@media screen and (min-width: 2560px) {
+    /* ordinateurs */
+    .Lost p {
+        font-size: $sz10;
+    }
+    
+    .Lost button a{
+        font-size: $sz8;
+        padding: 20px;
+    }
+
+}   

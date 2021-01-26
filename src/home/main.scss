@@ -6,19 +6,19 @@
     flex-direction: column;
     justify-content: center; 
     padding-left: 3%;
-    background-image: linear-gradient(45deg, #5d0422 0%, #5d0422 20%,#4B0019 20%,#4B0019 45%,#a10237 45%,#a10237 75%, $main-color 75%, $main-color 100%);
+    background-image: linear-gradient(45deg, $fourth-color 0%, $fourth-color 20%, $third-color 20%,$third-color 45%, $secondary-color 45%, $secondary-color 75%, $main-color 75%, $main-color 100%);
 }
 
 h1, h2 {
     color: $color-clear;
-    font-weight: lighter;
+    font-weight: $light;
 }
 h1 {
-    font-size: 2.188em;
+    font-size: $sz11;
 }
 
 h2 {
-    font-size: 1.563em;
+    font-size: $sz8;
 }
 
 .about {
@@ -37,14 +37,14 @@ h2 {
 @media screen and (min-width: 768px) {
     /* tablettes et ordinateurs */
     h1 {
-        font-size: 7.375em;
+        font-size: $sz18;
     }
     h2 {
-        font-size: 3.125em;
+        font-size: $sz14;
     }
     
     .about {
-        font-size: 1.5em;
+        font-size: $sz7;
     }
 
     }
@@ -52,7 +52,7 @@ h2 {
 @media screen and (min-width: 1024px) {
     /* tablettes et ordinateurs */
     .about {
-        font-size: 1.8em;
+        font-size: $sz9;
     }
 
     }
