@@ -14,12 +14,13 @@
     position: fixed;
     z-index: 5;
 }
-//absolute
 
 %notFound-plan {
     position: fixed;
     z-index: 7;
 }
+
+//absolute
 
 %first-plan {
     position: absolute;
@@ -32,7 +33,7 @@
 }
 
 %third-plan {
-    position: relative;
+    position: absolute;
     z-index: 2;
 }
 

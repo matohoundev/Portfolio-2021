@@ -23,12 +23,11 @@
 }
 
 .card-project {
-    height: $half-height-vh;
-    width: $half-width-vw;
-    max-width: 824px; 
     @extend %second-plan;
+    height: $half-height-vh; width: $half-width-vw;
+    max-width: 824px;  
     margin: 35vh 0 0 7%;
-    border-radius: 10px;
+    border-radius: $arrondi;
     background-size: cover;
     background-position: top;
 }
@@ -37,18 +36,11 @@
         animation: cardHover 0.8s 1 ease-in-out;
     }
 
-.col-mb { 
+.col-mb {
+    @extend %third-plan-r; 
     width: $max-width-vw;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    @extend %third-plan;
-}
-
-.slide-project { // slide d'animation
-    height: $max-height-vh;  
-    @extend %first-plan;
-    background-repeat: no-repeat;
+    display: flex; align-items: center;
+    overflow: hidden;   
 }
 
 @media only screen 
@@ -57,23 +49,22 @@
     and (min-height: 360px)
     and (max-height: 414px)
     and (orientation: landscape) {
-    /* smartphone landscapes */
+
     .col-preview em {
-        font-size: $sz2;
         margin-top: 21vh;
+        font-size: $sz2;   
     }
     
     .card-project {
-        width: 40vw;
         margin-top: 45vh;
+        width: 40vw; 
     }
     }
 
 @media screen and (min-width: 768px) {
-    /* tablettes et ordinateurs */
 
     .col-preview h3, .col-preview em {
-    padding: 15vh 0 0 7%;
+        padding: 15vh 0 0 7%;
 }
 
     .col-mb { 
@@ -83,21 +74,21 @@
     }
     
 @media screen and (min-width: 824px) {
-    /* tablettes et ordinateurs */
+
     .col-preview em {
         font-size: $sz8;
     }
     
     }
 
-    @media (min-device-width: 1024px) and (max-device-width: 1400px)and (orientation: landscape) {
-        /* tablettes */
-        .col-preview em {
-            margin-top: 11vh;
-        }
+@media (min-device-width: 1024px) and (max-device-width: 1400px) and (orientation: landscape) {
 
-        .card-project {
-            height: 45vh;
-        }
+    .col-preview em {
+        margin-top: 11vh;
+    }
 
-        }
+    .card-project {
+        height: 45vh;
+    }
+
+    }

@@ -4,7 +4,7 @@
 
 
 .col-preview .h3-acacia {
-    font-size: 4.563em;//regler le bail bizarre avec le texte
+    font-size: 4.563em;
     color: $color-clear;
 }
 
@@ -17,12 +17,12 @@
 }
 
 .svg-project-acacia { 
-    width: 650px; //800px a la fin
+    width: 650px; 
     margin: 6vh 0 0 -9vw;
     position: absolute;
 }
 
-.slide-acacia { // slide d'animation
+.slide-acacia { 
     background-image: linear-gradient(45deg, #5366DE 0%,#5366DE 10%, transparent 10%, transparent 100%); 
 }
 
@@ -31,13 +31,13 @@
 }
 
 @media screen and (min-width: 768px) {
-    /* tablettes et ordinateurs */
+
     .card-acacia {
         background-image: url("../../../assets/card-projects/acacia-tablette.jpg");
     }
 
     .svg-project-acacia { 
-        width: 800px; //800px a la fin
+        width: 800px; 
     }
 
 }
@@ -54,14 +54,13 @@
     }
 
 @media screen and (min-width: 1224px) {
-    /* ordinateurs */
     
     .card-acacia {
         background-image: url("../../../assets/card-projects/acacia.jpg");
     }
     
     .svg-project-acacia { 
-        width: 45vw; //800px a la fin
+        width: 45vw; 
     }
     
     .slide-acacia-2 {

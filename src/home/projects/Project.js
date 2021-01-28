@@ -27,7 +27,7 @@ const Project = props => {
     return (
         <div id="project" className="section">
 
-            <div className={`slide-project ${props.cls_slide}`}
+            <div className={`slide-base ${props.cls_slide}`}
                 data-aos="project-slide-f"
             ></div>
 

@@ -1,155 +1,130 @@
 @import '../App.scss';
-@import './scss\ mission/rainyday.scss';
-@import './scss\ mission/figurtoys.scss';
-@import './scss\ mission/portfolio.scss';
-@import './scss\ mission/acacia.scss';
+@import './img\ mission/rainyday.scss';
+@import './img\ mission/figurtoys.scss';
+@import './img\ mission/portfolio.scss';
+@import './img\ mission/acacia.scss';
 
 .mission {
-    font-family: "manrope", Helvetica, sans-serif;
     overflow: hidden;
-    background-image: linear-gradient(135deg, $color-clear 0%, $color-clear 24%, $main-color 24%, #a10237 45%, $color-clear 45%, $color-clear 100%);
+    background-image: linear-gradient(135deg, $color-clear 0%, $color-clear 24%, $main-color 24%, $secondary-color 45%, $color-clear 45%, $color-clear 100%);
 }
 
 .mission strong {
     padding-bottom: 8px;
 }
 
-.head-mission {
-    height: $max-height-vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .head-mission {
+        height: $max-height-vh;
+        display: flex; justify-content: center; align-items: center;
+    }
 
-.head-mission h3 {
-    font-size: $sz15;
-}
+    .head-mission h3 {
+        font-size: $sz15;
+    }
 
 .head-mission-img {
     height: $half-height-vh;
 }
 
-.main-mission {//on va voir si c'est vraiment nécessaire
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main-mission {
     padding: 4% 0;
+    display: flex; flex-direction: column; align-items: center;
 }
 
     .citation-mission {
-        font-size: $sz11;
         padding:  0 4%;
+        font-size: $sz11;
+        
     }
 
         q::first-line {
             color: $color-clear;
         }
 
-.synopsis {
-    height: $half-height-vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: $text-justify;
-    padding: 0 5%;
-    font-size: $sz4;
-}
+    .synopsis {
+        height: $half-height-vh;
+        display: flex; flex-direction: column; justify-content: center; text-align: justify;
+        padding: 0 5%;
+        font-size: $sz4;
+    }
 
     .synopsis strong {
         color: white;
     }
 
-.half-mission-img {
-    height: 75vh;
-    max-height: 987px;
-    width: $max-width-percent;
-    display: flex;
-    justify-content: center; 
-}
-
-.cd-1 {
-    width: 95%;
-    max-width: 1474px;
-    border-radius: $border-xs;
-}
-
-.about-mission {
-    height: $half-height-vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: $text-justify;
-    padding: 0 5%;
-    font-size: $sz4;
-}
-
-.github { 
-    padding: 7px;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-    font-size: $sz1;
-    font-family: "abril", Helvetica, sans-serif;
-}
-
-    .github:hover {
-        animation: cardHover 0.8s 1 ease-in-out;
+    .half-mission-img {
+        height: 75vh; width: $max-width-percent;
+        max-height: 987px;    
+        display: flex;
+        justify-content: center; 
     }
 
-.card-mission {
-    width: 100%;
-}
+        .cd-1 {
+            width: 95%;
+            max-width: 1474px;
+            border-radius: $arrondi;
+        }
 
-.cd-img{
-    width: 100%;
-    margin: 20px 0;
-}
-
-.card-mission-img-type1 {
-    height: 60vh;
-}
-
-.card-mission-img-type2 {
-    height: 80vh;
-}
-
-.card-mission-img-type3 {
-    height: $half-height-vh;
-}
-
-.returnHome{
-    width: 100%;
-    margin: 0px 0 60px 0;
-    text-align: center;
-    font-size: $sz11;
-}
-
-@keyframes shake{
-    30% {
-        padding-right: 10px;
+    .about-mission {
+        height: $half-height-vh;
+        display: flex; flex-direction: column; justify-content: center; text-align: justify;
+        padding: 0 5%;
+        font-size: $sz4;
     }
 
-    60% {
-        padding-left: 10px;
+        .github { 
+            padding: 7px;
+            border-radius: $arrondi;
+            font-size: $sz1;
+            font-family: "abril", Helvetica, sans-serif;
+            color: white;
+            background-color: black;
+            
+        }
+
+        .github:hover {
+            animation: cardHover 0.8s 1 ease-in-out;
+        }
+
+    .card-mission {
+        width: $max-width-percent;
     }
 
-    100% {
-        padding-right: 0;
+        .cd-img{
+            width: $max-width-percent;
+            margin: 20px 0;
+        }
+
+        .card-mission-img-type1 {
+            height: 60vh;
+        }
+
+        .card-mission-img-type2 {
+            height: 80vh;
+        }
+
+        .card-mission-img-type3 {
+            height: $half-height-vh;
+        }
+
+    .returnHome{
+        width: $max-width-percent;
+        margin: 0px 0 60px 0;
+        text-align: center;
+        font-size: $sz11;
     }
-}
 
-.returnHome a{
-    font-family: "manrope-light", Helvetica, sans-serif;
-    color: black;
-}
+        .returnHome a{
+            color: black;
+        }
 
-.returnHome a:hover{
-    animation: shake 1s 1 ease;
-}
+        .returnHome a:hover{
+            animation: shake 1s 1 ease;
+        }
 
 
 @media screen and (min-width: 763px) {
-    /* tablettes et ordinateurs */
+
     .head-mission h3 {
         font-size: $sz17;
     }
@@ -171,50 +146,46 @@
     }
 
     .card-mission {
-        display: flex;
-        justify-content: center;
+        display: flex; justify-content: center;
     }
 
-    .card-part-one {
-        width: 45%;
-        margin-right: 5%;
-    }
+        .card-part-one {
+            width: 45%;
+            margin-right: 5%;
+        }
 
-        .card-mission-img-type1 {
-            height: 60vh;
-        }
-        
-        .card-mission-img-type2 {
-            height: 60vh;
-        }
+            .card-mission-img-type1 {
+                height: 60vh;
+            }
+            
+            .card-mission-img-type2 {
+                height: 60vh;
+            }
     
 
-    .card-part-two {
-        width: 45%;
-        display: flex;
-        align-items: center;
-    }
-    
-        .card-mission-img-type3 {
-            height: 80vh;
+        .card-part-two {
+            width: 45%;
+            display: flex; align-items: center;
         }
-
-    }
+    
+            .card-mission-img-type3 {
+                height: 80vh;
+            }
+}
 
 @media screen and (min-width: 1024px) {
-    /* ordinateurs */
-
-    .synopsis {
-        height: $half-height-vh;
-        padding: 0 40% 0 3%;
-    }
-
+    
     .main-mission {
         align-items: baseline;
     }
 
         .citation-mission {
             width: 68%;
+        }
+
+    .synopsis {
+            height: $half-height-vh;
+            padding: 0 40% 0 3%;
         }
 
     .about-mission {
@@ -246,7 +217,7 @@
 }   
 
 @media screen and (min-width: 2560px) {
-    /* ordinateurs */
+
     .synopsis, .about-mission {
         font-size: $sz12;
     }

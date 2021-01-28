@@ -24,11 +24,6 @@ $sz1: 0.875em; // 14px
 $bold: bold;
 $light: lighter;
 
-/*text-align*/
-
-$text-justify: justify;
-$text-center: center;
-
 /*Color Base*/
 
 $main-color:#E3004C;
@@ -39,10 +34,6 @@ $fourth-color: #5d0422;
 $color-dark:#000000;
 $color-clear:#ffffff;
 $colorT: transparent;
-
-/*Color for projects*/
-
-
 
 /*Size screen*/
 
@@ -56,21 +47,7 @@ $max-width-percent: 100%;
 $half-width-vw: 50vw;
 $half-width-percent: 50%;
 
-/*padding*/
-
-$p:20px;
-
-$pt:20;
-$pb:20;
-$pr:20;
-$pl:20;
-
-$prl:20;
-$ptb:20;
-
-/*margin*/
-
-
 /*Border*/
 
-$border-xs: 10px;
+$arrondi: 10px;
+$round: 1em;

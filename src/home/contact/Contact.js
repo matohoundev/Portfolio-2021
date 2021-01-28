@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from 'react';
-import Tech from '../slideshow/Tech';
+import Tech from './skills/Tech';
 import './contact.scss'
 
 export class Contact extends Component {
     render() {
         return (
             <Fragment>
-                <div className="slide-project slide-contact"
+                <div className="slide-base slide-contact"
                     data-aos="contact-slide"
                 ></div>
 

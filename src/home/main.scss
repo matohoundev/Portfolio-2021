@@ -1,11 +1,9 @@
 @import '../App.scss';
-@import './slideshow/anim_slide.scss';
+@import './Effect/globalEffect';
 
 .head-Main {
-    display:flex;
-    flex-direction: column;
-    justify-content: center; 
     padding-left: 3%;
+    display:flex; flex-direction: column; justify-content: center;  
     background-image: linear-gradient(45deg, $fourth-color 0%, $fourth-color 20%, $third-color 20%,$third-color 45%, $secondary-color 45%, $secondary-color 75%, $main-color 75%, $main-color 100%);
 }
 
@@ -13,6 +11,7 @@ h1, h2 {
     color: $color-clear;
     font-weight: $light;
 }
+
 h1 {
     font-size: $sz11;
 }
@@ -22,20 +21,18 @@ h2 {
 }
 
 .about {
-    display: flex;
-    align-items: center;
-    text-align: $text-justify;
     padding: 0 5%;
+    display: flex; align-items: center; text-align: justify;
     color: white;
-    background-image: linear-gradient(45deg, $main-color 0%, $main-color 20%,#4B0019 20%,#a10237 80%, $main-color 80%, $main-color 100%);
+    background-image: linear-gradient(45deg, $main-color 0%, $main-color 20%,$third-color 20%,$secondary-color 80%, $main-color 80%, $main-color 100%);
 }
 
-    .about-plus {
-        font-family: "manrope", Arial, Helvetica, sans-serif;
-    }
+.about-plus {
+    font-weight: $bold;
+}
 
 @media screen and (min-width: 768px) {
-    /* tablettes et ordinateurs */
+    
     h1 {
         font-size: $sz18;
     }
@@ -50,17 +47,15 @@ h2 {
     }
 
 @media screen and (min-width: 1024px) {
-    /* tablettes et ordinateurs */
+
     .about {
         font-size: $sz9;
     }
 
     }
 
-
-
 @media screen and (min-width: 1224px) {
-    /* ordinateurs */
+
     .about {
         padding: 0 20%;
     }

@@ -3,7 +3,7 @@
 //////// Portfolio customization /////////
 
 .col-preview .h3-folio {
-    font-size: 3.8em;//regler le bail bizarre avec le texte
+    font-size: 3.8em;
     color: $color-clear;
 }
 
@@ -16,12 +16,12 @@
 }
 
 .svg-project-folio { 
-    width: 650px; //800px a la fin
+    width: 650px; 
     margin: 12vh 0 0 -9vw;
     position: absolute;
 }
 
-.slide-folio { // slide d'animation
+.slide-folio {
     background-image: linear-gradient(45deg, #DD5C5C 0%, #DD5C5C 10%, transparent 10%, transparent 100%);
 }
 
@@ -30,7 +30,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    /* tablettes et ordinateurs */
 
     .col-preview .b-folio, .mark-tech-folio {
         color: $color-clear;
@@ -41,19 +40,18 @@
     }
 
     .svg-project-folio { 
-        width: 800px; //800px a la fin
+        width: 800px; 
     }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    /* Styles pour cette Media Queries */
+
     .svg-project-folio { 
         margin-right: -23vw;
     }
     }
 
 @media screen and (min-width: 1224px) {
-    /* ordinateurs */
     
     .col-preview .b-folio, .mark-tech-folio{
         color: #DD5C5C;
@@ -64,7 +62,7 @@
     }
     
     .svg-project-folio { 
-        width: 40vw; //800px a la fin
+        width: 40vw; 
     }
     
     .slide-folio-2 {

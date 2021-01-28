@@ -84,7 +84,7 @@ export class Main extends Component {
 
                 cls_head_img:"figurLand",
                 citation:"Pourquoi toutes ces figurines ? Why not",
-                synopsis: "FigurToys est une Boutique fictif en ligne de Figurines de collections et produits Geek, 100% authentique sous licence officiel, Dérivé du Cinéma, Manga, Musique, Horreur, Jeux ...",
+                synopsis: "FigurToys est une Boutique fictif en ligne de Figurines de collections et produits Geek authentique sous licence officiel, Dérivé du Cinéma, Manga, Musique, Horreur, Jeux ...",
                 cls_half_img:"figurHalf",
                 mission: "Création d'une boutique Wordpress avec le thème Astra et WooCommerce pour la gestion du panier. ",
                 cls_img:"figurCard",
@@ -171,11 +171,9 @@ export class Main extends Component {
         return (
             <ReactFullpage
 
-                licenseKey={'ne pas oublier de la prendre après'}
+                licenseKey={'KEY_WAIT'}
 
                 scrollBar={true}
-
-                // scrollingSpeed={200}
 
                 render={({ state, fullpageApi }) => {
 
@@ -204,7 +202,7 @@ export class Main extends Component {
                                     data-aos="about-slide"
                                     data-aos-duration="2500"
                                 >
-                                    <p data-aos="fade"><span class="about-plus">"Votre projet est le mien"</span> c'est ainsi que j'envisage tout projet votre motivation est la mienne et c'est ce qui me permet d'atteindre un rendu fidèle au design. Développer de manière agile et polir chaque détails avec la soif d'innover ce sont mes valeurs.</p>
+                                    <p data-aos="fade"><span className="about-plus">"Votre projet est le mien"</span> c'est ainsi que j'envisage une mission votre motivation est la mienne et c'est ce qui me permet d'atteindre un rendu fidèle au design. Développer de manière agile et polir chaque détail avec la soif d'innover ce sont mes valeurs.</p>
                                 </section>
 
                                 {this.state.projects.map(projet => (
