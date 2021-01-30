@@ -45,7 +45,7 @@ export class Mission extends Component {
                     </h3>
                 </header>
 
-                <div className={`head-mission-img parallax ${props.cls_head_img}`} alt=""></div>
+                <div className={`head-mission-img parallax ${props.cls_head_img}`} alt={props.banner}></div>
 
                 <section className="main-mission">
                     <q className="citation-mission"
@@ -66,7 +66,7 @@ export class Mission extends Component {
                         data-aos="fade-up"
                         data-aos-duration="800" 
                     >
-                        <div className={`cd-1 parallax ${props.cls_half_img}`} alt=""></div>
+                        <div className={`cd-1 parallax ${props.cls_half_img}`} alt={props.img_project}></div>
                     </div> 
 
                     <div className="about-mission" 
@@ -84,8 +84,8 @@ export class Mission extends Component {
                             data-aos="fade-right" 
                             data-aos-duration="800"
                         >
-                            <div className={`cd-img card-mission-img-type1 parallax ${props.cls_img}`}></div>
-                            <div className={`cd-img card-mission-img-type2 parallax ${props.cls_img}`}></div>
+                            <div className={`cd-img card-mission-img-type1 parallax ${props.cls_img}`} alt={props.img_project_pllx}></div>
+                            <div className={`cd-img card-mission-img-type2 parallax ${props.cls_img}`} alt={props.img_project_pllx_2}></div>
                             
                         </div>
                         
@@ -93,7 +93,7 @@ export class Mission extends Component {
                             data-aos="fade-left"
                             data-aos-duration="800"
                         >
-                            <div className={`cd-img card-mission-img-type3 parallax ${props.cls_img}`}></div>
+                            <div className={`cd-img card-mission-img-type3 parallax ${props.cls_img}`} alt={props.img_project_pllx_3}></div>
                         </div>     
                     </div>
                 </section>

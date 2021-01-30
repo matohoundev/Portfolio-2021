@@ -3,7 +3,6 @@
 
 .head-Main {
     padding-left: 3%;
-    display:flex; flex-direction: column; justify-content: center;  
     background-image: linear-gradient(45deg, $fourth-color 0%, $fourth-color 20%, $third-color 20%,$third-color 45%, $secondary-color 45%, $secondary-color 75%, $main-color 75%, $main-color 100%);
 }
 
@@ -22,7 +21,7 @@ h2 {
 
 .about {
     padding: 0 5%;
-    display: flex; align-items: center; text-align: justify;
+    text-align: justify;
     color: white;
     background-image: linear-gradient(45deg, $main-color 0%, $main-color 20%,$third-color 20%,$secondary-color 80%, $main-color 80%, $main-color 100%);
 }
@@ -34,7 +33,7 @@ h2 {
 @media screen and (min-width: 768px) {
     
     h1 {
-        font-size: $sz18;
+        font-size: $sz16;
     }
     h2 {
         font-size: $sz14;
@@ -47,6 +46,10 @@ h2 {
     }
 
 @media screen and (min-width: 1024px) {
+
+    h1 {
+        font-size: $sz18;
+    }
 
     .about {
         font-size: $sz9;

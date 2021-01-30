@@ -18,6 +18,11 @@ const Project = props => {
                 cls_half_img: props.cls_half_img,
                 mission: props.mission,
                 cls_img: props.cls_img,
+                alt_banner: props.alt_banner,
+                img_project: props.img_project,
+                img_project_pllx: props.img_project_pllx,
+                img_project_pllx_1: props.img_project_pllx_1,
+                img_project_pllx_2: props.img_project_pllx_2,  
                 github: props.github
             }
         ])
@@ -57,7 +62,7 @@ const Project = props => {
                                     mission
                                 }
                             }}>
-                            <div className={`card-project ${props.cls_card}`}></div>
+                            <div className={`card-project ${props.cls_card}`} alt={props.alt_card}></div>
                         </Link>
                         ))}
 
@@ -67,11 +72,6 @@ const Project = props => {
                     <img src={props.svg} alt={props.alt_svg} className={props.cls_svg} data-aos="img-slide-left" />
                     {props.project_id === 1 || 2 ?
                         <img src={props.svg_2} alt={props.alt_svg_2} className={props.cls_svg_2} data-aos="img-slide-right" />
-                        :
-                        null
-                    }
-                    {props.project_id === 2 ?
-                        <img src={props.svg_3} alt={props.alt_svg_3} className={props.cls_svg_3} data-aos="img-slide-up" />
                         :
                         null
                     }

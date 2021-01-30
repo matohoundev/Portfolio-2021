@@ -11,7 +11,6 @@ import readyTwo from '../assets/svg-projects/readyTwo.svg';
 
 //FigurToys
 import sephi from '../assets/svg-projects/sephi.svg';
-import epaule from '../assets/svg-projects/epaule.svg';
 import cloud from '../assets/svg-projects/cloud.svg';
 
 //Portfolio 2020
@@ -40,6 +39,7 @@ export class Main extends Component {
                 tech: "React.js - Bootstrap -Javascript - ",
                 tech_other_half: "Firebase",
                 cls_card: "card-rainy",
+                alt_card: "image du projet RainyDay",
                 svg:ready,
                 svg_2:readyTwo,
                 alt_svg:"Anime kimetsu no yaiba(Demon Slayer) background black",
@@ -55,6 +55,11 @@ export class Main extends Component {
                 cls_half_img:"rainyHalf",
                 mission:"RainyDay est un projet personnelle entièrement crée par moi. Le projet rainyDay est actuellement en cours de création, une version bêta sera bientôt disponible et sans suivra une application mobile, en attendant vous pouvez suivre mes différents projet perso sur mon Github.",
                 cls_img:"rainyCard",
+                alt_banner: "Bannière Rainyday, étoiles rouges et bruns",
+                img_project: "Entête de RainyDay, Logo entourée d'étoiles et phrase d'accroche en dessous",
+                img_project_pllx: "premier parallax formant la page de profil d'un utilisateur",
+                img_project_pllx_1: "deuxième parallax formant la page de profil d'un utilisateur",
+                img_project_pllx_2: "troisième parallax formant la page de profil d'un utilisateur",              
                 github:"https://github.com/matohoundev?tab=repositories"
             },
             {
@@ -70,15 +75,13 @@ export class Main extends Component {
                 tech: "Wordpress - Astra - ",
                 tech_other_half: "WooCommerce",
                 cls_card: "card-figur",
+                alt_card: "image du projet FigurToys",
                 svg:sephi,
-                svg_2:epaule,
-                svg_3:cloud,
+                svg_2:cloud,
                 alt_svg:"Sephiroth",
-                alt_svg_2:"Épaulière sephiroth color pink",
-                alt_svg_3:"Cloud Strife de dos",
+                alt_svg_2:"Cloud Strife de dos",
                 cls_svg: "svg-project-figur",
                 cls_svg_2: "svg-project-figur-2",
-                cls_svg_3: "svg-project-figur-3",
                 
                 // Mission
 
@@ -88,6 +91,11 @@ export class Main extends Component {
                 cls_half_img:"figurHalf",
                 mission: "Création d'une boutique Wordpress avec le thème Astra et WooCommerce pour la gestion du panier. ",
                 cls_img:"figurCard",
+                alt_banner: "Bannière FigurToys, plusieurs figurines de Link(zelda)",
+                img_project: "Entête de FigurToys, figurine de cloud strife(final fantasy 7) et une indication pour accéder à son espace de vente",
+                img_project_pllx: "premier parallax formant la page About",
+                img_project_pllx_1: "deuxième parallax formant la page About",
+                img_project_pllx_2: "troisième parallax formant la page About",                
                 github:"https://github.com/matohoundev/Wordpress-FigurToys"
             },
             {
@@ -104,6 +112,7 @@ export class Main extends Component {
                 tech: "Bootstrap - Javascript  - Jquery - ",
                 tech_other_half: "Php",
                 cls_card: "card-folio",
+                alt_card: "image de mon Portfolio édition 2020",
                 svg:marvin,
                 alt_svg:"Atohoun marvin auteur du site (moi en gros)",
                 cls_svg: "svg-project-folio",
@@ -116,6 +125,11 @@ export class Main extends Component {
                 cls_half_img:"folioHalf",
                 mission:"L'édition 2020 de mon portfolio avait pour objectif d'offrir deux identités visuelle sur la même page via les différents interaction proposée, interaction qui au fur et à mesure modifiait l'apparence du site pour proposer une experience différente, le premier design était sobre et le second beaucoup plus colorée.",
                 cls_img:"folioCard",
+                alt_banner: "Bannière de mon Portfolio, mon entête avec mon nom écrit dessus et un court texte de présentation",
+                img_project: "Un aperçu d'un projet dans la section projet",
+                img_project_pllx: "premier parallax formant le portfolio dans son entièreté après animation",
+                img_project_pllx_1: "deuxième parallax formant le portfolio dans son entièreté après animation",
+                img_project_pllx_2: "troisième parallax formant le portfolio dans son entièreté après animation",                 
                 github:"https://github.com/matohoundev/Portfolio-2020"
             },
             {
@@ -131,6 +145,7 @@ export class Main extends Component {
                 tech: "Mvc - Materialize - Javascript ",
                 tech_other_half: "- Jquery - Php",
                 cls_card: "card-acacia",
+                alt_card: "image du projet Acacia",
                 svg:cuisto,
                 alt_svg:"chef cuistot cartoon",
                 cls_svg: "svg-project-acacia",
@@ -144,6 +159,11 @@ export class Main extends Component {
                 cls_half_img:"acaciaHalf",
                 mission:"Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
                 cls_img:"acaciaCard",
+                alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
+                img_project: "Page des produits du restaurants",
+                img_project_pllx: "premier parallax formant la page d'accueil",
+                img_project_pllx_1: "deuxième parallax formant la page d'accueil",
+                img_project_pllx_2: "troisième parallax formant la page d'accueil",                  
                 github:"https://github.com/matohoundev/Acacia"
             }
         ]
@@ -223,13 +243,11 @@ export class Main extends Component {
                                         cls_card={projet.cls_card}
                                         svg={projet.svg}
                                         svg_2={projet.svg_2}
-                                        svg_3={projet.svg_3}
                                         alt_svg={projet.alt_svg}
                                         alt_svg_2={projet.alt_svg_2}
                                         alt_svg_3={projet.alt_svg_3}
                                         cls_svg={projet.cls_svg}
                                         cls_svg_2={projet.cls_svg_2}
-                                        cls_svg_3={projet.cls_svg_3}
 
                                         //mission
 
@@ -239,7 +257,13 @@ export class Main extends Component {
                                         cls_half_img={projet.cls_half_img}
                                         mission={projet.mission}
                                         cls_img={projet.cls_img}
+                                        alt_card={projet.alt_card}
                                         github={projet.github}
+                                        alt_banner={projet.alt_banner}
+                                        img_project={projet.img_project}
+                                        img_project_pllx={projet.img_project_pllx}
+                                        img_project_pllx_2={projet.img_project_pllx_2} 
+                                        img_project_pllx_3={projet.img_project_pllx_3}
                                     />
                                 ))}
                             
