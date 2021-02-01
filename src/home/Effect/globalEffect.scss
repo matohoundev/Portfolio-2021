@@ -67,32 +67,11 @@
 /* PROJECT FOREGROUND SLIDE */
 
 [data-aos="project-slide-f"] {
-    width: 100%;
-    background-size: 3200%;
+    transform: translateX(0%);
     &.aos-animate {
-    width: 100%;
-    background-size: 0%;
-    visibility: hidden;
+    transform: translateX(-100%);
     }
-    
-    @media screen and (min-width: 768px) {
-
-        background-size: 2300%;
-        &.aos-animate {
-        background-size: 0%;
-        }
-    }   
-
-        @media screen and (min-width: 1400px) {
-
-            background-size: 1550%;
-            &.aos-animate {
-            background-size: 0%;
-            }
-        }
 }
-    
-
     
 /* PROJECT BACKGROUND SLIDE */
 
@@ -173,27 +152,26 @@
 }
 
 [data-aos="contact-slide"] {
-    background-size: 3200%;
+    transform: translateX(-50%);
     &.aos-animate {
-    background-size: 100%;
-    visibility: hidden;
+    transform: translateX(8%);
     }
-    
-    @media screen and (min-width: 768px) {
         
-        background-size: 2300%;
-        &.aos-animate {
-        background-size: 100%;
-        }
-    }   
-
-        @media screen and (min-width: 1400px) {
-
-            background-size: 1500%;
+        @media screen and (min-width: 768px) {
+            
+            transform: translateX(-60%);
             &.aos-animate {
-            background-size: 100%;
+            transform: translateX(5%);
             }
-        }
+        }   
+
+            @media screen and (min-width: 1400px) {
+
+                transform: translateX(-50%);
+                &.aos-animate {
+                transform: translateX(26%);
+                }
+            }
 }
 
 /* IMG SLIDE LEFT */

@@ -8,6 +8,7 @@ export class Contact extends Component {
             <Fragment>
                 <div className="slide-base slide-contact"
                     data-aos="contact-slide"
+                    data-aos-duration="1800"
                 ></div>
 
                 <div id="contact" className="contact-main bg-real" 

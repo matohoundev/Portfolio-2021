@@ -33,7 +33,8 @@ const Project = props => {
         <div id="project" className="section">
 
             <div className={`slide-base ${props.cls_slide}`}
-                data-aos="project-slide-f"
+                data-aos="project-slide-f" 
+                data-aos-duration="2700"
             ></div>
 
             <section className={`projet ${props.cls_name} ${props.cls_slide_2}`}

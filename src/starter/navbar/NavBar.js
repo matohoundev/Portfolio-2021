@@ -40,7 +40,7 @@ export function Navbar() {
                 <Anchor><Link href="/" className="navbar-brand" title="AM" /></Anchor>
                 {(toggleMenu || largeur > 1024) && (
                     <div className="navbar-collapse">
-                        <ul className="navbar-nav" data-aos="nav-fade-right" data-aos-duration="300" onClick={toggleNavSmallScreen}>
+                        <ul className="navbar-nav" data-aos="nav-fade-right" data-aos-duration="300">
                             <li>
                                 <Anchor><Link href="/#project" title="Projet" /></Anchor>
                             </li>

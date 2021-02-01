@@ -129,7 +129,20 @@ b {
   @extend %first-plan;
   height: $max-height-vh;  
   background-repeat: no-repeat;
+  width: 410%;
 }
+
+  @media screen and (min-width: 768px) {
+    .slide-base {
+      width: 310%;
+    }
+  }
+
+    @media screen and (min-width: 1400px) {
+      .slide-base {
+        width: 210%;
+      }
+    }
 
 .transition {
   width: $max-width-vw;

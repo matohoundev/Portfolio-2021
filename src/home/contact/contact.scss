@@ -1,9 +1,7 @@
 @import '../../App.scss';
 
 .slide-contact {
-    width: $max-width-percent;
-    background-position: right;
-    background-image: linear-gradient(45deg, transparent 0%, transparent 90%, #a10237 90%, #a10237 100%);
+    background-image: linear-gradient(225deg, #a10237 0%, #a10237 60%, transparent 60%, transparent 100%);
 }
 
 .bg-real {
@@ -51,6 +49,11 @@
     }
 
 @media screen and (min-width: 1024px) {
+
+    
+    .slide-contact {
+        background-image: linear-gradient(225deg, #a10237 0%, #a10237 70%, transparent 70%, transparent 100%);
+    }
 
     .contact-main {
         height: 95vh;
