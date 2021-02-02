@@ -11,7 +11,7 @@ export class Contact extends Component {
                     data-aos-duration="1800"
                 ></div>
 
-                <div id="contact" className="contact-main bg-real" 
+                <div id="contact" className="contact-main bg-real"
                     data-aos="fade-right"
                 >
                     <h3>Démarrons un projet ensemble</h3>

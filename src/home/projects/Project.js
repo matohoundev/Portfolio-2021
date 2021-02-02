@@ -71,7 +71,7 @@ const Project = props => {
 
                 <div id="#" className="col-mb">
                     <img src={props.svg} alt={props.alt_svg} className={props.cls_svg} data-aos="img-slide-left" />
-                    {props.project_id === 1 || 2 ?
+                    {props.svg_2 ?
                         <img src={props.svg_2} alt={props.alt_svg_2} className={props.cls_svg_2} data-aos="img-slide-right" />
                         :
                         null

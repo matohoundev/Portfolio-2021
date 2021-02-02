@@ -45,9 +45,8 @@ nav .ant-anchor .navbar-brand a {
 }
 
 @media screen and (min-width: 1024px) {
-
+    
     .navbar-collapse {
-        width: 15%;
         position: initial;
     }
 
@@ -58,7 +57,8 @@ nav .ant-anchor .navbar-brand a {
 
         .navbar-nav {
             display: flex; 
-            flex-direction: row; justify-content: space-between; flex-wrap: wrap;
+            flex-direction: row; justify-content: space-between;
+            width: 250px;
         }
 
     .navbar-toggler {

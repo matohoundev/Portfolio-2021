@@ -38,7 +38,7 @@ export function Navbar() {
             { (toggleMenu) && (<div className="nav-bg" data-aos="nav-slide" data-aos-duration="300"></div>)}
             <nav>
                 <Anchor><Link href="/" className="navbar-brand" title="AM" /></Anchor>
-                {(toggleMenu || largeur > 1024) && (
+                {(toggleMenu || largeur > 1023) && (
                     <div className="navbar-collapse">
                         <ul className="navbar-nav" data-aos="nav-fade-right" data-aos-duration="300">
                             <li>

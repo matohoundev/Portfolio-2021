@@ -75,7 +75,7 @@ export class Mission extends Component {
                     >
                         <strong>Mission</strong>
                         <p>{props.mission}</p>
-                        <p>Technologies utilisées : {props.tech}</p>
+                        <em>Technologies utilisées : {props.tech}</em>
                         <a href={props.github} target="_blank" rel="noreferrer"><button className="github">Github</button></a>
                     </div>
 
