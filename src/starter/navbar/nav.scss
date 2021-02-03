@@ -45,7 +45,11 @@ nav .ant-anchor .navbar-brand a {
 }
 
 @media screen and (min-width: 1024px) {
-    
+
+    .nav-bg {
+        display: none;
+    }
+
     .navbar-collapse {
         position: initial;
     }

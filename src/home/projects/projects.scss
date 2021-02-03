@@ -4,6 +4,10 @@
 @import './customer/figurToys.scss';
 @import './customer/acacia.scss';
 
+.slide-project {
+    @extend %first-plan;
+}
+
 .projet {
     height: $max-height-vh;
     display: flex;

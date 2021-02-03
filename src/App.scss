@@ -126,7 +126,6 @@ b {
 /* Transition Page */
 
 .slide-base {
-  @extend %first-plan;
   height: $max-height-vh;  
   background-repeat: no-repeat;
   width: 410%;

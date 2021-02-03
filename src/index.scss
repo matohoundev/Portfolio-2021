@@ -14,6 +14,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html{
+  /* for Firefox */
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar { 
+  /* for WebKit */
+  display: none;
+}
+
 /* color selection */
 
 ::selection {
@@ -56,12 +66,3 @@ button {
   background: #a10237;
 }
 
-body{
-  /* for Firefox */
-  scrollbar-width: none;
-}
-
-body::-webkit-scrollbar { 
-  /* for WebKit */
-  display: none;
-}

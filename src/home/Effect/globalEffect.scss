@@ -174,7 +174,18 @@
             }
 }
 
-/* IMG SLIDE LEFT */
+/*POSITION RESET*/
+
+[data-aos="position-reset"] {
+    position: relative;
+    z-index: 1;
+    &.aos-animate {
+    position: relative;
+    z-index: 4;
+    }
+}
+
+/* Mission IMG SLIDE LEFT */
 
 [data-aos="img-slide-left"] {
     transform: translateX(5%);
@@ -183,7 +194,7 @@
     }
 }
 
-/* IMG SLIDE RIGHT */
+/* Mission IMG SLIDE RIGHT */
 
 [data-aos="img-slide-right"] {
     transform: translateX(-5%);
@@ -192,7 +203,7 @@
     }
 }
 
-/* IMG SLIDE UP */
+/* Mission IMG SLIDE UP */
 
 [data-aos="img-slide-up"] {
     transform: translateY(5%);
