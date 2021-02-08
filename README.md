@@ -1,5 +1,3 @@
-[![Header](https://raw.githubusercontent.com/matohoundev/Portfolio-2021/main/public/Atohoun Marvin - Développeur front-end - Portfolio - localhost.png "Header")](https://atohoun-marvin.fr/)
-
 # Bonjour !
 
 Je suis ATOHOUN Marvin, un développeur Front-end français passionné et naturellement curieux , avec un dévouement pour l'interaction et l'expérience utilisateur. J'aime relever de nouveaux défis, découvrir les technologies émergentes, explorer des solutions innovantes.
