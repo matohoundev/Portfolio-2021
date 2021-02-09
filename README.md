@@ -1,15 +1,14 @@
-[![Header](https://www.atohoun-marvin.fr/%PUBLIC_URL%/Atohoun Marvin - Développeur front-end - Portfolio - localhost.png "Header")](https://atohoun-marvin.fr/)
-
 # Bonjour !
 
-Je suis ATOHOUN Marvin, un développeur Front-end français passionné et naturellement curieux , avec un dévouement pour l'interaction et l'expérience utilisateur. J'aime relever de nouveaux défis, découvrir les technologies émergentes, explorer des solutions innovantes.
+Je suis ATOHOUN Marvin, un développeur Front-end français passionné et naturellement curieux , avec un intérêt pour l'interaction et l'expérience utilisateur. J'aime relever de nouveaux défis, découvrir les technologies émergentes et explorer des solutions innovantes.
 
 ## Lancer le projet
 
 Exécutez `npm i` pour installer toutes les dépendances
+
 Exécutez `npm start` pour démarrer le portfolio
 
-## Projects
+## Projet
 
 • [Atohoun Marvin Portfolio 2021](https://atohoun-marvin.fr/)
 
@@ -19,7 +18,7 @@ Exécutez `npm start` pour démarrer le portfolio
 
 • [Acacia](https://github.com/matohoundev/Acacia)
 
-## Contacts
+## Contact
 
 • [Portfolio](https://atohoun-marvin.fr/)
 
