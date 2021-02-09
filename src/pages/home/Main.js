@@ -48,7 +48,7 @@ const Main = () => {
               data-aos-duration="2500"
             >
               <h1 data-aos="fade-right">ATOHOUN MARVIN</h1>
-              <h2 data-aos="fade-right">Front-end Developper</h2>
+              <h2 data-aos="fade-right">FullStack Developper</h2>
             </header>
 
             <section
