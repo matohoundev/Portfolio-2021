@@ -5,6 +5,7 @@ Je suis ATOHOUN Marvin, un développeur Front-end français passionné et nature
 ## Lancer le projet
 
 Exécutez `npm i` pour installer toutes les dépendances
+
 Exécutez `npm start` pour démarrer le portfolio
 
 ## Projects
