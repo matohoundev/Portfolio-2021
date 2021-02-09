@@ -7,8 +7,12 @@
     color: $color-clear;
 }
 
-.col-preview .b-figur, .mark-tech-figur{
+.col-preview .b-figur{
     color: #d8115d;
+}
+
+.mark-tech-figur{
+    color: $color-clear; 
 }
 
 .card-figur {
@@ -35,7 +39,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .col-preview .b-figur, .mark-tech-figur {
+    .col-preview .b-figur {
         color: $color-clear;
     }
 
