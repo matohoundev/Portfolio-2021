@@ -191,7 +191,7 @@ export class Main extends Component {
         return (
             <ReactFullpage
 
-                licenseKey={'KEY_WAIT'}
+                licenseKey={'iH#FNbQ%c2'}
 
                 scrollBar={true}
 
