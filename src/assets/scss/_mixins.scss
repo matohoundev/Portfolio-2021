@@ -8,3 +8,19 @@
 // }
 
 // @include absolute-el(50%,0,0,50%,-50%,-50%);
+
+// @mixin heading-shadow{
+//       text-shadow: .55rem .55rem #15DEA5;
+//     }
+    
+// @include heading-shadow;
+
+// @mixin heading-shadow($colour){
+//       text-shadow: .55rem .55rem $colour;
+//     }
+
+// @include heading-shadow(#fff);
+
+// @mixin heading-shadow($colour: $colour-primary){
+//       text-shadow: .55rem .55rem $colour;
+//     }
