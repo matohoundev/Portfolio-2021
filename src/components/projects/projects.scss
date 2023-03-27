@@ -1,0 +1,83 @@
+.slide-project {
+  @extend %first-plan;
+}
+
+.projet {
+  height: $max-height-vh;
+  display: flex;
+}
+
+.col-preview h3 {
+  @extend %second-plan;
+  padding: 15vh 0 0 7%;
+}
+
+.col-preview em {
+  @extend %second-plan;
+  margin-top: 10vh;
+  padding: 17vh 0 0 7%;
+  font-size: $sz3;
+  color: $color-clear;
+}
+
+.card-project {
+  @extend %second-plan;
+  height: $half-height-vh;
+  width: $half-width-vw;
+  max-width: 824px;
+  margin: 35vh 0 0 7%;
+  border-radius: $arrondi;
+  background-size: cover;
+  background-position: top;
+}
+
+.card-project:hover {
+  animation: cardHover 0.8s 1 ease-in-out;
+}
+
+.col-mb {
+  @extend %third-plan-r;
+  width: $max-width-vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 823px) and (min-height: 360px) and (max-height: 414px) and (orientation: landscape) {
+  .col-preview em {
+    margin-top: 21vh;
+    font-size: $sz2;
+  }
+
+  .card-project {
+    margin-top: 45vh;
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .col-preview h3,
+  .col-preview em {
+    padding: 15vh 0 0 7%;
+  }
+
+  .col-mb {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 824px) {
+  .col-preview em {
+    font-size: $sz8;
+  }
+}
+
+@media (min-device-width: 1024px) and (max-device-width: 1400px) and (orientation: landscape) {
+  .col-preview em {
+    margin-top: 11vh;
+  }
+
+  .card-project {
+    height: 45vh;
+  }
+}

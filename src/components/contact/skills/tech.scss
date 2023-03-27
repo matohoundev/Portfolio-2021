@@ -1,0 +1,27 @@
+.Tech {
+  width: max-content;
+  margin-top: 1%;
+  border-radius: 10px;
+  background-color: #a10237;
+}
+
+.Tech mark {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  /* tablettes et ordinateurs */
+  .Tech {
+    padding: 5px 15px;
+    word-spacing: 25px;
+    box-shadow: inset 0.1em -0.1em rgb(98, 2, 34);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* tablettes et ordinateurs */
+  .Tech {
+    word-spacing: 40px;
+    margin-top: 5%;
+  }
+}

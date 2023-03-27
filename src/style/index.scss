@@ -1,0 +1,335 @@
+// SCSS import
+@import "../assets/scss/variables";
+@import "../assets/scss/placeholders";
+// starter-kit
+@import "../starter/navbar/navbar";
+@import "../starter/footer/footer";
+// pages-kit
+@import "../pages/home/main.scss";
+@import "../pages/mission/mission.scss";
+@import "../pages/404/notfound.scss";
+// components-kit
+@import "../components/projects/projects.scss";
+@import "../components/contact/contact.scss";
+@import "../components/contact/skills/tech.scss";
+
+// components-kit custom home
+@import "../components/projects/customer/portfolio.scss";
+@import "../components/projects/customer/figurToys.scss";
+@import "../components/projects/customer/acacia.scss";
+@import "../components/projects/customer/rainyDay.scss";
+
+// effects-kit
+@import "../assets/animation/globalEffect";
+
+//fonts theme websites
+
+@font-face {
+  font-family: "abril";
+  font-display: swap;
+  src: url("../assets/webfonts/Abril/AbrilFatface-Regular.woff2")
+      format("woff2"),
+    url("../assets/webfonts/Abril/AbrilFatface-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "manrope";
+  font-display: swap;
+  src: url("../assets/webfonts/Manrope/Manrope-VariableFont_wght.woff2")
+      format("woff2"),
+    url("../assets/webfonts/Manrope/Manrope-VariableFont_wght.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "abril";
+  font-display: swap;
+  src: url("../assets/webfonts/Abril/AbrilFatface-Regular.woff2")
+      format("woff2"),
+    url("../assets/webfonts/Abril/AbrilFatface-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "manrope";
+  font-display: swap;
+  src: url("../assets/webfonts/Manrope/Manrope-VariableFont_wght.woff2")
+      format("woff2"),
+    url("../assets/webfonts/Manrope/Manrope-VariableFont_wght.woff")
+      format("woff");
+}
+
+//fonts projects
+
+@font-face {
+  font-family: "newyorker";
+  font-display: swap;
+  src: url("../assets/webfonts-project/NewYorker/newyrken.woff2")
+      format("woff2"),
+    url("../assets/webfonts-project/NewYorker/newyrken.woff") format("woff");
+}
+@font-face {
+  font-family: "newyorker2";
+  font-display: swap;
+  src: url("../assets/webfonts-project/NewYorker/newyorkr.woff2")
+      format("woff2"),
+    url("../assets/webfonts-project/NewYorker/newyorkr.woff") format("woff");
+}
+@font-face {
+  font-family: "neon";
+  font-display: swap;
+  src: url("../assets/webfonts-project/neon/neon2.woff2") format("woff2"),
+    url("../assets/webfonts-project/neon/neon2.woff") format("woff");
+}
+@font-face {
+  font-family: "limelight";
+  font-display: swap;
+  src: url("../assets/webfonts-project/Limelight/Limelight-Regular.woff2")
+      format("woff2"),
+    url("../assets/webfonts-project/Limelight/Limelight-Regular.woff")
+      format("woff");
+}
+
+// img custom mission
+
+// rainDay
+.rainyLand {
+  background-image: url("../assets/img-mission/rainyday/rainyLand.jpg");
+}
+
+.rainyHalf {
+  background-image: url("../assets/img-mission/rainyday/RainyDay-users-tablette.jpg");
+}
+
+.rainyCard {
+  background-image: url("../assets/img-mission/rainyday/RainyDay-mobile2.jpg");
+}
+
+// figurToys
+
+.figurLand {
+  background-image: url("../assets/img-mission/figurtoys/figurLand.jpg");
+}
+
+.figurHalf {
+  background-image: url("../assets/img-mission/figurtoys/figur-users-tablette.jpg");
+}
+
+.figurCard {
+  background-image: url("../assets/img-mission/figurtoys/figur-mobile2.jpg");
+}
+
+// acacia
+
+.acaciaLand {
+  background-image: url("../assets/img-mission/acacia/acaciaLand2.jpg");
+}
+
+.acaciaHalf {
+  background-image: url("../assets/img-mission/acacia/acacia-users-tablette.jpg");
+}
+
+.acaciaCard {
+  background-image: url("../assets/img-mission/acacia/acacia-mobile2.jpg");
+}
+
+// portfolio
+
+.folioLand {
+  background-image: url("../assets/img-mission/portfolio/folioLand.jpg");
+}
+
+.folioHalf {
+  background-image: url("../assets/img-mission/portfolio/folio-users-tablette.jpg");
+}
+
+.folioCard {
+  background-image: url("../assets/img-mission/portfolio/folio-mobile2.jpg");
+}
+
+/* reset */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  /* for Firefox */
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  /* for WebKit */
+  display: none;
+}
+
+/* color selection */
+
+::selection {
+  background-color: #e3004c;
+}
+
+/* delete style button */
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/*Fullpage reset*/
+.section {
+  overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: #e3004c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a10237;
+}
+
+/*Fonts Family*/
+
+h1 {
+  font-family: "abril", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+h2,
+.email,
+.Tech p,
+.about p,
+.Lost p,
+.Lost button {
+  font-family: "manrope", "Open Sans", Helvetica, sans-serif;
+}
+
+h3,
+nav {
+  font-family: "abril", "manrope", "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+p,
+strong,
+em,
+.about-plus,
+.mission {
+  font-family: "manrope", "Open Sans", sans-serif, Arial, Helvetica;
+}
+
+.Tech mark {
+  font-family: "abril", Arial, "Open Sans", Helvetica, sans-serif;
+}
+
+.returnHome a {
+  font-family: "manrope", Helvetica, sans-serif;
+}
+
+// delete decoration
+
+a {
+  text-decoration: none;
+}
+
+a :hover {
+  text-decoration: none;
+}
+
+mark {
+  background: transparent;
+}
+
+b {
+  font-weight: lighter;
+}
+
+/* Fonts for Projects */
+
+.h3-rainy {
+  font-family: "newyorker", Arial, Helvetica, sans-serif;
+}
+
+.h3-figur {
+  font-family: Arial, "newyorker", Helvetica, sans-serif;
+}
+
+.h3-folio {
+  font-family: "neon", "newyorker", Arial, Helvetica, sans-serif;
+}
+
+.h3-acacia {
+  font-family: "limelight", Arial, Helvetica, sans-serif;
+}
+
+.b-rainy,
+.b-rainy-md {
+  font-family: "newyorker2", Arial, Helvetica, sans-serif;
+}
+
+/*Management Parallax*/
+
+.parallax {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/* Transition Page */
+
+.slide-base {
+  height: $max-height-vh;
+  background-repeat: no-repeat;
+  width: 410%;
+}
+
+@media screen and (min-width: 768px) {
+  .slide-base {
+    width: 310%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .slide-base {
+    width: 210%;
+  }
+}
+
+.transition {
+  width: $max-width-vw;
+  height: $max-height-vh;
+  @extend %transition-plan;
+  background-color: $third-color;
+}
+
+// delete watermark fullpage
+
+.fp-watermark {
+  display: none;
+}

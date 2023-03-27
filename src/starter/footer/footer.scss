@@ -1,46 +1,37 @@
-@import '../../App.scss';
-
 .footer {
-    @extend %first-plan-r;
-    width: 100%;
-    height: 6%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #5d0422;
-    color: white;
+  @extend %first-plan-r;
+  width: 100%;
+  height: 6%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5d0422;
+  color: white;
 }
 
 .icons {
-    padding-top: 15%;
-    width: 30px;
+  padding-top: 15%;
+  width: 30px;
 }
 
-@media only screen 
-    and (min-height: 320px)
-    and (max-height: 414px)
-    and (orientation: landscape) {
+@media only screen and (min-height: 320px) and (max-height: 414px) and (orientation: landscape) {
+  .footer {
+    height: 10%;
+  }
 
-        .footer {
-            height: 10%;
-        }
-    
-        .icons {
-            width: 20px;
-        }
-    }
+  .icons {
+    width: 20px;
+  }
+}
 
 @media screen and (min-width: 768px) {
-
-    .icons {
-        width: 30px;
-    }
-    }
+  .icons {
+    width: 30px;
+  }
+}
 
 @media screen and (min-width: 1024px) {
-
-    .footer {
-        height: 5%;
-    }
-        
-    }
+  .footer {
+    height: 5%;
+  }
+}

@@ -1,0 +1,99 @@
+//////// FigurToys customization /////////
+
+.col-preview .h3-figur {
+  font-size: 4.563em;
+  color: $color-clear;
+}
+
+.col-preview .b-figur {
+  color: #d8115d;
+}
+
+.mark-tech-figur {
+  color: $color-clear;
+}
+
+.card-figur {
+  background-image: url("../../../assets/card-projects/figurtoys-mobile.jpg");
+}
+
+.svg-project-figur {
+  @extend %first-plan;
+  display: none;
+}
+
+.svg-project-figur-2 {
+  width: 660px;
+  margin: 48.2vh 0 0 -16.3vw;
+}
+
+.slide-figur {
+  background-image: linear-gradient(
+    45deg,
+    #332832 0%,
+    #332832 60%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+
+.slide-figur-2 {
+  background-image: linear-gradient(
+    45deg,
+    #332832 0%,
+    #332832 27%,
+    #d8115d 27%,
+    #d8115d 71%,
+    transparent 71%,
+    transparent 100%
+  );
+}
+
+@media screen and (min-width: 768px) {
+  .col-preview .b-figur {
+    color: $color-clear;
+  }
+
+  .card-figur {
+    background-image: url("../../../assets/card-projects/figurtoys-tablette.jpg");
+  }
+
+  .svg-project-figur-2 {
+    width: 810px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .svg-project-figur-2 {
+    margin-right: -25vw;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .card-figur {
+    background-image: url("../../../assets/card-projects/figurtoys.jpg");
+  }
+
+  .svg-project-figur {
+    display: block;
+    width: 100vw;
+    right: -35vw;
+    bottom: 0;
+  }
+
+  .svg-project-figur-2 {
+    width: 46vw;
+  }
+
+  .slide-figur-2 {
+    background-image: linear-gradient(
+      45deg,
+      #332832 0%,
+      #332832 22%,
+      #d8115d 22%,
+      #d8115d 50%,
+      transparent 50%,
+      transparent 100%
+    );
+  }
+}
