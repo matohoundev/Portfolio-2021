@@ -30,7 +30,7 @@ const Main = () => {
     <ReactFullpage
       licenseKey={"iH#FNbQ%c2"}
       scrollBar={true}
-      render={({ state, fullpageApi }) => {
+      render={() => {
         return (
           <Fragment>
             <motion.div
