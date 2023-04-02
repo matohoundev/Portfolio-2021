@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="343.334" height="343.334" viewBox="0 0 343.334 343.334">
+  <g id="Logo" transform="translate(-548.707 -340.333)">
+    <path id="Tracé_2393" data-name="Tracé 2393" d="M706.87,512h-100.1v38.5Zm-100.1,0V473.5L706.87,512Z" fill="#006" fill-rule="evenodd"/>
+    <circle id="Ellipse_382" data-name="Ellipse 382" cx="18" cy="18" r="18" transform="translate(548.707 530.149) rotate(-90)" fill="#006"/>
+    <path id="Tracé_2394" data-name="Tracé 2394" d="M733.878,512h100.1v38.5Zm100.1,0V473.5L733.878,512Z" fill="#006" fill-rule="evenodd"/>
+    <circle id="Ellipse_383" data-name="Ellipse 383" cx="18" cy="18" r="18" transform="translate(856.041 530.149) rotate(-90)" fill="#006"/>
+    <path id="Tracé_2395" data-name="Tracé 2395" d="M710.825,521.548,640.044,592.33l27.224,27.223ZM640.044,592.33,612.82,565.106l98.005-43.558Z" fill="#d90000" fill-rule="evenodd"/>
+    <circle id="Ellipse_384" data-name="Ellipse 384" cx="18" cy="18" r="18" transform="translate(611.821 646.216) rotate(-135)" fill="#d90000"/>
+    <path id="Tracé_2396" data-name="Tracé 2396" d="M729.923,502.452,800.7,431.67l27.224,27.224ZM800.7,431.67l-27.223-27.223-43.558,98.005Z" fill="#ff8c00" fill-rule="evenodd"/>
+    <circle id="Ellipse_385" data-name="Ellipse 385" cx="18" cy="18" r="18" transform="translate(829.138 428.903) rotate(-135)" fill="#ff8c00"/>
+    <path id="Tracé_2397" data-name="Tracé 2397" d="M710.825,502.452,640.044,431.67,612.82,458.894ZM640.044,431.67l27.224-27.223,43.557,98.005Z" fill="#1d1d1d" fill-rule="evenodd"/>
+    <circle id="Ellipse_386" data-name="Ellipse 386" cx="18" cy="18" r="18" transform="translate(586.156 403.446) rotate(-45)" fill="#1d1d1d"/>
+    <path id="Tracé_2398" data-name="Tracé 2398" d="M729.923,521.548,800.7,592.33,773.48,619.553ZM800.7,592.33l27.224-27.224-98.005-43.558Z" fill="#1d1d1d" fill-rule="evenodd"/>
+    <circle id="Ellipse_387" data-name="Ellipse 387" cx="18" cy="18" r="18" transform="translate(803.471 620.764) rotate(-45)" fill="#1d1d1d"/>
+    <path id="Tracé_2399" data-name="Tracé 2399" d="M720.374,498.5V398.4h-38.5Zm0-100.1h38.5l-38.5,100.1Z" fill="#d90000" fill-rule="evenodd"/>
+    <circle id="Ellipse_388" data-name="Ellipse 388" cx="18" cy="18" r="18" transform="translate(702.225 340.333)" fill="#d90000"/>
+    <path id="Tracé_2400" data-name="Tracé 2400" d="M720.374,525.5V625.6h-38.5Zm0,100.1h38.5l-38.5-100.1Z" fill="#ff8c00" fill-rule="evenodd"/>
+    <circle id="Ellipse_389" data-name="Ellipse 389" cx="18" cy="18" r="18" transform="translate(702.225 647.667)" fill="#ff8c00"/>
+  </g>
+</svg>

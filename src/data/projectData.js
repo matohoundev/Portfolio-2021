@@ -1,3 +1,21 @@
+//Digitalli
+import digit from "../assets/svg-projects/logo_digitalli.svg";
+import digitPlace from "../assets/svg-projects/digitalli_place.svg";
+
+//Netto
+import netto from "../assets/svg-projects/netto.svg";
+import nettoBlock from "../assets/svg-projects/netto_block.svg";
+
+//Hotel Service Plus
+import hsp from "../assets/svg-projects/hsp.svg";
+
+//Exval
+import exval from "../assets/svg-projects/exval.svg";
+import exvalSubtitle from "../assets/svg-projects/exval_subtitle.svg";
+
+// //Portfolio 2020
+// import marvin from "../assets/svg-projects/marvin.svg";
+
 //Ready
 import ready from "../assets/svg-projects/ready.svg";
 import readyTwo from "../assets/svg-projects/readyTwo.svg";
@@ -12,8 +30,191 @@ import marvin from "../assets/svg-projects/marvin.svg";
 //Acacia
 import cuisto from "../assets/svg-projects/cuisto.svg";
 
-export const rainyDayData = {
+export const digitalliData = {
   id: 1,
+  cls_slide: "slide-digitalli",
+  cls_slide_2: "slide-digitalli-2",
+  cls_name: "digitalli",
+  cls_h3: "h3-digitalli",
+  name: "DIGI",
+  name_other_half: "TALLI",
+  cls_name_half: "b-digitalli",
+  cls_mark_name: "mark-tech-digitalli",
+  tech: "Vue.js - Vitejs - GraphQl",
+  cls_card: "card-digitalli",
+  alt_card: "image du projet digitalli",
+  svg: digitPlace,
+  svg_2: digit,
+  alt_svg: "logo du projet digitalli",
+  alt_svg_2: "logo du projet digitalli en blanc",
+  cls_svg: "svg-project-digitalli",
+  cls_svg_2: "svg-project-digitalli-2",
+
+  // Mission
+
+  cls_head_img: "acaciaLand",
+  citation: "La bonne cuisine est honnête, sincère et simple.",
+  synopsis:
+    "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
+  cls_half_img: "acaciaHalf",
+  mission:
+    "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
+  cls_img: "acaciaCard",
+  alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
+  img_project: "Page des produits du restaurants",
+  img_project_pllx: "premier parallax formant la page d'accueil",
+  img_project_pllx_1: "deuxième parallax formant la page d'accueil",
+  img_project_pllx_2: "troisième parallax formant la page d'accueil",
+  github: "https://github.com/matohoundev/Acacia",
+};
+
+export const nettoData = {
+  id: 2,
+  cls_slide: "slide-netto",
+  cls_slide_2: "slide-netto-2",
+  cls_name: "netto",
+  cls_h3: "h3-netto",
+  name: "Net",
+  name_other_half: "to",
+  cls_name_half: "b-netto",
+  cls_mark_name: "mark-tech-netto",
+  tech: "Drupal - Scss",
+  cls_card: "card-netto",
+  alt_card: "image du projet netto",
+  svg: netto,
+  svg_2: nettoBlock,
+  alt_svg: "logo du projet netto",
+  alt_svg_2: "block logo du projet netto",
+  cls_svg: "svg-project-netto",
+  cls_svg_2: "svg-project-netto-2",
+
+  // Mission
+
+  cls_head_img: "acaciaLand",
+  citation: "La bonne cuisine est honnête, sincère et simple.",
+  synopsis:
+    "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
+  cls_half_img: "acaciaHalf",
+  mission:
+    "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
+  cls_img: "acaciaCard",
+  alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
+  img_project: "Page des produits du restaurants",
+  img_project_pllx: "premier parallax formant la page d'accueil",
+  img_project_pllx_1: "deuxième parallax formant la page d'accueil",
+  img_project_pllx_2: "troisième parallax formant la page d'accueil",
+  github: "https://github.com/matohoundev/Acacia",
+};
+
+export const hspData = {
+  id: 3,
+  cls_slide: "slide-hsp",
+  cls_slide_2: "slide-hsp-2",
+  cls_name: "hsp",
+  cls_h3: "h3-hsp",
+  name: "Hotel Service Plus",
+  cls_name_half: "b-hsp",
+  cls_mark_name: "mark-tech-hsp",
+  tech: "React.js - Tailwind",
+  cls_card: "card-hsp",
+  alt_card: "image du projet hsp",
+  svg: hsp,
+  alt_svg: "logo du projet hsp",
+  cls_svg: "svg-project-hsp",
+
+  // Mission
+
+  cls_head_img: "acaciaLand",
+  citation: "La bonne cuisine est honnête, sincère et simple.",
+  synopsis:
+    "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
+  cls_half_img: "acaciaHalf",
+  mission:
+    "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
+  cls_img: "acaciaCard",
+  alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
+  img_project: "Page des produits du restaurants",
+  img_project_pllx: "premier parallax formant la page d'accueil",
+  img_project_pllx_1: "deuxième parallax formant la page d'accueil",
+  img_project_pllx_2: "troisième parallax formant la page d'accueil",
+  github: "https://github.com/matohoundev/Acacia",
+};
+
+export const exvaldata = {
+  id: 4,
+  cls_slide: "slide-exval",
+  cls_slide_2: "slide-exval-2",
+  cls_name: "exval",
+  cls_h3: "h3-exval",
+  name: "Ex",
+  name_other_half: "Val",
+  cls_name_half: "b-exval",
+  cls_mark_name: "mark-tech-exval",
+  tech: "Vue.js - Twig - Php",
+  cls_card: "card-exval",
+  alt_card: "image du projet exval",
+  svg: exval,
+  svg_2: exvalSubtitle,
+  alt_svg: "logo du projet exval",
+  alt_svg_2: "block logo du projet exval",
+  cls_svg: "svg-project-exval",
+  cls_svg_2: "svg-project-exval-2",
+
+  // Mission
+
+  cls_head_img: "acaciaLand",
+  citation: "La bonne cuisine est honnête, sincère et simple.",
+  synopsis:
+    "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
+  cls_half_img: "acaciaHalf",
+  mission:
+    "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
+  cls_img: "acaciaCard",
+  alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
+  img_project: "Page des produits du restaurants",
+  img_project_pllx: "premier parallax formant la page d'accueil",
+  img_project_pllx_1: "deuxième parallax formant la page d'accueil",
+  img_project_pllx_2: "troisième parallax formant la page d'accueil",
+  github: "https://github.com/matohoundev/Acacia",
+};
+
+export const ydgData = {
+  id: 5,
+  cls_slide: "slide-acacia",
+  cls_slide_2: "slide-acacia-2",
+  cls_name: "yoodoogood",
+  cls_h3: "h3-acacia",
+  name: "Yoodoogood",
+  cls_name_half: "b-acacia",
+  cls_mark_name: "mark-tech-acacia",
+  tech: "Vue.js - Vitejs - GraphQl -",
+  tech_other_half: "Tailwind",
+  cls_card: "card-acacia",
+  alt_card: "image du projet Acacia",
+  svg: cuisto,
+  alt_svg: "chef cuistot cartoon",
+  cls_svg: "svg-project-acacia",
+
+  // Mission
+
+  cls_head_img: "acaciaLand",
+  citation: "La bonne cuisine est honnête, sincère et simple.",
+  synopsis:
+    "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
+  cls_half_img: "acaciaHalf",
+  mission:
+    "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
+  cls_img: "acaciaCard",
+  alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
+  img_project: "Page des produits du restaurants",
+  img_project_pllx: "premier parallax formant la page d'accueil",
+  img_project_pllx_1: "deuxième parallax formant la page d'accueil",
+  img_project_pllx_2: "troisième parallax formant la page d'accueil",
+  github: "https://github.com/matohoundev/Acacia",
+};
+
+export const rainyDayData = {
+  id: 6,
   cls_slide: "slide-rainy",
   cls_slide_2: "slide-rainy-2",
   cls_name: "rainyDay",
@@ -58,7 +259,7 @@ export const rainyDayData = {
 };
 
 export const figurToysData = {
-  id: 2,
+  id: 7,
   cls_slide: "slide-figur",
   cls_slide_2: "slide-figur-2",
   cls_name: "figurToys",
@@ -98,7 +299,7 @@ export const figurToysData = {
 };
 
 export const folioData = {
-  id: 3,
+  id: 8,
   cls_slide: "slide-folio",
   cls_slide_2: "slide-folio-2",
   cls_name: "folio",
@@ -138,7 +339,7 @@ export const folioData = {
 };
 
 export const acaciaData = {
-  id: 4,
+  id: 9,
   cls_slide: "slide-acacia",
   cls_slide_2: "slide-acacia-2",
   cls_name: "acacia",

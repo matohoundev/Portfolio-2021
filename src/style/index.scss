@@ -18,6 +18,11 @@
 @import "../components/projects/customer/figurToys.scss";
 @import "../components/projects/customer/acacia.scss";
 @import "../components/projects/customer/rainyDay.scss";
+@import "../components/projects/customer/digitalli.scss";
+@import "../components/projects/customer/hsp.scss";
+@import "../components/projects/customer/ydg.scss";
+@import "../components/projects/customer/netto.scss";
+@import "../components/projects/customer/exval.scss";
 
 // effects-kit
 @import "../assets/animation/globalEffect";
@@ -284,6 +289,26 @@ b {
 
 .h3-acacia {
   font-family: "limelight", Arial, Helvetica, sans-serif;
+}
+
+.h3-digitalli {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.h3-hsp {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+.h3-ydg {
+  font-family: "newyorker", Arial, Helvetica, sans-serif;
+}
+
+.h3-netto {
+  font-family: "Comic Sans MS", "Comic Sans", Arial, Helvetica, sans-serif;
+}
+
+.h3-exval {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
 }
 
 .b-rainy,

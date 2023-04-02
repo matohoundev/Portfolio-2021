@@ -1,0 +1,98 @@
+//////// Exval customization /////////
+
+.col-preview .h3-exval {
+  font-size: 4.563em;
+  font-weight: bold;
+  color: $color-clear;
+}
+
+.col-preview .b-exval,
+.mark-tech-exval {
+  color: #363660;
+}
+
+.card-exval {
+  background-image: url("../../../assets/card-projects/exval.jpg");
+}
+
+.svg-project-exval {
+  width: 660px;
+  margin: -2vh 8vw 0 0;
+  position: absolute;
+}
+.svg-project-exval-2 {
+  width: 650px;
+  margin: -2vh 8vw -18vh 0;
+}
+
+.slide-exval {
+  background-image: linear-gradient(
+    45deg,
+    #363660 0%,
+    #363660 60%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+
+.slide-exval-2 {
+  background-image: linear-gradient(
+    45deg,
+    #363660 0%,
+    #363660 27%,
+    #e94a73 27%,
+    #e94a73 70%,
+    transparent 70%,
+    transparent 100%
+  ); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
+}
+
+@media screen and (min-width: 768px) {
+  .card-exval {
+    background-image: url("../../../assets/card-projects/exval.jpg");
+  }
+
+  .svg-project-exval,
+  .svg-project-exval-2 {
+    width: 810px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles pour cette Media Queries */
+  .svg-project-exval,
+  .svg-project-exval-2 {
+    margin-right: -23vw;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .col-preview .b-exval,
+  .mark-tech-exval {
+    color: #363660;
+  }
+
+  .card-exval {
+    background-image: url("../../../assets/card-projects/exval.jpg");
+  }
+
+  .svg-project-exval {
+    width: 23vw;
+  }
+
+  .svg-project-exval-2 {
+    width: 23vw;
+  }
+
+  .slide-exval-2 {
+    background-image: linear-gradient(
+      45deg,
+      #363660 0%,
+      #363660 22%,
+      #e94a73 22%,
+      #e94a73 50%,
+      transparent 50%,
+      transparent 100%
+    );
+  }
+}

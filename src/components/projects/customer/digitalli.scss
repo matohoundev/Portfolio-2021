@@ -1,0 +1,94 @@
+//////// Digitalli customization /////////
+
+.col-preview .h3-digitalli {
+  font-size: 4.563em;
+  color: $color-clear;
+}
+
+.col-preview .b-digitalli,
+.mark-tech-digitalli {
+  color: #031652;
+}
+
+.card-digitalli {
+  background-image: url("../../../assets/card-projects/digitalli.jpg");
+}
+
+.svg-project-digitalli {
+  width: 660px;
+  margin: -2vh 0 0 -11.3vw;
+  position: absolute;
+  display: none;
+}
+.svg-project-digitalli-2 {
+  width: 650px;
+  margin: -2vh 0 0 -11.3vw;
+}
+
+.slide-digitalli {
+  background-image: linear-gradient(
+    45deg,
+    #031652 0%,
+    #031652 60%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+
+.slide-digitalli-2 {
+  background-image: linear-gradient(
+    45deg,
+    #031652 0%,
+    #031652 27%,
+    #e6b55c 27%,
+    #e6b55c 70%,
+    transparent 70%,
+    transparent 100%
+  ); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
+}
+
+@media screen and (min-width: 768px) {
+  .card-digitalli {
+    background-image: url("../../../assets/card-projects/digitalli.jpg");
+  }
+
+  .svg-project-digitalli {
+    width: 810px;
+    display: block;
+  }
+
+  .svg-project-digitalli-2 {
+    width: 800px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles pour cette Media Queries */
+  .svg-project-digitalli,
+  .svg-project-digitalli-2 {
+    margin-right: -23vw;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .card-digitalli {
+    background-image: url("../../../assets/card-projects/digitalli.jpg");
+  }
+
+  .svg-project-digitalli,
+  .svg-project-digitalli-2 {
+    width: 41vw;
+  }
+
+  .slide-digitalli-2 {
+    background-image: linear-gradient(
+      45deg,
+      #031652 0%,
+      #031652 22%,
+      #e6b55c 22%,
+      #e6b55c 50%,
+      transparent 50%,
+      transparent 100%
+    );
+  }
+}

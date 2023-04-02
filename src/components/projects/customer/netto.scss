@@ -1,0 +1,97 @@
+//////// Netto customization /////////
+
+.col-preview .h3-netto {
+  font-size: 4.563em;
+  color: $color-clear;
+}
+
+.col-preview .b-netto,
+.mark-tech-netto {
+  color: #e30613;
+}
+
+.card-netto {
+  background-image: url("../../../assets/card-projects/netto-mobile.jpg");
+}
+
+.svg-project-netto {
+  width: 660px;
+  margin: -2vh 8vw 0 0;
+  position: absolute;
+}
+.svg-project-netto-2 {
+  width: 650px;
+  margin: -2vh 4.5vw 0 0;
+}
+
+.slide-netto {
+  background-image: linear-gradient(
+    45deg,
+    #f35723 0%,
+    #f35723 60%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+
+.slide-netto-2 {
+  background-image: linear-gradient(
+    45deg,
+    #e30613 0%,
+    #e30613 27%,
+    #f35723 27%,
+    #f35723 70%,
+    transparent 70%,
+    transparent 100%
+  ); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
+}
+
+@media screen and (min-width: 768px) {
+  .card-netto {
+    background-image: url("../../../assets/card-projects/netto-mobile.jpg");
+  }
+
+  .svg-project-netto,
+  .svg-project-netto-2 {
+    width: 810px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles pour cette Media Queries */
+  .svg-project-netto,
+  .svg-project-netto-2 {
+    margin-right: -23vw;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .col-preview .b-netto,
+  .mark-tech-netto {
+    color: #f35723;
+  }
+
+  .card-netto {
+    background-image: url("../../../assets/card-projects/netto.jpg");
+  }
+
+  .svg-project-netto {
+    width: 23vw;
+  }
+
+  .svg-project-netto-2 {
+    width: 31vw;
+  }
+
+  .slide-netto-2 {
+    background-image: linear-gradient(
+      45deg,
+      #f35723 0%,
+      #f35723 22%,
+      #e30613 22%,
+      #e30613 50%,
+      transparent 50%,
+      transparent 100%
+    );
+  }
+}

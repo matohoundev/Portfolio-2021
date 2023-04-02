@@ -1,4 +1,9 @@
 import {
+  digitalliData,
+  hspData,
+  nettoData,
+  exvaldata,
+  ydgData,
   rainyDayData,
   figurToysData,
   folioData,
@@ -7,7 +12,17 @@ import {
 
 export default class JsServices {
   getAllProjects() {
-    return [rainyDayData, figurToysData, folioData, acaciaData];
+    return [
+      digitalliData,
+      nettoData,
+      hspData,
+      exvaldata,
+      ydgData,
+      rainyDayData,
+      figurToysData,
+      folioData,
+      acaciaData,
+    ];
   }
 
   getProjectByName(name) {
