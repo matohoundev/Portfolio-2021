@@ -1,0 +1,95 @@
+//////// Yoodoogood customization /////////
+
+.col-preview .h3-ydg {
+  font-size: 4.563em;
+  font-weight: bold;
+  color: #f8dc35;
+}
+
+.col-preview .b-ydg,
+.mark-tech-ydg {
+  color: #f8dc35;
+}
+
+.card-ydg {
+  background-position: 48%;
+  background-image: url("../../../assets/card-projects/ydg.jpg");
+}
+
+.svg-project-ydg {
+  width: 450px;
+  margin: 0 8.5vw 0 0;
+  position: absolute;
+  display: none;
+}
+
+.slide-ydg {
+  background-image: linear-gradient(
+    45deg,
+    #f8dc35 0%,
+    #f8dc35 60%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+
+.slide-ydg-2 {
+  background-image: linear-gradient(
+    45deg,
+    #f8dc35 0%,
+    #f8dc35 27%,
+    white 27%,
+    white 54.5%,
+    #f8dc35 54.5%,
+    #f8dc35 55%,
+    transparent 55%,
+    transparent 100%
+  ); // for laptop 45% au lieu de 70% et au lieu de 27% c'est 22%, ensuite pour les mobile je ferais du cas par cas car le svg dépasse un peu
+}
+
+@media screen and (min-width: 768px) {
+  .card-ydg {
+    background-position: center;
+    background-image: url("../../../assets/card-projects/ydg.jpg");
+  }
+
+  .svg-project-ydg {
+    width: 800px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles pour cette Media Queries */
+  .svg-project-ydg {
+    margin-right: -23vw;
+  }
+
+  .svg-project-ydg-2 {
+    margin-right: -25vw;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .card-ydg {
+    background-image: url("../../../assets/card-projects/ydg.jpg");
+  }
+
+  .svg-project-ydg {
+    width: 23vw;
+    display: block;
+  }
+
+  .slide-ydg-2 {
+    background-image: linear-gradient(
+      45deg,
+      #f8dc35 0%,
+      #f8dc35 22%,
+      white 22%,
+      white 49.5%,
+      #f8dc35 49.5%,
+      #f8dc35 50%,
+      transparent 50%,
+      transparent 100%
+    );
+  }
+}

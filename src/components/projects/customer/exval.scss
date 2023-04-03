@@ -19,10 +19,12 @@
   width: 660px;
   margin: -2vh 8vw 0 0;
   position: absolute;
+  display: none;
 }
 .svg-project-exval-2 {
   width: 650px;
   margin: -2vh 8vw -18vh 0;
+  display: none;
 }
 
 .slide-exval {
@@ -55,6 +57,7 @@
   .svg-project-exval,
   .svg-project-exval-2 {
     width: 810px;
+    display: block;
   }
 }
 
@@ -62,7 +65,8 @@
   /* Styles pour cette Media Queries */
   .svg-project-exval,
   .svg-project-exval-2 {
-    margin-right: -23vw;
+    width: 230px;
+    margin-right: 5vw;
   }
 }
 

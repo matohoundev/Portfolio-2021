@@ -13,8 +13,8 @@ import hsp from "../assets/svg-projects/hsp.svg";
 import exval from "../assets/svg-projects/exval.svg";
 import exvalSubtitle from "../assets/svg-projects/exval_subtitle.svg";
 
-// //Portfolio 2020
-// import marvin from "../assets/svg-projects/marvin.svg";
+//Ydg 2020
+import ydg from "../assets/svg-projects/ydg.svg";
 
 //Ready
 import ready from "../assets/svg-projects/ready.svg";
@@ -40,7 +40,7 @@ export const digitalliData = {
   name_other_half: "TALLI",
   cls_name_half: "b-digitalli",
   cls_mark_name: "mark-tech-digitalli",
-  tech: "Vue.js - Vitejs - GraphQl",
+  tech: "Vitejs - Pinia - GraphQl",
   cls_card: "card-digitalli",
   alt_card: "image du projet digitalli",
   svg: digitPlace,
@@ -180,20 +180,20 @@ export const exvaldata = {
 
 export const ydgData = {
   id: 5,
-  cls_slide: "slide-acacia",
-  cls_slide_2: "slide-acacia-2",
+  cls_slide: "slide-ydg",
+  cls_slide_2: "slide-ydg-2",
   cls_name: "yoodoogood",
-  cls_h3: "h3-acacia",
-  name: "Yoodoogood",
-  cls_name_half: "b-acacia",
-  cls_mark_name: "mark-tech-acacia",
-  tech: "Vue.js - Vitejs - GraphQl -",
-  tech_other_half: "Tailwind",
-  cls_card: "card-acacia",
-  alt_card: "image du projet Acacia",
-  svg: cuisto,
-  alt_svg: "chef cuistot cartoon",
-  cls_svg: "svg-project-acacia",
+  cls_h3: "h3-ydg",
+  name: "YDG",
+  cls_name_half: "b-ydg",
+  cls_mark_name: "mark-tech-ydg",
+  // tech: "React native - Xcode - Android Studio",
+  tech_other_half: "React native - Xcode -Android Studio",
+  cls_card: "card-ydg",
+  alt_card: "image du projet ydg",
+  svg: ydg,
+  alt_svg: "logo du projet ydg",
+  cls_svg: "svg-project-ydg",
 
   // Mission
 
@@ -224,7 +224,7 @@ export const rainyDayData = {
   cls_name_half: "b-rainy",
   cls_name_half_md: "b-rainy-md",
   cls_mark_name: "mark-tech-rainy",
-  tech: "React.js - Bootstrap -Javascript - ",
+  tech: "React.js - Redux - Bootstrap - ",
   tech_other_half: "Firebase",
   cls_card: "card-rainy",
   alt_card: "image du projet RainyDay",

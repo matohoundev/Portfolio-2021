@@ -1,7 +1,7 @@
 //////// Netto customization /////////
 
 .col-preview .h3-netto {
-  font-size: 4.563em;
+  font-size: 4.2em;
   color: $color-clear;
 }
 
@@ -59,9 +59,13 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles pour cette Media Queries */
-  .svg-project-netto,
+  .svg-project-netto {
+    width: 170px;
+    margin-right: 8.5vw;
+  }
   .svg-project-netto-2 {
-    margin-right: -23vw;
+    width: 230px;
+    margin-right: 5vw;
   }
 }
 
