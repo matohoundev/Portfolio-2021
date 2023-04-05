@@ -9,32 +9,166 @@
     $color-clear 45%,
     $color-clear 100%
   );
-}
+  strong {
+    padding-bottom: 8px;
+  }
 
-.mission strong {
-  padding-bottom: 8px;
-}
-
-.head-mission {
-  height: $max-height-vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.head-mission h3 {
-  font-size: $sz14;
-}
-
-.head-mission-img {
-  height: $half-height-vh;
+  .head-mission {
+    height: $max-height-vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-size: $sz14;
+      @media screen and (min-width: 560px) {
+        font-size: $sz15;
+      }
+      @media screen and (min-width: 763px) {
+        font-size: $sz17;
+      }
+    }
+    &-img {
+      height: $half-height-vh;
+    }
+    &-description {
+      width: $max-width-vw;
+      height: $half-height-vh;
+      background-color: $color-dark;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5%;
+      @media screen and (min-width: 763px) {
+        height: 40vh;
+      }
+      p {
+        text-align: center;
+        font-size: $sz4;
+        color: $color-clear;
+        @media screen and (min-width: 763px) {
+          font-size: $sz8;
+        }
+      }
+    }
+  }
 }
 
 .main-mission {
-  padding: 4% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 6%;
+  @media screen and (min-width: 763px) {
+    padding: 2% 0;
+  }
+  .info {
+    @media screen and (min-width: 763px) {
+      display: flex;
+      padding: 0 6%;
+      column-gap: 5%;
+    }
+    ul {
+      list-style: none;
+    }
+    h2 {
+      font-size: $sz7;
+      margin-bottom: 15px;
+      @media screen and (min-width: 560px) {
+        font-size: $sz10;
+      }
+    }
+    p {
+      // font-size: $sz3;
+      // text-align: justify;
+      @media screen and (min-width: 560px) {
+        font-size: $sz6;
+      }
+    }
+    .white {
+      background-color: $color-clear;
+      padding: 5%;
+      @media screen and (min-width: 763px) {
+        border-radius: $round;
+      }
+      div {
+        padding-bottom: 15px;
+      }
+      .aside {
+        @media screen and (min-width: 763px) {
+          display: flex;
+          gap: 35%;
+          // justify-content: space-between;
+          // align-items: center;
+        }
+      }
+    }
+    .black {
+      background-color: $color-dark;
+      color: $color-clear;
+      padding: 5%;
+      height: fit-content;
+      @media screen and (min-width: 763px) {
+        border-radius: $round;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        span {
+          padding-bottom: 4px;
+          padding-left: 6px;
+        }
+      }
+    }
+  }
+
+  .gallery {
+    width: $max-width-percent;
+    padding: 5%;
+    // display: flex;
+    // justify-content: flex-start;
+    @media screen and (min-width: 763px) {
+      // background-color: black;
+      padding: 1% 6%;
+    }
+    h2 {
+      font-size: $sz7;
+      margin-bottom: 15px;
+      color: $color-dark;
+      @media screen and (min-width: 760px) {
+        background-color: $color-clear;
+        width: fit-content;
+        padding: 5px 20% 5px 15px;
+        border-radius: $arrondi;
+        font-size: $sz10;
+      }
+    }
+    .gallery-img {
+      width: $max-width-percent;
+      padding: 2%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      background-color: $color-clear;
+      border-radius: $arrondi;
+      @media screen and (min-width: 763px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 1.5%;
+        border-radius: $arrondi;
+        // background-color: black;
+      }
+      img {
+        width: 100%;
+        border-radius: $arrondi;
+        @media screen and (min-width: 763px) {
+          max-height: 300px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
 
 .citation-mission {
@@ -91,6 +225,7 @@ q::first-line {
   font-family: "abril", Helvetica, sans-serif;
   color: white;
   background-color: black;
+  cursor: pointer;
 }
 
 .github:hover {
@@ -123,27 +258,18 @@ q::first-line {
   margin: 0px 0 60px 0;
   text-align: center;
   font-size: $sz11;
-}
-
-.returnHome a {
-  color: black;
-}
-
-.returnHome a:hover {
-  animation: shake 1s 1 ease;
-}
-
-@media screen and (min-width: 560px) {
-  .head-mission h3 {
-    font-size: $sz15;
+  a {
+    color: $color-clear;
+    background-color: #e3004c;
+    padding: 5px 35px;
+    border-radius: $round;
+    &:hover {
+      animation: miniBounce 1s 1 ease;
+    }
   }
 }
 
 @media screen and (min-width: 763px) {
-  .head-mission h3 {
-    font-size: $sz17;
-  }
-
   .citation-mission {
     font-size: $sz16;
   }

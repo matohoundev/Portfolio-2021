@@ -6,7 +6,7 @@ $sz16: 5.625em; // 90px
 $sz15: 5em; // 80px
 $sz14: 3.125em; // 50px
 $sz13: 2.813em; // 45px
-$sz12: 2.500em; // 40px
+$sz12: 2.5em; // 40px
 $sz11: 2.188em; // 35px
 $sz10: 1.875em; // 30px
 $sz9: 1.8em; // 28.8px
@@ -15,7 +15,7 @@ $sz7: 1.5em; // 24px
 $sz6: 1.438em; // 23px
 $sz5: 1.375em; // 22px
 $sz4: 1.125em; // 18px
-$sz3: 1.000em; // 16px
+$sz3: 1em; // 16px
 $sz2: 0.938em; // 15.008px
 $sz1: 0.875em; // 14px
 
@@ -26,21 +26,21 @@ $light: lighter;
 
 /*Color Base*/
 
-$main-color:#E3004C;
-$secondary-color:#a10237;
-$third-color: #4B0019;
+$main-color: #e3004c;
+$secondary-color: #a10237;
+$third-color: #4b0019;
 $fourth-color: #5d0422;
 
-$color-dark:#000000;
-$color-clear:#ffffff;
+$color-dark: #000000;
+$color-clear: #ffffff;
 $colorT: transparent;
 
 /*Size screen*/
 
-$max-height-vh:100vh;
-$max-height-percent:100%;
-$half-height-vh:50vh;
-$half-height-percent:50%;
+$max-height-vh: 100vh;
+$max-height-percent: 100%;
+$half-height-vh: 50vh;
+$half-height-percent: 50%;
 
 $max-width-vw: 100vw;
 $max-width-percent: 100%;
@@ -51,3 +51,5 @@ $half-width-percent: 50%;
 
 $arrondi: 10px;
 $round: 1em;
+$round2: 50px;
+$round3: 100px;

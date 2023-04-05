@@ -52,6 +52,7 @@ export const digitalliData = {
 
   // Mission
 
+  new: true,
   cls_head_img: "acaciaLand",
   citation: "La bonne cuisine est honnête, sincère et simple.",
   synopsis:
