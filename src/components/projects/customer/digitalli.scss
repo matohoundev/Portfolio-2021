@@ -1,7 +1,7 @@
 //////// Digitalli customization /////////
 
 .col-preview .h3-digitalli {
-  font-size: 4.563em;
+  font-size: 3.563em;
   color: $color-clear;
 }
 
@@ -21,8 +21,10 @@
   display: none;
 }
 .svg-project-digitalli-2 {
-  width: 650px;
-  margin: -2vh 0 0 -11.3vw;
+  // width: 650px;
+  width: 150px;
+  // margin: -2vh 0 0 -11.3vw;
+  margin: 15vh 0 0 58.3vw;
 }
 
 .slide-digitalli {
@@ -48,17 +50,22 @@
 }
 
 @media screen and (min-width: 768px) {
+  .col-preview .h3-digitalli {
+    font-size: 3.563em;
+  }
+
   .card-digitalli {
     background-image: url("../../../assets/card-projects/digitalli.jpg");
   }
 
   .svg-project-digitalli {
-    width: 810px;
-    display: block;
+    width: 410px;
+    display: none;
   }
 
   .svg-project-digitalli-2 {
-    width: 800px;
+    width: 400px;
+    margin: 7vh 0 0 0vw;
   }
 }
 
@@ -66,7 +73,7 @@
   /* Styles pour cette Media Queries */
   .svg-project-digitalli,
   .svg-project-digitalli-2 {
-    margin-right: -23vw;
+    margin-right: -5vw;
   }
 }
 
@@ -78,6 +85,14 @@
   .svg-project-digitalli,
   .svg-project-digitalli-2 {
     width: 41vw;
+    margin: -2vh 0 0 -11.3vw;
+  }
+
+  .svg-project-digitalli {
+    display: block;
+  }
+
+  .svg-project-digitalli-2 {
   }
 
   .slide-digitalli-2 {

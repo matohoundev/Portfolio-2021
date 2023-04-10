@@ -58,7 +58,7 @@ const Main = () => {
             >
               <p data-aos="fade">
                 <span className="about-plus">"Votre projet est le mien"</span>{" "}
-                c'est ainsi que j'envisage une mission votre motivation est la
+                c'est ainsi que j'envisage une mission, votre motivation est la
                 mienne et c'est ce qui me permet d'atteindre un rendu fidèle au
                 design. Développer de manière agile et polir chaque détail avec
                 la soif d'innover, ce sont mes valeurs.

@@ -89,6 +89,7 @@
       padding: 5%;
       @media screen and (min-width: 763px) {
         border-radius: $round;
+        max-width: 65vw;
       }
       div {
         padding-bottom: 15px;
@@ -97,8 +98,6 @@
         @media screen and (min-width: 763px) {
           display: flex;
           gap: 35%;
-          // justify-content: space-between;
-          // align-items: center;
         }
       }
     }
@@ -113,9 +112,15 @@
       li {
         display: flex;
         align-items: center;
+        margin-bottom: 5px;
         span {
-          padding-bottom: 4px;
           padding-left: 6px;
+        }
+        &.longText {
+          align-items: start;
+          svg {
+            padding-top: 4px;
+          }
         }
       }
     }

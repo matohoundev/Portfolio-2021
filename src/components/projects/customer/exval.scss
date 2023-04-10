@@ -16,15 +16,13 @@
 }
 
 .svg-project-exval {
-  width: 660px;
-  margin: -2vh 8vw 0 0;
+  width: 100px;
+  margin: -2vh 0 -11vh 63vw;
   position: absolute;
-  display: none;
 }
 .svg-project-exval-2 {
-  width: 650px;
-  margin: -2vh 8vw -18vh 0;
-  display: none;
+  width: 100px;
+  margin: -2vh 0 -18vh 63vw;
 }
 
 .slide-exval {
@@ -54,6 +52,13 @@
     background-image: url("../../../assets/card-projects/exval.jpg");
   }
 
+  .svg-project-exval {
+    margin: -2vh 8vw 0 0;
+  }
+  .svg-project-exval-2 {
+    margin: -2vh 8vw -18vh 0;
+  }
+
   .svg-project-exval,
   .svg-project-exval-2 {
     width: 810px;
@@ -62,7 +67,10 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles pour cette Media Queries */
+  .col-preview .h3-exval {
+    font-size: 3.563em;
+  }
+
   .svg-project-exval,
   .svg-project-exval-2 {
     width: 230px;

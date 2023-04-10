@@ -61,6 +61,8 @@ export const digitalliData = {
   mission:
     "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
   cls_img: "acaciaCard",
+  year: "2022-2023",
+  tech_mission: ["Vite.js", "Pinia", "GraphQl", "Tailwindcss"],
   alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
   img_project: "Page des produits du restaurants",
   img_project_pllx: "premier parallax formant la page d'accueil",
@@ -91,6 +93,7 @@ export const nettoData = {
 
   // Mission
 
+  new: true,
   cls_head_img: "acaciaLand",
   citation: "La bonne cuisine est honnête, sincère et simple.",
   synopsis:
@@ -99,6 +102,8 @@ export const nettoData = {
   mission:
     "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
   cls_img: "acaciaCard",
+  year: "2022",
+  tech_mission: ["Drupal", "Scss"],
   alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
   img_project: "Page des produits du restaurants",
   img_project_pllx: "premier parallax formant la page d'accueil",
@@ -125,6 +130,7 @@ export const hspData = {
 
   // Mission
 
+  new: true,
   cls_head_img: "acaciaLand",
   citation: "La bonne cuisine est honnête, sincère et simple.",
   synopsis:
@@ -133,6 +139,8 @@ export const hspData = {
   mission:
     "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
   cls_img: "acaciaCard",
+  year: "2022",
+  tech_mission: ["React.js", "Tailwindcss"],
   alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
   img_project: "Page des produits du restaurants",
   img_project_pllx: "premier parallax formant la page d'accueil",
@@ -163,6 +171,7 @@ export const exvaldata = {
 
   // Mission
 
+  new: true,
   cls_head_img: "acaciaLand",
   citation: "La bonne cuisine est honnête, sincère et simple.",
   synopsis:
@@ -171,6 +180,8 @@ export const exvaldata = {
   mission:
     "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
   cls_img: "acaciaCard",
+  year: "2021 -2022",
+  tech_mission: ["Vue.js", "Php", "Twig"],
   alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
   img_project: "Page des produits du restaurants",
   img_project_pllx: "premier parallax formant la page d'accueil",
@@ -183,12 +194,11 @@ export const ydgData = {
   id: 5,
   cls_slide: "slide-ydg",
   cls_slide_2: "slide-ydg-2",
-  cls_name: "yoodoogood",
+  cls_name: "ydg",
   cls_h3: "h3-ydg",
   name: "YDG",
   cls_name_half: "b-ydg",
   cls_mark_name: "mark-tech-ydg",
-  // tech: "React native - Xcode - Android Studio",
   tech_other_half: "React native - Xcode -Android Studio",
   cls_card: "card-ydg",
   alt_card: "image du projet ydg",
@@ -198,6 +208,7 @@ export const ydgData = {
 
   // Mission
 
+  new: true,
   cls_head_img: "acaciaLand",
   citation: "La bonne cuisine est honnête, sincère et simple.",
   synopsis:
@@ -206,6 +217,8 @@ export const ydgData = {
   mission:
     "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
   cls_img: "acaciaCard",
+  year: "2021",
+  tech_mission: ["React native", "Xcode", "Android Studio"],
   alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
   img_project: "Page des produits du restaurants",
   img_project_pllx: "premier parallax formant la page d'accueil",

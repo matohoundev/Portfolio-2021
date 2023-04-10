@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import Footer from "../../starter/footer/Footer";
 import JsServices from "../../services/JsServices";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import {
   faReact,
   faVuejs,
@@ -14,36 +13,40 @@ import {
   faBootstrap,
   faWordpress,
   faPhp,
+  faDrupal,
+  faAndroid,
+  faApple,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Mission = () => {
   const { id } = useParams();
   const [project] = useState(new JsServices().getProjectByName(id));
-  const test = [
-    "react.js",
-    "vue.js",
-    "javascript",
-    "sass",
-    "bootstrap",
-    "wordpress",
-    "php",
-  ];
   const iconForTech = (tech) => {
     switch (tech) {
-      case "react.js":
+      case "React.js":
+      case "React native":
         return faReact;
-      case "vue.js":
+      case "Vue.js":
+      case "Vite.js":
+      case "Pinia":
         return faVuejs;
-      case "javascript":
+      case "Javascript":
         return faJs;
-      case "sass":
+      case "Sass":
+      case "Scss":
         return faSass;
-      case "bootstrap":
+      case "Bootstrap":
         return faBootstrap;
-      case "wordpress":
+      case "Wordpress":
         return faWordpress;
-      case "php":
+      case "Php":
         return faPhp;
+      case "Drupal":
+        return faDrupal;
+      case "Android Studio":
+        return faAndroid;
+      case "Xcode":
+        return faApple;
       default:
         return "fas fa-question";
     }
@@ -96,14 +99,7 @@ const Mission = () => {
         )}
         {project.new && (
           <div className="head-mission-description">
-            <p>
-              RainyDay est une plate-forme de suivi pour la télévision et les
-              films. Il permet aux utilisateurs de suivre ce qu'ils regardent,
-              RainyDay permet également aux utilisateurs de réagir et de
-              commenter des épisodes au sein de la communauté du site. Les
-              utilisateurs ne peuvent pas regarder des émissions ou des films
-              avec RainyDay.
-            </p>
+            <p>{project.synopsis}</p>
           </div>
         )}
 
@@ -120,34 +116,44 @@ const Mission = () => {
 
           {project.new && (
             <div className="info">
-              <div className="white">
+              <div
+                className="white"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <div className="description">
-                  <h2>Description</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Officia facere quisquam, praesentium eligendi repellat
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Officia facere quisquam, praesentium eligendi repellat
-                  </p>
+                  <h2>Descriptif mission</h2>
+                  <p>{project.mission}</p>
                 </div>
                 <div className="aside">
                   <div className="annee">
                     <h2>Année</h2>
-                    <p>2020</p>
+                    <p>{project.year}</p>
                   </div>
-                  <div className="lien">
-                    <h2>Lien</h2>
-                    <p>faire un a href ici</p>
-                  </div>
+                  {project.link && (
+                    <div className="lien">
+                      <h2>Lien</h2>
+                      <p>faire un a href ici</p>
+                    </div>
+                  )}
                 </div>
               </div>
-              <div className="black">
+              <div
+                className="black"
+                data-aos="fade-down-left"
+                data-aos-duration="1000"
+              >
                 <h2>Tech</h2>
                 <ul>
-                  {test.map((tech, id) => (
-                    <li key={id}>
+                  {project.tech_mission.map((tech, id) => (
+                    <li
+                      key={id}
+                      className={
+                        tech === "Android Studio" || "React native"
+                          ? "longText"
+                          : ""
+                      }
+                    >
                       <FontAwesomeIcon icon={iconForTech(tech)} />
                       <span>{tech}</span>
                     </li>
