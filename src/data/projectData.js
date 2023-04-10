@@ -119,7 +119,7 @@ export const nettoData = {
   synopsis:
     "Netto est une enseigne française de hard-discount alimentaire. Le projet Netto consistait à créer plusieurs de leur page d'événement pour Noël, il était possible de gagner des chèques-cadeaux après y avoir effectué des achats.",
   mission:
-    "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
+    "En collaboration avec l'agence de communication et en synergie avec un développeur Drupal, développement de plusieurs pages d'événement pour l'opération promotionnelle de Netto",
   year: "2022",
   tech_mission: ["Drupal", "Scss"],
   img_project_route: [
@@ -151,9 +151,9 @@ export const hspData = {
 
   new: true,
   synopsis:
-    "Fondée en 2007, Hotel Service Plus est une plateforme privée de réservation d’hébergements temporaires d’urgence pour des familles et des personnes isolées en situation de rupture d’hébergement.",
+    "Fondée en 2007, Hotel Service Plus est une plateforme privée de réservation d’hébergements temporaires d’urgence pour des familles et des personnes isolées en situation de rupture d’hébergement. Le projet Othello est un outil de gestion de placements hôteliers.",
   mission:
-    "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
+    "De concert avec une équipe de 4 développeurs, 3 développeurs front-end et 1 développeur back-end, ajout des différentes sections de l'application et de leurs fonctionnalités.",
   year: "2022",
   tech_mission: ["React.js", "Tailwindcss"],
   img_project_route: [hspHome, hsp1, hspBenef, hspModal],
@@ -185,9 +185,9 @@ export const exvaldata = {
   synopsis:
     "Exval est une société spécialisée dans le Smart Data et l'Intelligent Data pour les marchés immobiliers. Leur outil permet de collecter, traiter et analyser les données immobilières pour les rendre intelligibles et exploitable.",
   mission:
-    "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
+    "Ajout de nouvelles sections sur le site vitrine, refonte de l'interface utilisateur de l'outil de gestion de données, nouvelles sections graphiques, statistiques, création et développement de pdf pour export de données.",
   year: "2021 -2022",
-  tech_mission: ["Vue.js", "Php", "Twig", "GAnalytics"],
+  tech_mission: ["Vue.js", "Analytics", "Php", "Twig"],
   img_project_route: [
     exvalHome,
     wonderfexHome,
@@ -220,7 +220,7 @@ export const ydgData = {
   synopsis:
     "Yoodoogood est une application mobile dédié aux jeux qui permet de gagner des lots tout en donnant à des associations. Chaque jour des lots sont mis en jeu et les joueurs peuvent gagner des points en jouant à des jeux pour tenter de gagner ces lots.",
   mission:
-    "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
+    "Application mobile oblige utilisation de Xcode et Android Studio pour le développement de l'application. Développement de l'application mobile en React native, création des pages d'Onboarding, des différentes modal de l'application, de l'animation des pièces qui tombent suite à la victoire du joueur et enfin développement de la fonctionnalités principale de l'application, le slider pour miser sur un lot.",
   year: "2021",
   tech_mission: ["React native", "Xcode", "Android Studio"],
   img_project_route: [ydgHome, ydg2, ydg3],

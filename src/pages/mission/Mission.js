@@ -48,7 +48,7 @@ const Mission = () => {
         return faAndroid;
       case "Xcode":
         return faApple;
-      case "GAnalytics":
+      case "Analytics":
         return faGoogle;
       default:
         return "fas fa-question";
