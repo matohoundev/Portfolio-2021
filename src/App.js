@@ -11,7 +11,7 @@ import NotFound from "./pages/404/Notfound";
 function App() {
   useEffect(() => {
     Aos.init({ duration: 2000, delay: 0, easing: "ease-in-out" });
-    // console.clear();
+    console.clear();
   }, []);
 
   const location = useLocation();
