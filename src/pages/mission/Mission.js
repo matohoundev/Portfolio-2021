@@ -18,6 +18,7 @@ import {
   faApple,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Mission = () => {
   const { id } = useParams();
@@ -51,7 +52,7 @@ const Mission = () => {
       case "Analytics":
         return faGoogle;
       default:
-        return "fas fa-question";
+        return faCode;
     }
   };
 
