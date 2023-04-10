@@ -1,20 +1,44 @@
 //Digitalli
 import digit from "../assets/svg-projects/logo_digitalli.svg";
 import digitPlace from "../assets/svg-projects/digitalli_place.svg";
+import DigitalliHome from "../assets/img-mission/digitalli/digitalli-home.jpg";
+import digitalliInformation from "../assets/img-mission/digitalli/digitalli-informations.jpg";
+import digitalliStore from "../assets/img-mission/digitalli/stores.jpg";
+import digitalliStoreInformation from "../assets/img-mission/digitalli/new-store-informations.jpg";
+import digitalliToast from "../assets/img-mission/digitalli/toast.jpg";
+import digitalliFloorPlan from "../assets/img-mission/digitalli/new-store-floor-plan.jpg";
 
 //Netto
 import netto from "../assets/svg-projects/netto.svg";
 import nettoBlock from "../assets/svg-projects/netto_block.svg";
+import NettoEvent from "../assets/img-mission/netto/netto-1.jpg";
+import NettoEvent2 from "../assets/img-mission/netto/netto-2.jpg";
+import NettoEvent3 from "../assets/img-mission/netto/netto-3.jpg";
+import NettoEvent4 from "../assets/img-mission/netto/netto-4.jpg";
+import NettoEvent5 from "../assets/img-mission/netto/netto-5.jpg";
 
 //Hotel Service Plus
 import hsp from "../assets/svg-projects/hsp.svg";
+import hspHome from "../assets/img-mission/hsp/hsp-home.jpg";
+import hsp1 from "../assets/img-mission/hsp/hsp-1.jpg";
+import hspBenef from "../assets/img-mission/hsp/hsp-benef.jpg";
+import hspModal from "../assets/img-mission/hsp/hsp-modal.jpg";
 
 //Exval
 import exval from "../assets/svg-projects/exval.svg";
 import exvalSubtitle from "../assets/svg-projects/exval_subtitle.svg";
+import exvalHome from "../assets/img-mission/exval/Exval-home.jpg";
+import wonderfexHome from "../assets/img-mission/exval/Exval.jpg";
+import wonderfex from "../assets/img-mission/exval/Exval-1.jpg";
+import wonderfex2 from "../assets/img-mission/exval/Exval-2.jpg";
+import wonderfex3 from "../assets/img-mission/exval/Exval-3.jpg";
+import wonderfex4 from "../assets/img-mission/exval/Exval-4.jpg";
 
 //Ydg 2020
 import ydg from "../assets/svg-projects/ydg.svg";
+import ydgHome from "../assets/img-mission/ydg/ydg-start.jpg";
+import ydg2 from "../assets/img-mission/ydg/ydg-2.jpg";
+import ydg3 from "../assets/img-mission/ydg/ydg-3.jpg";
 
 //Ready
 import ready from "../assets/svg-projects/ready.svg";
@@ -53,22 +77,20 @@ export const digitalliData = {
   // Mission
 
   new: true,
-  cls_head_img: "acaciaLand",
-  citation: "La bonne cuisine est honnête, sincère et simple.",
   synopsis:
-    "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
-  cls_half_img: "acaciaHalf",
+    "Digitalli est membre de RC Group, un groupe d’entreprises françaises, leader dans le domaine des services de communication pour les marques premium et de luxe. Le projet Place by Digitalli est une plateforme de gestion d'écran digital pour les boutiques, restaurants, hôtels, etc...",
   mission:
-    "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
-  cls_img: "acaciaCard",
+    "Le projet est basé sur le framework Vite.js. Développement de différentes pages d'ajout et d'édition de contenu à l'aide de l'API GraphQl, et de la librairie Pinia pour la gestion d'état. Ajout de divers fonctionnalités pour l'administration de la plateforme et une modernisation de l'interface utilisateur.",
   year: "2022-2023",
   tech_mission: ["Vite.js", "Pinia", "GraphQl", "Tailwindcss"],
-  alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
-  img_project: "Page des produits du restaurants",
-  img_project_pllx: "premier parallax formant la page d'accueil",
-  img_project_pllx_1: "deuxième parallax formant la page d'accueil",
-  img_project_pllx_2: "troisième parallax formant la page d'accueil",
-  github: "https://github.com/matohoundev/Acacia",
+  img_project_route: [
+    DigitalliHome,
+    digitalliStoreInformation,
+    digitalliInformation,
+    digitalliStore,
+    digitalliFloorPlan,
+    digitalliToast,
+  ],
 };
 
 export const nettoData = {
@@ -94,22 +116,19 @@ export const nettoData = {
   // Mission
 
   new: true,
-  cls_head_img: "acaciaLand",
-  citation: "La bonne cuisine est honnête, sincère et simple.",
   synopsis:
-    "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
-  cls_half_img: "acaciaHalf",
+    "Netto est une enseigne française de hard-discount alimentaire. Le projet Netto consistait à créer plusieurs de leur page d'événement pour Noël, il était possible de gagner des chèques-cadeaux après y avoir effectué des achats.",
   mission:
     "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
-  cls_img: "acaciaCard",
   year: "2022",
   tech_mission: ["Drupal", "Scss"],
-  alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
-  img_project: "Page des produits du restaurants",
-  img_project_pllx: "premier parallax formant la page d'accueil",
-  img_project_pllx_1: "deuxième parallax formant la page d'accueil",
-  img_project_pllx_2: "troisième parallax formant la page d'accueil",
-  github: "https://github.com/matohoundev/Acacia",
+  img_project_route: [
+    NettoEvent,
+    NettoEvent2,
+    NettoEvent3,
+    NettoEvent4,
+    NettoEvent5,
+  ],
 };
 
 export const hspData = {
@@ -131,22 +150,13 @@ export const hspData = {
   // Mission
 
   new: true,
-  cls_head_img: "acaciaLand",
-  citation: "La bonne cuisine est honnête, sincère et simple.",
   synopsis:
-    "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
-  cls_half_img: "acaciaHalf",
+    "Fondée en 2007, Hotel Service Plus est une plateforme privée de réservation d’hébergements temporaires d’urgence pour des familles et des personnes isolées en situation de rupture d’hébergement.",
   mission:
     "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
-  cls_img: "acaciaCard",
   year: "2022",
   tech_mission: ["React.js", "Tailwindcss"],
-  alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
-  img_project: "Page des produits du restaurants",
-  img_project_pllx: "premier parallax formant la page d'accueil",
-  img_project_pllx_1: "deuxième parallax formant la page d'accueil",
-  img_project_pllx_2: "troisième parallax formant la page d'accueil",
-  github: "https://github.com/matohoundev/Acacia",
+  img_project_route: [hspHome, hsp1, hspBenef, hspModal],
 };
 
 export const exvaldata = {
@@ -172,22 +182,20 @@ export const exvaldata = {
   // Mission
 
   new: true,
-  cls_head_img: "acaciaLand",
-  citation: "La bonne cuisine est honnête, sincère et simple.",
   synopsis:
-    "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
-  cls_half_img: "acaciaHalf",
+    "Exval est une société spécialisée dans le Smart Data et l'Intelligent Data pour les marchés immobiliers. Leur outil permet de collecter, traiter et analyser les données immobilières pour les rendre intelligibles et exploitable.",
   mission:
     "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
-  cls_img: "acaciaCard",
   year: "2021 -2022",
-  tech_mission: ["Vue.js", "Php", "Twig"],
-  alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
-  img_project: "Page des produits du restaurants",
-  img_project_pllx: "premier parallax formant la page d'accueil",
-  img_project_pllx_1: "deuxième parallax formant la page d'accueil",
-  img_project_pllx_2: "troisième parallax formant la page d'accueil",
-  github: "https://github.com/matohoundev/Acacia",
+  tech_mission: ["Vue.js", "Php", "Twig", "GAnalytics"],
+  img_project_route: [
+    exvalHome,
+    wonderfexHome,
+    wonderfex,
+    wonderfex2,
+    wonderfex3,
+    wonderfex4,
+  ],
 };
 
 export const ydgData = {
@@ -209,22 +217,13 @@ export const ydgData = {
   // Mission
 
   new: true,
-  cls_head_img: "acaciaLand",
-  citation: "La bonne cuisine est honnête, sincère et simple.",
   synopsis:
-    "Acacia est un restaurant gastronomique fictif, il est fictivement basée à Paris et ils s'y cuisinent tout aussi fictivement de délicieux plats.",
-  cls_half_img: "acaciaHalf",
+    "Yoodoogood est une application mobile dédié aux jeux qui permet de gagner des lots tout en donnant à des associations. Chaque jour des lots sont mis en jeu et les joueurs peuvent gagner des points en jouant à des jeux pour tenter de gagner ces lots.",
   mission:
     "Création d’une solution pour qu'un restaurants puisse fidéliser ces clients via un espace membre leur permettant de commenter les différents articles partager par  le restaurant, et de bénéficier de différents bon de réduction.",
-  cls_img: "acaciaCard",
   year: "2021",
   tech_mission: ["React native", "Xcode", "Android Studio"],
-  alt_banner: "Bannière d'Acacia, pain perdu, miel, fruits",
-  img_project: "Page des produits du restaurants",
-  img_project_pllx: "premier parallax formant la page d'accueil",
-  img_project_pllx_1: "deuxième parallax formant la page d'accueil",
-  img_project_pllx_2: "troisième parallax formant la page d'accueil",
-  github: "https://github.com/matohoundev/Acacia",
+  img_project_route: [ydgHome, ydg2, ydg3],
 };
 
 export const rainyDayData = {

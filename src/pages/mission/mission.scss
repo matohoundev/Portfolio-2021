@@ -158,18 +158,33 @@
       @media screen and (min-width: 763px) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         grid-gap: 10px;
         padding: 1.5%;
         border-radius: $arrondi;
-        // background-color: black;
       }
       img {
         width: 100%;
         border-radius: $arrondi;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+        cursor: pointer;
         @media screen and (min-width: 763px) {
           max-height: 300px;
           object-fit: cover;
+        }
+        &:hover {
+          width: 101%;
+        }
+        &:active {
+          @media screen and (min-width: 763px) {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+            position: fixed;
+            top: 7.5vh;
+            left: 15vw;
+            width: 70vw;
+            max-height: 85vh;
+            transition: 0.3s;
+          }
         }
       }
     }

@@ -4,25 +4,11 @@ import {
   nettoData,
   exvaldata,
   ydgData,
-  rainyDayData,
-  figurToysData,
-  folioData,
-  acaciaData,
 } from "../data/projectData";
 
 export default class JsServices {
   getAllProjects() {
-    return [
-      digitalliData,
-      nettoData,
-      hspData,
-      exvaldata,
-      ydgData,
-      rainyDayData,
-      figurToysData,
-      folioData,
-      acaciaData,
-    ];
+    return [digitalliData, nettoData, hspData, exvaldata, ydgData];
   }
 
   getProjectByName(name) {

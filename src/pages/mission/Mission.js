@@ -16,6 +16,7 @@ import {
   faDrupal,
   faAndroid,
   faApple,
+  faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Mission = () => {
@@ -47,6 +48,8 @@ const Mission = () => {
         return faAndroid;
       case "Xcode":
         return faApple;
+      case "GAnalytics":
+        return faGoogle;
       default:
         return "fas fa-question";
     }
@@ -167,26 +170,10 @@ const Mission = () => {
             <div className="gallery">
               <h2>Gallerie</h2>
               <div className="gallery-img">
-                <img
-                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1"
-                  alt=""
-                />
-                <img
-                  src="https://www.fredzone.org/wp-content/uploads/2022/12/IMG-20221206-WA0004-1.jpg"
-                  alt=""
-                />
-                <img
-                  src="https://www.fredzone.org/wp-content/uploads/2022/12/IMG-20221206-WA0004-1.jpg"
-                  alt=""
-                />
-                <img
-                  src="https://www.fredzone.org/wp-content/uploads/2022/12/IMG-20221206-WA0004-1.jpg"
-                  alt=""
-                />
-                <img
-                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1"
-                  alt=""
-                />
+                {project.img_project_route.map((img, id) => (
+                  // eslint-disable-next-line jsx-a11y/img-redundant-alt
+                  <img key={id} src={img} alt={`image du projet n°${id + 1}`} />
+                ))}
               </div>
             </div>
           )}
