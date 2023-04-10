@@ -1,6 +1,6 @@
 # Bonjour !
 
-Je suis ATOHOUN Marvin, un développeur Front-end français passionné et naturellement curieux , avec un intérêt pour l'interaction et l'expérience utilisateur. J'aime relever de nouveaux défis, découvrir les technologies émergentes et explorer des solutions innovantes.
+Je suis Atohoun Marvin, un développeur Front-end français passionné et naturellement curieux , avec un intérêt pour l'interaction et l'expérience utilisateur. J'aime relever de nouveaux défis, découvrir les technologies émergentes et explorer des solutions innovantes.
 
 ## Lancer le projet
 
