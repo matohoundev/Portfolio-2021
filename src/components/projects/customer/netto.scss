@@ -3,6 +3,7 @@
 .col-preview .h3-netto {
   font-size: 3.2em;
   color: $color-clear;
+  font-weight: bold;
 }
 
 .col-preview .b-netto,
@@ -49,6 +50,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .col-preview .h3-netto {
+    font-weight: 500;
+  }
+
   .card-netto {
     background-image: url("../../../assets/card-projects/netto-tablet.jpg");
   }

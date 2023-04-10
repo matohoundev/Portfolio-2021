@@ -3,6 +3,7 @@
 .col-preview .h3-digitalli {
   font-size: 3.563em;
   color: $color-clear;
+  font-weight: bold;
 }
 
 .col-preview .b-digitalli,
@@ -52,6 +53,7 @@
 @media screen and (min-width: 768px) {
   .col-preview .h3-digitalli {
     font-size: 3.563em;
+    font-weight: 500;
   }
 
   .card-digitalli {
