@@ -119,7 +119,7 @@ export const nettoData = {
   synopsis:
     "Netto est une enseigne française de hard-discount alimentaire. Le projet Netto consistait à créer plusieurs de leur page d'événement pour Noël, il était possible de gagner des chèques-cadeaux après y avoir effectué des achats.",
   mission:
-    "En collaboration avec l'agence de communication et en synergie avec un développeur Drupal, développement de plusieurs pages d'événement pour l'opération promotionnelle de Netto",
+    "En collaboration avec l'agence de communication et en synergie avec un développeur Drupal, développement de plusieurs pages d'événement responsive pour l'opération promotionnelle de Netto.",
   year: "2022",
   tech_mission: ["Drupal", "Scss"],
   img_project_route: [
