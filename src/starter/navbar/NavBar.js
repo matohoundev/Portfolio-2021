@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
-import navImg from "./nav.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import { Anchor } from "antd";
 
@@ -63,7 +64,7 @@ const Navbar = () => {
           </div>
         )}
         <button onClick={toggleNavSmallScreen} className="navbar-toggler">
-          <img src={navImg} alt="" className="nav-icon" />
+          <FontAwesomeIcon icon={faBars} />
         </button>
       </nav>
     </Fragment>
