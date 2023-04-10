@@ -1,7 +1,7 @@
 //////// Yoodoogood customization /////////
 
 .col-preview .h3-ydg {
-  font-size: 4.563em;
+  font-size: 3.963em;
   font-weight: bold;
   color: #f8dc35;
 }
@@ -13,7 +13,7 @@
 
 .card-ydg {
   background-position: 48%;
-  background-image: url("../../../assets/card-projects/ydg.jpg");
+  background-image: url("../../../assets/card-projects/ydg-mobile.jpg");
 }
 
 .svg-project-ydg {
@@ -48,6 +48,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .col-preview .h3-ydg {
+    font-size: 4.563em;
+  }
+
   .card-ydg {
     background-position: center;
     background-image: url("../../../assets/card-projects/ydg.jpg");
