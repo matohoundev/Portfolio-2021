@@ -5,19 +5,20 @@ export class Tech extends Component {
     return (
       <div className="Tech" data-aos="fade-right">
         <p>
-          <mark>React.js</mark> javascript <mark>UI</mark>
+          <mark>React.js</mark> javascript <mark>UI </mark>
+          <mark>Nuxt.js</mark>
         </p>
         <p>
-          Symfony php materialize <mark>Aos</mark>
+          Express <mark>Node.Js</mark> Sequelize
         </p>
         <p>
-          <mark>Framer-motion</mark> Firebase
+          <mark>Framer-motion</mark> Firebase <mark>Next.Js</mark>
         </p>
         <p>
-          Sql Jquery <mark>Bootstrap</mark> Gsap{" "}
+          Sql Jquery <mark>Bootstrap</mark> <mark>Gsap</mark>{" "}
         </p>
         <p>
-          <mark>UX</mark> Wordpress <mark>Scss</mark> Vue.js{" "}
+          <mark>UX</mark> Shopify <mark>Scss</mark> Vue.js{" "}
         </p>
       </div>
     );
