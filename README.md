@@ -1,8 +1,8 @@
 # Bonjour !
 
-Je suis Atohoun Marvin, un développeur Full-Stack français passionné et naturellement curieux , avec un intérêt pour l'interaction et l'expérience utilisateur. J'aime relever de nouveaux défis, découvrir les technologies émergentes et explorer des solutions innovantes.
+Je suis Atohoun Marvin, un développeur Front-end français passionné et naturellement curieux , avec un intérêt pour l'interaction et l'expérience utilisateur. J'aime relever de nouveaux défis, découvrir les technologies émergentes et explorer des solutions innovantes.
 
-## Lancer le projet
+Lancer le projet
 
 Exécutez `npm i` pour installer toutes les dépendances
 
